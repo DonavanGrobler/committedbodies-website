@@ -1,13 +1,14 @@
 <script>
-    import HeroSlider from "$lib/components/HeroSlider.svelte";
+    import Header from '$lib/components/Header.svelte';
     import { slideFadeIn, slideFadeOut } from "$lib/animation/transition-slideFade";
+    import README from '../../../README.md'
 </script>
 
 
 <div class="pageWrap" in:slideFadeIn out:slideFadeOut>
-    <HeroSlider></HeroSlider>
+    <Header>DOCS</Header>
     <section>
-        Home page here
+        <README></README>
     </section>
 </div>
 
