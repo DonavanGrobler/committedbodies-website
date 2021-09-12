@@ -9,7 +9,7 @@
 
     let activeSlide = 0;
 
-    $: console.log(activeSlide);
+    // $: console.log(activeSlide);
     function prevSlide() {
         if (activeSlide === 0) {
             activeSlide = heroSlider.slides.length - 1;
@@ -28,7 +28,7 @@
     onMount( () => {
         const interval = setInterval(() => {
             time = new Date();
-            console.log(time);
+            // console.log(time);
             nextSlide();
         }, 6000);
     });
