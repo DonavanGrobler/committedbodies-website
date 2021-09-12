@@ -1,5 +1,7 @@
-# SVELTE KITTEN
-## A template for sveltekit projects
+# COMMITTED BODIES
+
+A sonya.ninja project for Client: Committed Bodies Gym
+## Cloned from SONYA.NINJA template: Svelte-Kitten
 
 ### FEATURES
 
@@ -35,12 +37,3 @@
 - [ ] Improve design for 404 page
 - [ ] Netlify CMS role based redirects
 - [ ] Netlify CMS preview path for each collection and test preview links
-
-### SETUP
-1. Clone, publish to gitbub, create netlify account for client
-2. Rename site and package.json
-3. Change content of lib/logo/logo.svelte
-4. Change Logo for CMS in static/assets/Logo.svg
-5. Change CMS login background style in static/admin/index.html
-6. NB: create a site admin user on netlify identity (Sonya! remove the testing client user from netlify svelte-kitten site)
-7. Edit theme colors, fonts and mixins in styles/theme.scss
