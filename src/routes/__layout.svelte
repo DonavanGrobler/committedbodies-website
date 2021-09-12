@@ -1,0 +1,47 @@
+<script>
+    // Global Styles
+    import "../styles/app.scss";
+
+    // Imports
+    import Nav from '$lib/components/navigation/Nav.svelte';
+
+    import IconsCombined from "$lib/svg/Icons_combined.svelte";
+
+    // Scrolling amount for top-nav height animation
+    export let y;
+
+</script>
+
+<!-- Get scroll distance -->
+<svelte:window bind:scrollY={y}/>
+
+<!-- Add hidden icon paths to use across all components -->
+<IconsCombined></IconsCombined>
+
+<!-- Fancy Navigation (Hor and Vert) -->
+<Nav {y}></Nav>
+
+<!-- Main content -->
+<main>
+    <div class="content">
+        <slot></slot>
+    </div>
+</main>
+
+
+<style lang="scss">
+    main {
+        position: relative;
+        display: grid;
+        position: relative;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        height: 100vh;
+        .content {
+            position: relative;
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+</style>

@@ -1,0 +1,56 @@
+# Netlify CMS settings
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow # Allows you to save drafts before publishing them
+media_folder: static/uploads # Media files will be stored in the repo under static/images/uploads
+public_folder: /uploads # The src attribute for uploaded media will begin with /images/uploads
+logo_url: /assets/Logo.svg
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: committed-bodies
+    api_key: 724142698475225
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "/src/routes/blog" # The path to the folder where our blog posts are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+  - name: "team"
+    label: "Team"
+    folder: "/src/routes/team"
+    create: true
+    identifier_field: name
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Profile Pic", name: "thumbnail", widget: "image"}
+      - {label: "About", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "team"}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Hero Slider"
+        name: "heroSlider"
+        file: "/src/lib/data/heroSlider.json"
+        fields:
+          - label: Slides
+            name: slides
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+              - {label: Paragraph, name: "paragraph", required: false, widget: markdown}
+              - {label: Image, name: "thumbnail", widget: image}
+              - {label: Button Text, name: "buttonText", widget: string}
+              - {label: Button link, name: "buttonLink", widget: string}

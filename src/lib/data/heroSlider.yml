@@ -1,0 +1,18 @@
+slides:
+  - title: Committed Bodies
+    subtitle: Changing your body
+    paragraph: one day at a time
+    thumbnail: https://res.cloudinary.com/committed-bodies/image/upload/v1631432240/gym/cb2_vw6ymr.jpg
+    buttonText: Book an appointment
+    buttonLink: /contact
+  - thumbnail: https://res.cloudinary.com/committed-bodies/image/upload/v1631434598/gym/Jill-SLide2_yshkdo.jpg
+    title: Ready to change your life?
+    subtitle: start
+    paragraph: remove required for this field
+    buttonText: Join now
+    buttonLink: /membership/join
+  - title: Bring your guts
+    subtitle: Committed?
+    buttonText: Join!
+    buttonLink: /membership/join
+    thumbnail: https://res.cloudinary.com/committed-bodies/image/upload/v1631431623/gym/Gym-in-Benoni_m5uh6j.jpg

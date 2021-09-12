@@ -1,0 +1,40 @@
+// GLOBAL STYLES
+// Styling in componenents may override these basic styles
+// These styles will ensure that user inserted content (eg. blog posts) look beautiful.
+
+// Dependant stylesheets
+@import url(https://unpkg.com/sanitize.css);
+@import url(https://unpkg.com/sanitize.css/forms.css);
+@import url(https://unpkg.com/sanitize.css/assets.css);
+@import url(https://unpkg.com/sanitize.css/typography.css);
+
+// Sonya todo: light/dark theme
+@import './theme-variables.scss';
+
+// BASE ELEMENTS
+html, body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: $light1;
+    text-rendering: optimizeLegibility;
+    font-family: $font_brand;
+    color: $transparent_dark2;
+}
+
+a {
+    color: $brand3;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+// needed to facilitate smooth transitions
+// https://stackoverflow.com/questions/59882179/svelte-transition-between-two-elements-jumps
+.pageWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}

@@ -1,0 +1,33 @@
+{
+    "general":{
+        "logo":"assets/images/logo.png",
+        "name" : "Company Name"
+    },
+    "navlist1":[
+        {
+            "title":"Home",
+            "link":"/",
+            "icon": "home"
+        },
+        {
+            "title":"About",
+            "link":"/about",
+            "icon": "menu"
+        },
+        {
+            "title":"Membership",
+            "link":"/membership",
+            "icon": "user"
+        },
+        {
+            "title":"News",
+            "link":"/blog",
+            "icon": "list"
+        },
+        {
+            "title":"Contact",
+            "link":"/contact",
+            "icon": "at-sign"
+        }
+    ]
+}
