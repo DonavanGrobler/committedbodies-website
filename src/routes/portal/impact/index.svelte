@@ -23,7 +23,7 @@
         grid-template-columns: 1fr 4fr;
         .sidebar {
             overflow-y: scroll;
-            background-color: $dark2;
+            background-color: $dark1;
         }
         .content {
             overflow-y: scroll;
