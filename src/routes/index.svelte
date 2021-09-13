@@ -380,7 +380,6 @@
        <AnimatedLogo></AnimatedLogo>
     </section>
 
-
     <section class="slide slide--1" id="slide-1">
         <div class="col col--1">
             <div class="col__content col__content--1">
@@ -532,9 +531,9 @@
     </section>
 
     <footer class="footer" id="slide-7">
-        <a class="footer__link" href="http://www.duda.ie/" target="_blank">duda.ie</a>
+        <a class="footer__link" href="http://www.duda.ie/" target="_blank">Take back your life!</a>
         <a class="footer__link-top" href="#slide-0">Top<span class="footer__link-top-line"></span></a>
-        <p class="footer__copyright">All images © 2020 Dave Uda</p>
+        <p class="footer__copyright">Designed by Sonya.Ninja © 2021 Committed Bodies</p>
     </footer>
 </div>
 
@@ -591,7 +590,7 @@ p {
     overflow: hidden;
 
     &:nth-of-type(even) {
-        background: #C4CDC4;
+        background: $light2;
     }
 
     @media all and (max-width: 768px) {
@@ -654,50 +653,50 @@ p {
 }
 
 .col__content--1 {
-    background: #D8C0C0;
+    background: $light2;
 
     @media all and (max-width: 768px) {
-        background: rgba(#D8C0C0, 0.9);
+        background: rgba($light2, 0.9);
     }
 }
 
 .col__content--2 {
-    background: #CDD5E0;
+    background: $light1;
 
     @media all and (max-width: 768px) {
-        background: rgba(#CDD5E0, 0.9);
+        background: rgba($light1, 0.9);
     }
 }
 
 .col__content--3 {
-    background: #F3D3B0;
+    background: $light2;
 
     @media all and (max-width: 768px) {
-        background: rgba(#F3D3B0, 0.9);
+        background: rgba($light2, 0.9);
     }
 }
 
 .col__content--4 {
-    background: #F8E9E6;
+    background: $light1;
 
     @media all and (max-width: 768px) {
-        background: rgba(#F8E9E6, 0.9);
+        background: rgba($light1, 0.9);
     }
 }
 
 .col__content--5 {
-    background: #D1E2EC;
+    background: $light2;
 
     @media all and (max-width: 768px) {
-        background: rgba(#D1E2EC, 0.9);
+        background: rgba($light2, 0.9);
     }
 }
 
 .col__content--6 {
-    background: #D7CEC5;
+    background: $light1;
 
     @media all and (max-width: 768px) {
-        background: rgba(#D7CEC5, 0.9);
+        background: rgba($light1, 0.9);
     }
 }
 
@@ -875,14 +874,14 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #cecece;
+    background: $light2;
 }
 
 .footer__link {
     font-size: 5vw;
     color: var(--dark);
     text-decoration: none;
-    font-family: 'Cinzel', serif;
+    font-family: $font-boldEmphasis;
 }
 
 .footer__link-top {
