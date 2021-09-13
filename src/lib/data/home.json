@@ -1,0 +1,28 @@
+{
+    "sections": [
+        {
+            "layout": "SectionTwoCol",
+            "columns" : [
+                {
+                    "title": "I took back my life at age 52!",
+                    "subtitle": "Jill Myburgh",
+                    "body": "The day I turned 52, I looked in the mirror and did not recognise the woman staring back at me"
+                },
+                {
+                    "thumbnail": "https://res.cloudinary.com/committed-bodies/image/upload/v1631431623/gym/Gym-in-Benoni_m5uh6j.jpg"
+                }
+            ]
+        },
+        {
+            "layout": "Banner",
+            "columns" : [
+                {
+                    "title": "EXPERTS IN BODY TRANSFORMATION",
+                    "subtitle": "Committed Bodies",
+                    "body": "Changing your body one day at a time.",
+                    "thumbnail": "/logo"
+                }
+            ]
+        }
+    ]
+}
