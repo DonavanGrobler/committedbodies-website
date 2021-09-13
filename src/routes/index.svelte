@@ -383,7 +383,7 @@
     <section class="slide slide--1" id="slide-1">
         <div class="col col--1">
             <div class="col__content col__content--1">
-                <h2 class="col__content-title"><span class="line__inner">Mono</span><br /><span class="line__inner">No. 1</span></h2>
+                <h2 class="col__content-title"><span class="line__inner">Take back</span><br /><span class="line__inner">your life!</span></h2>
                 <div class="col__content-wrap">
                     <p class="col__content-txt">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod.</p>
                     <!-- svelte-ignore a11y-invalid-attribute -->
@@ -400,7 +400,7 @@
         <div class="col col--2">
             <div class="col__image-wrap">
                 <!-- svelte-ignore a11y-missing-attribute -->
-                <img class="img img--1" src="https://assets.codepen.io/61488/duda-1.jpg" />
+                <img class="img img--1" src="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631432240/gym/cb2_vw6ymr.jpg" />
             </div>
         </div>
     </section>
@@ -543,7 +543,7 @@
 
 h2 {
     margin: 0;
-    line-height: 0.8;
+    line-height: 0.95;
     font-family: $font_boldEmphasis;
     text-transform: uppercase;
     font-weight: 600;
@@ -705,8 +705,8 @@ p {
 
 .col__content-title {
     margin: 0 0 2vw;
-    font-size: 11vw;
-    letter-spacing: -0.8vw;
+    font-size: 8vw;
+    letter-spacing: -0.5vw;
 
     @media all and (max-width: 768px) {
         margin: 0 0 6vw;
