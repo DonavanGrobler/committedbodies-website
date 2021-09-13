@@ -136,7 +136,7 @@
                     a {
                         padding: $spaceSM;
                         font-size: medium;
-                        color: #929292;
+                        color: $transparent_light2;
                         i {
                             display: none;
                         }
