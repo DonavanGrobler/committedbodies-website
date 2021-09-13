@@ -1,25 +1,25 @@
 <script>
     export let bgColor;
+    export let data;
+    console.log(data);
 </script>
 
 <section class="{bgColor}">
-    <div>
-        <p>LEFT COL</p>
-    </div>
-    <div>
-        <p>RIGHT COL</p>
-    </div>
+
+        <slot name="left">
+		</slot>
+
+        <slot name="left">
+		</slot>
+
 </section>
 
 <style lang="scss">
     section {
         // SMALL DEVICES
-        div {
+        &:global(div) {
             padding: $spaceMD;
             border: 1px solid red;
-            p {
-                height: 300px;
-            }
         }
         &.light1 {
             background-color: $light1;
