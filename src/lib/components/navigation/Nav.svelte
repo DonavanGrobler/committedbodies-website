@@ -10,6 +10,7 @@
     const [send, receive] = crossfade({});
 </script>
 
+<svelte:window bind:scrollY={y}/>
 <nav class="{y > 100 ? 'scrolled' : ''}">
     <div class="logoWrap">
         <Logo></Logo>

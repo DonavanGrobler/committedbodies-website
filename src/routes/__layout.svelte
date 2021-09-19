@@ -7,19 +7,13 @@
 
     import IconsCombined from "$lib/svg/Icons_combined.svelte";
 
-    // Scrolling amount for top-nav height animation
-    export let y;
-
 </script>
-
-<!-- Get scroll distance -->
-<svelte:window bind:scrollY={y}/>
 
 <!-- Add hidden icon paths to use across all components -->
 <IconsCombined></IconsCombined>
 
 <!-- Fancy Navigation (Hor and Vert) -->
-<Nav {y}></Nav>
+<Nav></Nav>
 
 <!-- Main content -->
 <main>
