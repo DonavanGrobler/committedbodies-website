@@ -3,14 +3,20 @@
 	import AnimatedLogo from '$lib/logo/Animated-LOGO.svelte';
     import { onMount } from 'svelte';
 
-
+    // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
+    // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689403/ui-assets/woman_f4955x.png"
+    // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689417/ui-assets/dumbbell-FG_auovbf.png"
 
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
         gsap.registerPlugin(ScrollToPlugin);
         gsap.registerPlugin(SplitText);
+        gsap.registerPlugin(CustomEase);
 
-        console.clear();
+        // Allow gsap to determine the center anchor for all svg transforms
+        gsap.set('svg *', {transformOrigin:"center center", transformStyle:"preserve-3d"});
+
+        // console.clear();
 
         let select = e => document.querySelector(e);
         let selectAll = e => document.querySelectorAll(e);
@@ -19,8 +25,8 @@
         const slides = selectAll(".slide");
         const links = selectAll(".slide__scroll-link");
         const titles = selectAll('.col__content-title');
-        const introTitle = new SplitText('.intro__title', {type: "lines", linesClass: "intro-line"});
-        const splitTitles = new SplitText(titles, {type: "lines, chars", linesClass: "line", charsClass: "char", position: "relative" });
+        // const introTitle = new SplitText('.intro__title', {type: "lines", linesClass: "intro-line"});
+        // const splitTitles = new SplitText(titles, {type: "lines, chars", linesClass: "line", charsClass: "char", position: "relative" });
         let slideID = 0;
 
         function initHeader() {
@@ -74,61 +80,50 @@
         }
 
         function initIntro() {
+            // INTRODUCE THE HERO LOGO
+            let tl = gsap.timeline({delay:1, id:"intro"});
 
-            // animate the intro elements into place
+            tl.from("#bannerCenter, #bodies",{duration:0.4, autoAlpha:0, scaleX:0});
+            tl.fromTo('#committed path', {scaleX:0.2, scaleY:1.8, y:-300, autoAlpha:0}, {duration:1, y:0, scaleX:1, scaleY:1, autoAlpha:1, ease:"bounce.out"},"<")
+            tl.from('#man', {duration:1, autoAlpha:0, yPercent:30},"<");
+            tl.from('#sphere', {duration:1, scale:0.3, yPercent:20, autoAlpha:0, ease:"expo.out"},"<");
+            tl.from('#bannerRight', {duration:0.3, xPercent:-50, yPercent:-10, autoAlpha:0, ease:"expo.out"},"<");
+            tl.from('#bannerLeft', {duration:0.3, xPercent:50, yPercent:-10, autoAlpha:0, ease:"expo.out"},"<");
+            tl.from("#shield, #kettlebell",{duration:0.6, autoAlpha:0, scale:0, ease:"expo.out"},"<0.3");
+            tl.from("#barbell-Left",{duration:0.7, autoAlpha:0, rotate:-20, transformOrigin:"right top", ease:"bounce.out"} ,">");
+            tl.from("#barbell-Right",{duration:0.7, autoAlpha:0, rotate:20, transformOrigin:"left top", ease:"bounce.out"} ,"<");
+            tl.from('#woman, #woman-dumbbell', {duration:3, yPercent:10, autoAlpha:0, ease:"expo.out"},"<");
+            // GSDevTools.create();
 
-            let tl = gsap.timeline({delay: 0});
-
-            tl.from('.intro-line', {
-                // x: 100,
-                y: 400,
-                ease: 'power4',
-                duration: 3
-            })
-            .from('.intro__txt', {
-                x: -100,
-                opacity: 0,
-                ease: 'power4',
-                duration: 3
-            }, 0.7)
-            .from('.intro__img--1', {
-                // x: -50,
-                y: 50,
-                opacity: 0,
-                ease: 'power2',
-                rotate: 0,
-                duration: 10
-            }, 1)
-            .from('.intro__img--2', {
-                // x: 50,
-                y: -50,
-                opacity: 0,
-                ease: 'power2',
-                duration: 10
-            }, 1);
-
-            // set up scrollTrigger animation for the when the intro scrolls out
-
+            // SCROLLTRIGGER OUT ANIMATION
             let stl = gsap.timeline({
                 scrollTrigger: {
                     trigger: '.intro',
+                    markers:true,
                     scrub: 1,
-                    start: "top bottom", // position of trigger meets the scroller position
+                    start: "center 49%", // position of trigger meets the scroller position
                     end: "bottom top"
                 }
             });
+            stl.to('#sphere', {duration:4, y:-20},"<");
+            stl.to('#man', {duration:4, y:-10},"<");
+            stl.to("#committed path",{duration:4, y:0},"<");
 
-            stl.to('.intro__title', {
-                x: 400,
-                ease: 'power4.in',
-                duration: 3,
+            stl.to("#cmtd-t1",{duration:1, xPercent:5 },"<");
+            stl.to("#cmtd-t2",{duration:1, xPercent:15 },"<");
+            stl.to("#cmtd-e",{duration:1, xPercent:20 },"<");
+            stl.to("#cmtd-d",{duration:1, xPercent:35 },"<");
 
-            })
-            .to('.intro__txt', {
-                y: 100,
-                ease: 'power4.in',
-                duration: 3,
-            }, 0);
+            stl.to("#cmtd-m2",{duration:1, xPercent:-5 },"<");
+            stl.to("#cmtd-m1",{duration:1, xPercent:-15 },"<");
+            stl.to("#cmtd-o",{duration:1, xPercent:-20 },"<");
+            stl.to("#cmtd-c",{duration:1, xPercent:-35 },"<");
+
+            stl.to('#woman, #woman-dumbbell', {duration:4, y:10},"<");
+            stl.to("#bannerLeft, #bannerRight, #bannerCenter, #bodies",{duration:4, y:20},"<");
+            stl.to("#barbell-Left path, #barbell-Right path",{duration:4, y:30},"<");
+            stl.to("#kettlebell path",{duration:4, y:40},"<");
+            stl.to("#shield",{duration:4, y:40},"<");
         }
 
         function initLinks() {
@@ -305,11 +300,11 @@
                         trigger: slide,
                         scrub: true,
                         start: "top bottom", // position of trigger meets the scroller position
-                        snap: {
-                            snapTo: 0.5, // 0.5 'cause the scroll animation range is 200vh for parallax effect
-                            duration: 1,
-                            ease: 'power4.inOut'
-                        }
+                        // snap: {
+                        //     snapTo: 0.5, // 0.5 'cause the scroll animation range is 200vh for parallax effect
+                        //     duration: 1,
+                        //     ease: 'power4.inOut'
+                        // }
                     },
                     ease: 'none'
                 })
@@ -354,10 +349,11 @@
             });
         }
 
+        // INITIALISE ALL THE TIMELINES
         function init() {
             gsap.set(stage, { autoAlpha: 1 });
             // initHeader();
-            // initIntro();
+            initIntro();
             initLinks();
             initSlides();
             initParallax();
@@ -576,6 +572,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    :global(svg){
+        height: 100%;
+        width: auto;
+        overflow: visible;
+        box-shadow : 0px -0px 10000px transparent /*trick for chrome*/
+    }
 }
 
 
