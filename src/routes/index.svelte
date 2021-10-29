@@ -96,11 +96,12 @@
         position: relative;
         background: linear-gradient(180deg, #2E9494 0%, #42A640 36.66%, #A9CF45 95.45%);
         overflow: hidden;
-        display: grid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100vh;
         width: 100vw;
         :global(svg){
-            margin:auto;
             overflow: visible; /* This prevents clipping when animating the expanding/enlarging */
             box-shadow : 0px -0px 10000px transparent; /*overflow trick for chrome - to do the same as above*/
         }
