@@ -3,7 +3,7 @@
     import "../styles/app.scss";
 
     // Imports
-    import Nav from '$lib/components/navigation/Nav.svelte';
+    // import Nav from '$lib/components/navigation/Nav.svelte';
 
     import IconsCombined from "$lib/svg/Icons_combined.svelte";
 
@@ -12,8 +12,8 @@
 <!-- Add hidden icon paths to use across all components -->
 <IconsCombined></IconsCombined>
 
-<!-- Fancy Navigation (Hor and Vert) -->
-<Nav></Nav>
+<!-- Fancy Navigation -->
+<!-- <Nav></Nav> -->
 
 <!-- Main content -->
 <main>
