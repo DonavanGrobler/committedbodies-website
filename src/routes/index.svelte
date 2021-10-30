@@ -45,7 +45,6 @@
             });
             stl.to('#sphere', {duration:4, y:-20},"<");
             stl.to('#man', {duration:4, y:-10},"<");
-            stl.to("#committed path",{duration:4, y:0},"<");
 
             stl.to("#cmtd-t1",{duration:1, xPercent:5 },"<");
             stl.to("#cmtd-t2",{duration:1, xPercent:15 },"<");
