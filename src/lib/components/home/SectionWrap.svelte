@@ -1,17 +1,15 @@
+<script>
+    export let number = 1;
+</script>
 <section>
-
-    <slot name="contentPrimary">
-    </slot>
-
+    <slot name="contentPrimary"></slot>
     <div class="numbers">
         <svg class="line" preserveAspectRatio="none" viewbox="-1 -1 6 800" width="6" height="800">
             <line x="0" y1="0" x2="0" y2="800"></line>
         </svg>
-        <div class="number">1</div>
+        <div class="number">{number}</div>
     </div>
-
-    <slot name="contentSecondary">
-    </slot>
+    <slot name="contentSecondary"></slot>
 
 </section>
 

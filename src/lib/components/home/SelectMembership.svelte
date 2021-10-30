@@ -2,7 +2,7 @@
     import SectionWrap from "./SectionWrap.svelte";
 </script>
 
-<SectionWrap>
+<SectionWrap number="2">
     <div slot="contentPrimary">
         <h2>Put some skin in the game</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>

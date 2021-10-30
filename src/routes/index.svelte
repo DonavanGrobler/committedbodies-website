@@ -84,16 +84,16 @@
        <AnimatedLogo></AnimatedLogo>
     </section>
 
-    <!-- Section1: Jill's story -->
+    <!-- Jill's story -->
     <JillsStory></JillsStory>
 
-    <!-- Section2: Starts now -->
+    <!-- Starts now -->
     <StartsNow></StartsNow>
 
-    <!-- Section3 Commitment-->
+    <!-- Section1: Commitment-->
     <Commitment></Commitment>
 
-    <!-- Section4 Membership-->
+    <!-- Section2: Membership-->
     <SelectMembership></SelectMembership>
 </div>
 
