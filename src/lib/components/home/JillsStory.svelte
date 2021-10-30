@@ -5,18 +5,16 @@
 
 <section class="jillsStory">
             <div class="jillBefore">
-                <img src="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1634543981/ui-assets/beforeFront_zzufzf.png" alt="">
+                <img src="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1635584514/ui-assets/beforeFront2_s0blvc.png" alt="">
             </div>
             <div class="content">
+                <!-- <div class="clockWrap">
+                    <Clock></Clock>
+                </div> -->
+                <!-- <div class="longArm"></div> -->
                 <div class="titleWrap">
-                    <div class="longArm">
-                        <div class="arm"></div>
-                        <div class="clockWrap">
-                            <Clock></Clock>
-                        </div>
-                    </div>
                     <h2>
-                        I took<br>back<br>my life
+                        I took back my life
                     </h2>
                 </div>
                 <div class="copyWrap">
@@ -32,35 +30,60 @@
                 </div>
             </div>
             <div class="jillAfter">
-                <img src="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1634544410/ui-assets/afterFront_rpcsmd.png" alt="">
+                <img src="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1635583370/ui-assets/afterFront_2_up6xo9.png" alt="">
             </div>
     </section>
 
 
 <style lang="scss">
     .jillsStory {
-        border: 1px solid red;
+        // border: 1px solid red;
         width: 100vw;
-        padding: $sizeMD;
+        padding: 6vw;
         display: grid;
+        align-items: flex-end;
+        justify-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
         grid-template-areas:
             "content content"
             "before after";
-        @media all and (min-width: $md) {
+    }
+    .jillBefore {
+        // border: 1px solid blue;
+        grid-area: before;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .jillAfter {
+        // border: 1px solid red;
+        grid-area: after;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .content {
+        grid-area: content;
+        .titleWrap {
+            h2 {
+                font-size: 4em;
+                line-height: 1;
+                font-weight: 900;
+                margin: 0;
+            }
+        }
+        p.signature {
+            font-family: $font_cursiveEmphasis;
+            font-size: 2rem;
+            margin: 0;
+            // color: $brand3
+        }
+    }
+    // MD - LG SCREENS
+    @media all and (min-width: 980px) {
+        .jillsStory {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas:
             "before content after";
         }
-    }
-    .jillBefore {
-        grid-area: before;
-    }
-    .jillAfter {
-        grid-area: after;
-    }
-    .content {
-        grid-area: content;
     }
 </style>
