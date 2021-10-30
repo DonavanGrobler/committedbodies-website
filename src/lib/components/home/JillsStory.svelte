@@ -65,7 +65,9 @@
         grid-area: content;
         .titleWrap {
             h2 {
-                font-size: 4em;
+                font-family: $font_boldEmphasis;
+                text-transform: uppercase;
+                font-size: var(--fs-xl);
                 line-height: 1;
                 font-weight: 900;
                 margin: 0;

@@ -1,8 +1,11 @@
 <script>
-    // import gsap from 'gsap';
+    import { onMount } from 'svelte';
 	import AnimatedLogo from '$lib/logo/Animated-LOGO.svelte';
     import JillsStory from '$lib/components/home/JillsStory.svelte';
-    import { onMount } from 'svelte';
+    import StartsNow from '$lib/components/home/StartsNow.svelte';
+    import Commitment from '$lib/components/home/Commitment.svelte';
+    import SelectMembership from '$lib/components/home/SelectMembership.svelte';
+
 
     // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
     // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689403/ui-assets/woman_f4955x.png"
@@ -81,8 +84,17 @@
        <AnimatedLogo></AnimatedLogo>
     </section>
 
-    <!-- Slide1: Jill's story -->
+    <!-- Section1: Jill's story -->
     <JillsStory></JillsStory>
+
+    <!-- Section2: Starts now -->
+    <StartsNow></StartsNow>
+
+    <!-- Section3 Commitment-->
+    <Commitment></Commitment>
+
+    <!-- Section4 Membership-->
+    <SelectMembership></SelectMembership>
 </div>
 
 

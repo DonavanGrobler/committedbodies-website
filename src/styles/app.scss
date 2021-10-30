@@ -14,7 +14,18 @@
 // BASE ELEMENTS
 :root {
     font-family: $font_brand;
+    // font sizes based on tut: https://www.youtube.com/watch?v=wARbgs5Fmuw
+    // https://codepen.io/kevinpowell/pen/MWoYgrN
+    --fs-xl: clamp(3.5rem, 6vw + 1rem, 12rem);
+    --fs-600: 2rem;
+    --fs-400: 1rem;
+
+    @media (min-width: 40em) {
+        --fs-600: 3rem;
+        --fs-400: 1.125rem;
+    }
 }
+
 html, body {
     padding: 0;
     margin: 0;
@@ -23,6 +34,7 @@ body {
     background-color: $light1;
     text-rendering: optimizeLegibility;
     color: $transparent_dark2;
+    font-size: var(--fs-400);
 }
 
 a {
