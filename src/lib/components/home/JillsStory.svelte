@@ -82,6 +82,7 @@
     // MD - LG SCREENS
     @media all and (min-width: 980px) {
         .jillsStory {
+            padding-top: 0;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas:
             "before content after";
