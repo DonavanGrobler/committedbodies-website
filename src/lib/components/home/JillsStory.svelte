@@ -69,6 +69,7 @@
                 line-height: 1;
                 font-weight: 900;
                 margin: 0;
+                color: #000000;
             }
         }
         p.signature {
