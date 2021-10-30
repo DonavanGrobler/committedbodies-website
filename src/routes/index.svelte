@@ -31,6 +31,7 @@
             tl.from("#barbell-Left",{duration:0.7, autoAlpha:0, rotate:-20, transformOrigin:"right top", ease:"bounce.out"} ,">");
             tl.from("#barbell-Right",{duration:0.7, autoAlpha:0, rotate:20, transformOrigin:"left top", ease:"bounce.out"} ,"<");
             tl.from('#woman, #woman-dumbbell', {duration:3, yPercent:10, autoAlpha:0, ease:"expo.out"},"<");
+            tl.from("#slogan",{duration:0.5, autoAlpha:0, rotate:-60, transformOrigin:"center center", ease:"expo.out"},"<+0.5");
             // GSDevTools.create();
 
             // SCROLLTRIGGER OUT ANIMATION
