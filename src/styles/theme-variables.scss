@@ -87,7 +87,7 @@ $sizeLG: 130px; // Used for nav initial size before scroll
 @mixin buttonPrimary {
     border: 1px solid $brand2;
     background: $brand2;
-    color: $black;
+    color: $white;
     font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
