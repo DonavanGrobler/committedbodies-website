@@ -5,6 +5,10 @@
     import StartsNow from '$lib/components/home/StartsNow.svelte';
     import Commitment from '$lib/components/home/Commitment.svelte';
     import SelectMembership from '$lib/components/home/SelectMembership.svelte';
+    import BookTrainer from '$lib/components/home/BookTrainer.svelte';
+    import Change from '$lib/components/home/Change.svelte';
+    import Community from '$lib/components/home/Community.svelte';
+    import Success from '$lib/components/home/Success.svelte';
 
 
     // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
@@ -95,6 +99,19 @@
 
     <!-- Section2: Membership-->
     <SelectMembership></SelectMembership>
+
+    <!-- Section3: Trainer-->
+    <BookTrainer></BookTrainer>
+
+    <!-- Section4: Change-->
+    <Change></Change>
+
+    <!-- Section5: Community-->
+    <Community></Community>
+
+    <!-- Section6: Community-->
+    <Success></Success>
+
 </div>
 
 
