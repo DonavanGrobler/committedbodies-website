@@ -102,19 +102,18 @@
         height: 100vh;
         width: 100vw;
         :global(svg){
+            height: 100%;
+            width: auto;
+            max-width: 100%;
             overflow: visible; /* This prevents clipping when animating the expanding/enlarging */
             box-shadow : 0px -0px 10000px transparent; /*overflow trick for chrome - to do the same as above*/
         }
     }
 
     // MED - LARGE SCREENS
-    @media all and (min-width: $md) {
+    @media all and (min-width: 1300px) {
         .intro {
             padding: 3rem;
-            :global(svg){
-                height: 100%;
-                width: unset;
-            }
         }
     }
 </style>
