@@ -1,14 +1,15 @@
 <script>
     import SectionWrap from "./SectionWrap.svelte";
+    export let number;
 </script>
 
-<SectionWrap number="3">
+<SectionWrap number={number}>
     <div slot="contentPrimary">
-        <h2>Find an expert mentor - book a trainer</h2>
+        <h2>Find a mentor - book a trainer</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>
     </div>
     <div slot="contentSecondary">
-        images here
+        <img src="/assets/images/trainer-LOGO.png" alt="">
     </div>
 </SectionWrap>
 

@@ -10,7 +10,6 @@
     import Community from '$lib/components/home/Community.svelte';
     import Success from '$lib/components/home/Success.svelte';
 
-
     // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
     // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689403/ui-assets/woman_f4955x.png"
     // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689417/ui-assets/dumbbell-FG_auovbf.png"
@@ -95,22 +94,22 @@
     <StartsNow></StartsNow>
 
     <!-- Section1: Commitment-->
-    <Commitment></Commitment>
+    <Commitment number="1"></Commitment>
 
     <!-- Section2: Membership-->
-    <SelectMembership></SelectMembership>
+    <SelectMembership number="2"></SelectMembership>
 
     <!-- Section3: Trainer-->
-    <BookTrainer></BookTrainer>
+    <BookTrainer number="3"></BookTrainer>
 
     <!-- Section4: Change-->
-    <Change></Change>
+    <Change number="4"></Change>
 
     <!-- Section5: Community-->
-    <Community></Community>
+    <Community number="5"></Community>
 
-    <!-- Section6: Community-->
-    <Success></Success>
+    <!-- Section6: Successs-->
+    <Success number="6"></Success>
 
 </div>
 

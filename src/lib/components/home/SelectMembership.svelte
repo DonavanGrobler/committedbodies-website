@@ -1,14 +1,15 @@
 <script>
     import SectionWrap from "./SectionWrap.svelte";
+    export let number;
 </script>
 
-<SectionWrap number="2">
+<SectionWrap number={number}>
     <div slot="contentPrimary">
         <h2>Put some skin in the game</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>
     </div>
     <div slot="contentSecondary">
-        images here
+        
     </div>
 </SectionWrap>
 

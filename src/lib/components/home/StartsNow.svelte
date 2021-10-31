@@ -61,7 +61,7 @@
         }
         &:before {
             content: "";
-            background: linear-gradient(180deg, #2E9494 0%, #42A640 36.66%, #A9CF45 95.45%);
+            background: linear-gradient(90deg, #2E9494 0%, #42A640 36.66%, #A9CF45 95.45%);
             // background: $brand2;
             width: 100%;
             height: 100%;

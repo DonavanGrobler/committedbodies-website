@@ -1,12 +1,8 @@
 <script>
     // Global Styles
     import "../styles/app.scss";
-
-    // Imports
     // import Nav from '$lib/components/navigation/Nav.svelte';
-
     import IconsCombined from "$lib/svg/Icons_combined.svelte";
-
 </script>
 
 <!-- Add hidden icon paths to use across all components -->
