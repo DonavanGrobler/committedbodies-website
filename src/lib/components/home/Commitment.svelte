@@ -11,7 +11,7 @@
             Willpower plays a much smaller role than we think. Actually, character trumps will-power when it comes to body transformation. You can create rules which define the type of person you want to be - go ahead and try it.
         </p>
         <p>
-            Look yourself in the mirror and say, "I'm the type of person who enjoys a healthy, active life." You're creating a character rule - these affirmations are more effective and use less psychological energy than ability to resist short-term temptation.
+            Look yourself in the mirror and say, "I'm the type of person who enjoys a healthy, active life." You're creating a character rule - these affirmations are more effective and use less psychological energy than trying to resist short-term temptation.
         </p>
     </div>
     <div slot="contentSecondary">
