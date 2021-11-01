@@ -1,0 +1,58 @@
+{
+    "sections":[
+        {
+            "number": 1,
+            "title":"Make a character commitment",
+            "subtitle": "- not a will-power comittment",
+            "text": "Figure out how to use html / rich text for this field",
+            "image": "/assets/images/kettlebell-LOGO.png",
+            "primaryButton": "",
+            "secondaryButton": ""
+        },
+        {
+            "number": 2,
+            "title":"Put some skin in the game",
+            "subtitle": "- select a membership",
+            "text": "Figure out how to use html / rich text for this field",
+            "image": "/assets/images/kettlebell-LOGO.png",
+            "primaryButton": "",
+            "secondaryButton": "Memberships"
+        },
+        {
+            "number": 3,
+            "title":"Find a mentor",
+            "subtitle": "- book a trainer",
+            "text": "Figure out how to use html / rich text for this field",
+            "image": "/assets/images/kettlebell-LOGO.png",
+            "primaryButton": "",
+            "secondaryButton": ""
+        },
+        {
+            "number": 4,
+            "title":"Change your habits",
+            "subtitle": "- one day at a time",
+            "text": "Figure out how to use html / rich text for this field",
+            "image": "/assets/images/kettlebell-LOGO.png",
+            "primaryButton": "",
+            "secondaryButton": ""
+        },
+        {
+            "number": 5,
+            "title":"Make it fun",
+            "subtitle": "- find a supportive community",
+            "text": "Figure out how to use html / rich text for this field",
+            "image": "/assets/images/kettlebell-LOGO.png",
+            "primaryButton": "",
+            "secondaryButton": ""
+        },
+        {
+            "number": 6,
+            "title":"Celebrate your success",
+            "subtitle": "- keep a record",
+            "text": "Figure out how to use html / rich text for this field",
+            "image": "/assets/images/kettlebell-LOGO.png",
+            "primaryButton": "",
+            "secondaryButton": ""
+        }
+    ]
+}
