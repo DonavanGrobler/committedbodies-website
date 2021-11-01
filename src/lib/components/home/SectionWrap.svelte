@@ -79,6 +79,9 @@
                 margin: 0;
                 color: #000000;
             }
+            h3 {
+                font-family: $font_cursiveEmphasis;
+            }
             .actionRow {
                 display: grid;
                 grid-gap: 1rem;
