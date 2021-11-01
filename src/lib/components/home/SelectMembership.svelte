@@ -7,7 +7,7 @@
     <div slot="contentPrimary">
         <h2>Put some skin in the game</h2>
         <h3 class="subtitle">- select a membership</h3>
-        <p>A gym membership gets you more than access to free weights and treadmills. With a gym membership, you can feel your body and mind transform with every visit. We have affordable memberships to suit any lifestyle:</p>
+        <p>A gym membership gets you more than access to free weights and treadmills. With a gym membership, you can feel your body and mind transform with every visit. We have affordable memberships to suit any lifestyle.</p>
         <div class="actionRow">
             <a class="buttonSecondary" href="/membership">Memberships</a>
         </div>
