@@ -5,8 +5,14 @@
 
 <SectionWrap number={number}>
     <div slot="contentPrimary">
-        <h2>Make a commitment</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>
+        <h2>Make a character commitment</h2>
+        <h3 class="subtitle">- not a will-power comittment</h3>
+        <p>
+            Willpower plays a much smaller role than we think. Actually, character trumps will-power when it comes to body transformation. You can create rules which define the type of person you want to be - go ahead and try it.
+        </p>
+        <p>
+            Look yourself in the mirror and say, "I'm the type of person who enjoys a healthy, active life." You're creating a character rule - these affirmations are more effective and use less psychological energy than ability to resist short-term temptation.
+        </p>
     </div>
     <div slot="contentSecondary">
         <img src="/assets/images/kettlebell-LOGO.png" alt="">
@@ -22,3 +28,8 @@
         color: #000000;
     }
 </style>
+
+<!--
+    RESOURCES
+    https://www.psychologytoday.com/us/blog/never-binge-again/201812/in-weight-loss-character-trumps-willpower
+ -->

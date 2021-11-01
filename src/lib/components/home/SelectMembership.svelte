@@ -6,10 +6,12 @@
 <SectionWrap number={number}>
     <div slot="contentPrimary">
         <h2>Put some skin in the game</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>
+        <h3 class="subtitle">- select a membership</h3>
+        <p>A gym membership gets you more than access to free weights and treadmills. With a gym membership, you can feel your body and mind transform with every visit.</p>
+        <a class="button" href="/membership">Membership</a>
     </div>
     <div slot="contentSecondary">
-        
+        <img src="/assets/images/boxing-LOGO.png" alt="">
     </div>
 </SectionWrap>
 

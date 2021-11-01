@@ -9,7 +9,7 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>
     </div>
     <div slot="contentSecondary">
-        
+        <img src="/assets/images/ball-LOGO.png" alt="">
     </div>
 </SectionWrap>
 
