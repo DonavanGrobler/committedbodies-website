@@ -1,19 +1,18 @@
 <script>
+    import homePage from '$lib/data/homePage.json'
     import { onMount } from 'svelte';
 	import AnimatedLogo from '$lib/logo/Animated-LOGO.svelte';
     import JillsStory from '$lib/components/home/JillsStory.svelte';
     import StartsNow from '$lib/components/home/StartsNow.svelte';
-    import Commitment from '$lib/components/home/Commitment.svelte';
-    import SelectMembership from '$lib/components/home/SelectMembership.svelte';
-    import BookTrainer from '$lib/components/home/BookTrainer.svelte';
-    import Change from '$lib/components/home/Change.svelte';
-    import Community from '$lib/components/home/Community.svelte';
-    import Success from '$lib/components/home/Success.svelte';
+    import SectionWrap from '$lib/components/home/SectionWrap.svelte';
 
     // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
     // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689403/ui-assets/woman_f4955x.png"
     // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689417/ui-assets/dumbbell-FG_auovbf.png"
 
+    // SECTIONS FROM DATA
+    let sections = homePage.sections;
+    // ANIMATION WITH GSAP
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
         gsap.registerPlugin(CustomEase);
@@ -78,6 +77,9 @@
 
         init();
     });
+
+    //RESOURCES
+    // https://www.psychologytoday.com/us/blog/never-binge-again/201812/in-weight-loss-character-trumps-willpower
 </script>
 
 
@@ -93,23 +95,9 @@
     <!-- Starts now -->
     <StartsNow></StartsNow>
 
-    <!-- Section1: Commitment-->
-    <Commitment number="1"></Commitment>
-
-    <!-- Section2: Membership-->
-    <SelectMembership number="2"></SelectMembership>
-
-    <!-- Section3: Trainer-->
-    <BookTrainer number="3"></BookTrainer>
-
-    <!-- Section4: Change-->
-    <Change number="4"></Change>
-
-    <!-- Section5: Community-->
-    <Community number="5"></Community>
-
-    <!-- Section6: Successs-->
-    <Success number="6"></Success>
+    {#each sections as section (section)}
+        <SectionWrap {section}></SectionWrap>
+    {/each}
 
 </div>
 

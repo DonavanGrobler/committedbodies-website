@@ -1,0 +1,70 @@
+{
+    "sections":[
+        {
+            "number": 1,
+            "title":"Make a character commitment",
+            "subtitle": "Not a will-power comittment",
+            "text": "<p>Willpower plays a much smaller role than we think. Actually, character trumps will-power when it comes to body transformation. You can create rules which define the type of person you want to be - go ahead and try it.</p><p>Look yourself in the mirror and say, \"I'm the type of person who enjoys a healthy, active life.\" You're creating a character rule - these affirmations are more effective and use less psychological energy than trying to resist short-term temptation.</p>",
+            "image": "/assets/images/kettlebell-LOGO.png",
+            "primaryButtonText": "",
+            "secondaryButtonText": "",
+            "primaryButtonLink": "/",
+            "secondaryButtonLink": "/"
+        },
+        {
+            "number": 2,
+            "title":"Put some skin in the game",
+            "subtitle": "Select a membership",
+            "text": "<p>A gym membership gets you more than access to free weights and treadmills. With a gym membership, you can feel your body and mind transform with every visit. We have affordable memberships to suit any lifestyle.</p>",
+            "image": "/assets/images/boxing-LOGO.png",
+            "primaryButtonText": "",
+            "secondaryButtonText": "Memberships",
+            "primaryButtonLink": "/",
+            "secondaryButtonLink": "/membership"
+        },
+        {
+            "number": 3,
+            "title":"Find a mentor",
+            "subtitle": "Book a trainer",
+            "text": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>",
+            "image": "/assets/images/trainer-LOGO.png",
+            "primaryButtonText": "",
+            "secondaryButtonText": "Our trainers",
+            "primaryButtonLink": "",
+            "secondaryButtonLink": "/team"
+        },
+        {
+            "number": 4,
+            "title":"Change your habits",
+            "subtitle": "One day at a time",
+            "text": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>",
+            "image": "/assets/images/ball-LOGO.png",
+            "primaryButtonText": "",
+            "secondaryButtonText": "Our services",
+            "primaryButtonLink": "/",
+            "secondaryButtonLink": "/services"
+        },
+        {
+            "number": 5,
+            "title":"Make it fun",
+            "subtitle": "Find a supportive community",
+            "text": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>",
+            "image": "/assets/images/zumba-LOGO.png",
+            "primaryButtonText": "",
+            "secondaryButtonText": "News and Events",
+            "primaryButtonLink": "/",
+            "secondaryButtonLink": "/blog"
+        },
+        {
+            "number": 6,
+            "title":"Celebrate your success",
+            "subtitle": "Take back your life",
+            "text": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>",
+            "image": "/assets/images/dumbbells-LOGO.png",
+            "primaryButtonText": "TAKE BACK YOUR LIFE!",
+            "secondaryButtonText": "",
+            "primaryButtonLink": "/services/take-back-your-life",
+            "secondaryButtonLink": ""
+        }
+    ]
+}

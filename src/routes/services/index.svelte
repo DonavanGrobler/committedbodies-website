@@ -1,14 +1,13 @@
 <script>
     import Header from '$lib/components/Header.svelte';
     import { slideFadeIn, slideFadeOut } from "$lib/animation/transition-slideFade";
-    import README from '../../../README.md'
 </script>
 
 
 <div class="pageWrap" in:slideFadeIn out:slideFadeOut>
-    <Header>DOCS</Header>
+    <Header>SERVICES</Header>
     <section>
-        <README></README>
+        <h3>PLACEHOLDER</h3>
     </section>
 </div>
 

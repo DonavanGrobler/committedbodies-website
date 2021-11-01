@@ -1,15 +1,31 @@
 <script>
     export let number = 1;
+    export let section;
 </script>
 <section>
-    <slot name="contentPrimary"></slot>
+    <!-- <slot name="contentPrimary"></slot> -->
+    <div class="contentPrimary">
+        <h2>{section.title}</h2>
+        <h3 class="subtitle">{section.subtitle}</h3>
+        {@html section.text}
+        <div class="actionRow">
+            {#if section.secondaryButtonText}
+                <a class="buttonSecondary" href="{section.secondaryButtonLink}">{section.secondaryButtonText}</a>
+            {/if}
+            {#if section.primaryButtonText}
+                <a class="buttonPrimary" href="{section.primaryButtonLink}">{section.primaryButtonText}</a>
+            {/if}
+        </div>
+    </div>
     <div class="numbers">
         <svg class="line" preserveAspectRatio="none" viewbox="-1 -1 6 800" width="6" height="800">
             <line x="0" y1="0" x2="0" y2="800"></line>
         </svg>
         <div class="number">{number}</div>
     </div>
-    <slot name="contentSecondary"></slot>
+    <div class="contentSecondary">
+        <img src="{section.image}" alt="">
+    </div>
 
 </section>
 
@@ -54,10 +70,27 @@
                 color: #ffffff;
             }
         }
-        :global( [slot="contentPrimary"] ) {
+        .contentPrimary {
             padding: 3vw;
+            h2 {
+                font-family: $font_boldEmphasis;
+                font-size: var(--fs-600);
+                line-height: 1;
+                margin: 0;
+                color: #000000;
+            }
+            .actionRow {
+                display: grid;
+                grid-gap: 1rem;
+            }
+            .buttonPrimary {
+                @include buttonPrimary;
+            }
+            .buttonSecondary {
+                @include buttonSecondary;
+            }
         }
-        :global( [slot="contentSecondary"] ) {
+        .contentSecondary {
             padding: 3vw;
         }
     }
@@ -69,10 +102,10 @@
         }
         // Alternate image and text on larger screens
         :global(section:nth-of-type(odd)) {
-            :global( [slot="contentPrimary"] ) {
+            .contentPrimary {
                 grid-area: right;
             }
-            :global( [slot="contentSecondary"] ) {
+            .contentSecondary {
                 grid-area: left;
             }
         }
