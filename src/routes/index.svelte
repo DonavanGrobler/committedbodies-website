@@ -12,6 +12,8 @@
 
     // SECTIONS FROM DATA
     let sections = homePage.sections;
+
+
     // ANIMATION WITH GSAP
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
