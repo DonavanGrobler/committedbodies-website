@@ -8,8 +8,8 @@
             "image": "/assets/images/kettlebell-LOGO.png",
             "primaryButtonText": "",
             "secondaryButtonText": "",
-            "primaryButtonLink": "/",
-            "secondaryButtonLink": "/"
+            "primaryButtonLink": "",
+            "secondaryButtonLink": ""
         },
         {
             "number": 2,
@@ -19,7 +19,7 @@
             "image": "/assets/images/boxing-LOGO.png",
             "primaryButtonText": "",
             "secondaryButtonText": "Memberships",
-            "primaryButtonLink": "/",
+            "primaryButtonLink": "",
             "secondaryButtonLink": "/membership"
         },
         {
@@ -41,7 +41,7 @@
             "image": "/assets/images/ball-LOGO.png",
             "primaryButtonText": "",
             "secondaryButtonText": "Our services",
-            "primaryButtonLink": "/",
+            "primaryButtonLink": "",
             "secondaryButtonLink": "/services"
         },
         {
@@ -52,7 +52,7 @@
             "image": "/assets/images/zumba-LOGO.png",
             "primaryButtonText": "",
             "secondaryButtonText": "News and Events",
-            "primaryButtonLink": "/",
+            "primaryButtonLink": "",
             "secondaryButtonLink": "/blog"
         },
         {
