@@ -1,5 +1,6 @@
 <script>
     import contact from '$lib/data/contact.json'
+    import Logo from '$lib/logo/Logo.svelte';
 
     // Contact details from data
     let contacts = contact.contacts;
@@ -11,32 +12,41 @@
         <img src="/assets/images/map.svg" alt="">
     </a>
     <div class="contactInfo">
+        <div class="logoWrap">
+            <Logo></Logo>
+        </div>
         <h2>CONTACT US</h2>
         <ul class="contactDetails">
             {#each contacts as contact (contact)}
             <li>
-                <i>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                        <use xlink:href="#phone"></use>
-                    </svg>
-                </i>
-                {contact.phone}
+                <a href="tel:{contact.phone}" class="contacts_phone">
+                    <i>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                    </i>
+                    {contact.phone}
+                </a>
             </li>
             <li>
-                <i>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                        <use xlink:href="#map-pin"></use>
-                    </svg>
-                </i>
-                {contact.address}
+                <a href="mailto:{contact.email}">
+                    <i>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <use xlink:href="#mail"></use>
+                        </svg>
+                    </i>
+                    {contact.email}
+                </a>
             </li>
             <li>
-                <i>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                        <use xlink:href="#mail"></use>
-                    </svg>
-                </i>
-                {contact.email}
+                <a href="{contact.mapLink}">
+                    <i>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <use xlink:href="#map-pin"></use>
+                        </svg>
+                    </i>
+                    {contact.address}
+                </a>
             </li>
             {/each}
         </ul>
@@ -68,8 +78,17 @@
         padding: 6vw;
         grid-gap: 3rem;
         .contactInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             h2 {
+                margin: 0;
                 color: #ffffff;
+            }
+            .logoWrap {
+                :global(svg) {
+                    height:10rem;
+                }
             }
             ul.contactDetails {
                 color: $transparent_light1;
@@ -79,6 +98,15 @@
                 display: flex;
                 flex-direction: column;
                 grid-gap: $spaceSM;
+                li {
+                    a {
+                        color: inherit;
+                        text-decoration: none;
+                        &:hover {
+                            color: $black;
+                        }
+                    }
+                }
             }
             ul.socialDetails {
                 padding: 0;
@@ -86,7 +114,7 @@
                 list-style-type: none;
                 display: flex;
                 flex-wrap: wrap;
-                grid-gap: $spaceSM;
+                gap: $spaceSM;
                 li {
                     padding: 0;
                     margin: 0;
