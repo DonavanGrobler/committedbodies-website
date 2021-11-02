@@ -105,11 +105,12 @@
             background-color: rgba(255,255,255,0.3);
             border: 1px solid transparent;
             img {
+                will-change: transform, scale;
                 width: 100%;
                 height: 500px;
                 object-fit: cover;
                 object-position: center center;
-                transition: all 0.7s linear;
+                transition: all 0.4s ease-in-out;
                 scale: 1;
             }
             &:hover {
