@@ -1,5 +1,4 @@
 <script>
-    export let number = 1;
     export let section;
 </script>
 <section>
