@@ -1,7 +1,8 @@
 <script>
     // Global Styles
     import "../styles/app.scss";
-    // import Nav from '$lib/components/navigation/Nav.svelte';
+    import Nav from '$lib/components/navigation/Nav.svelte';
+    import Footer from '$lib/components/Footer.svelte';
     import IconsCombined from "$lib/svg/Icons_combined.svelte";
 </script>
 
@@ -9,14 +10,18 @@
 <IconsCombined></IconsCombined>
 
 <!-- Fancy Navigation -->
-<!-- <Nav></Nav> -->
+<Nav></Nav>
 
 <!-- Main content -->
 <main>
     <div class="content">
         <slot></slot>
     </div>
+
+    <!-- Footer -->
+    <Footer></Footer>
 </main>
+
 
 
 <style lang="scss">
