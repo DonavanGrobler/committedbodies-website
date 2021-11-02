@@ -8,11 +8,12 @@
             "mapLink": ""
         }
     ],
-    "socials":[
-        {"facebook": "https://www.facebook.com/committedbodies/"},
-        {"twitter": ""},
-        {"youtube": "https://www.youtube.com/channel/UCYN4z_rfltz7nsy0TnzrYRQ"},
-        {"tiktok": "https://www.tiktok.com"},
-        {"instagram": "https://www.instagram.com/committedbodies/"}
-    ]
+    "socials":
+        {
+            "facebook": "https://www.facebook.com/committedbodies/",
+            "twitter": "",
+            "youtube": "https://www.youtube.com/channel/UCYN4z_rfltz7nsy0TnzrYRQ",
+            "tiktok": "https://www.tiktok.com",
+            "instagram": "https://www.instagram.com/committedbodies/"
+        }
 }
