@@ -95,9 +95,21 @@
     <!-- Starts now -->
     <StartsNow></StartsNow>
 
+    <!-- Numbered Sections -->
     {#each sections as section (section)}
         <SectionWrap {section}></SectionWrap>
     {/each}
+
+    <!-- Contact -->
+    <section class="contact">
+        <div class="contactInfo">
+            <h2>CONTACT US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rerum quisquam animi, consectetur, et natus quis harum officiis iste at doloribus assumenda. Possimus temporibus vitae nostrum assumenda rerum officia dolore.</p>
+        </div>
+        <a class="mapWrap" href="https://goo.gl/maps/VA4dCUMKpTfk7nPh6" alt="View on Google Maps">
+            <img src="/assets/images/map.svg" alt="">
+        </a>
+    </section>
 
 </div>
 
@@ -125,11 +137,55 @@
             box-shadow : 0px -0px 10000px transparent; /*overflow trick for chrome - to do the same as above*/
         }
     }
+    .contact {
+        height: auto;
+        position: relative;
+        background: linear-gradient(180deg, #2E9494 0%, #42A640 36.66%, #A9CF45 95.45%);
+        overflow: hidden;
+        display: grid;
+        padding: 6vw;
+        grid-gap: 3rem;
+        .contactInfo {
+            h2 {
+                color: #ffffff;
+            }
+            p {
+                color: $transparent_light1;
+            }
+        }
+        a.mapWrap {
+            overflow: hidden;
+            transition: all 0.7s linear;
+            background-color: rgba(255,255,255,0.3);
+            border: 1px solid transparent;
+            img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+                object-position: center center;
+                transition: all 0.7s linear;
+                scale: 1;
+            }
+            &:hover {
+                background-color: rgba(255,255,255,0.1);
+                border: 1px solid #ffffff;
+                    img {
+                        transform: scale(2.8);
+                    }
+            }
+        }
+    }
 
-    // MED - LARGE SCREENS
+    // RESPONSIVE STYLES
     @media all and (min-width: 1300px) {
         .intro {
             padding: 3rem;
         }
+    }
+    @media (min-width:700px) {
+        .contact {
+            grid-template-columns: 1fr 1fr;
+        }
+
     }
 </style>
