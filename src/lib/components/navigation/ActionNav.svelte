@@ -51,7 +51,7 @@
         }
     }
     // Responsive styles
-    @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
+    @media screen and (min-width: $mdScreen) {
         .actionNav {
             background-color: transparent;
             color: $fontColorLight3;
@@ -60,6 +60,7 @@
                 justify-content: flex-end;
                 gap: $space1;
                 li {
+                    flex: unset;
                     a {
                         font-size: 1rem;
                         i {
@@ -84,11 +85,13 @@
 
     @media screen and (min-width: $xlScreen) {
         .actionNav {
+            background-color: $brand1;
             box-shadow: none;
             padding: 0;
             ul {
                 justify-content: center;
                 gap: $space1;
+                flex: unset;
                 li {
                     a {
                         font-size: 1rem;
