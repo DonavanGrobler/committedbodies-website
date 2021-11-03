@@ -1,7 +1,7 @@
 <script>
     import homePage from '$lib/data/homePage.json'
     import { onMount } from 'svelte';
-	import AnimatedLogo from '$lib/logo/Animated-LOGO.svelte';
+	import AnimatedLogo from '$lib/svg/logo/Animated-LOGO.svelte';
     import JillsStory from '$lib/components/home/JillsStory.svelte';
     import StartsNow from '$lib/components/home/StartsNow.svelte';
     import SectionWrap from '$lib/components/home/SectionWrap.svelte';

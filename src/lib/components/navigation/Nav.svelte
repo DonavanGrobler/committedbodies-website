@@ -2,7 +2,7 @@
     import navigation from '$lib/data/navigation.json'
     // How do I make sure the nav list is compiled on server not on client load?
     import {crossfade} from 'svelte/transition';
-    import Logo from "$lib/logo/Logo.svelte";
+    import Logo from "$lib/svg/logo/Logo.svelte";
     import { page } from '$app/stores';
     // console.log(navigation);
     let navlist1 = navigation.navlist1;

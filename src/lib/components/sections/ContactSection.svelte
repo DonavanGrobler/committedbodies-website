@@ -1,6 +1,6 @@
 <script>
     import contact from '$lib/data/contact.json'
-    import Logo from '$lib/logo/Logo.svelte';
+    import Logo from '$lib/svg/logo/Logo.svelte';
 
     // Contact details from data
     let contacts = contact.contacts;

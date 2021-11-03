@@ -1,20 +1,23 @@
 <script>
     // Global Styles
     import "../styles/app.scss";
-    import IconsCombined from "$lib/svg/Icons_combined.svelte";
-    import Logo from '$lib/logo/Logo.svelte';
+    import IconsCombined from "$lib/svg/icons/Icons_combined.svelte";
+    import TopNav from "$lib/components/navigation/TopNav.svelte";
+    import ActionNav from "$lib/components/navigation/ActionNav.svelte";
+    import Overlay from "$lib/components/navigation/Overlay.svelte";
+    import LogoWrap from "$lib/components/navigation/logoWrap.svelte";
 </script>
 
 <!-- Add hidden icon paths to use across all components -->
 <IconsCombined></IconsCombined>
 
 <!-- Navigation Components -->
-<div class="logo">
-    <Logo></Logo>
-</div>
-<nav class="topNav">Top nav here</nav>
-<nav class="actionNav">Action Action Action</nav>
-<nav class="overlay">Overlay Here</nav>
+<LogoWrap></LogoWrap>
+<TopNav></TopNav>
+<ActionNav></ActionNav>
+<Overlay></Overlay>
+
+
 
 <!-- Main content -->
 <main>
