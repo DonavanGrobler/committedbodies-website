@@ -39,7 +39,7 @@
                 height: 120px;
                 transform-origin: left top;
                 transition: all 0.5s linear;
-                will-change: height;
+                will-change: transform;
             }
             &.scrolled {
                 :global(svg.mdScreenLogo) {
