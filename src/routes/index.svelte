@@ -40,7 +40,7 @@
         }
         &.hero {
             height: 100%;
-            background-color: aqua;
+            background-image: $brandGradient;
             display: flex;
             flex-direction: column;
             justify-content: center;

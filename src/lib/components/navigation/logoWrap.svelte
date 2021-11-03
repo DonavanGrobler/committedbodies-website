@@ -7,7 +7,9 @@
 </div>
 
 <style lang="scss">
+    // Default mobile-first styles
     .logoWrap {
+        padding: $space1;
         background-color: $brand1;
         display: flex;
         justify-content: flex-start;
@@ -18,4 +20,12 @@
             max-width: 100%;
         }
     }
+
+    // Responsive styles
+    @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
+        .logoWrap {
+            background-color: transparent;
+        }
+    }
+
 </style>

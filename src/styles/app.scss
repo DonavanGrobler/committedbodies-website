@@ -1,7 +1,9 @@
-// Dependant stylesheets
+// ---Themeing and utility classes
 @import './themeVars.scss';
 
-// The global and layout styles
+
+
+// ---The global and layout styles
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@
 }
 
 html {
-    // border: 1px solid red;
+    font-family: $font_brand;
     height: 100%;
 }
 
@@ -27,8 +29,8 @@ body {
     "actionNav actionNav";
 
     @media screen and (min-width: $mdScreen) {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 40px 1fr;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: 100px 1fr;
         grid-template-areas:
         "logo topNav actionNav"
         "main main main";
