@@ -5,7 +5,7 @@
 </script>
 
 
-<nav class="topNav {y > 100 ? 'scrolled' : ''}">
+<nav class="topNav {y > 80 ? 'scrolled' : ''}">
     <ul>
         {#each topNavList as item (item)}
         <li class="{item.class}">

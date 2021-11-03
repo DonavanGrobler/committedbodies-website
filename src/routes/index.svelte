@@ -1,5 +1,9 @@
+<script>
+    import AnimatedLogo from "$lib/svg/logo/Animated-LOGO.svelte";
+</script>
+
 <section class="hero">
-    <h1>Full Screen Hero content</h1>
+    <AnimatedLogo></AnimatedLogo>
 </section>
 
 <section>
@@ -45,6 +49,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            :global(svg){
+                height: 100%;
+                width: auto;
+                max-width: 100%;
+                overflow: visible; /* This prevents clipping when animating the expanding/enlarging */
+                box-shadow : 0px -0px 10000px transparent; /*overflow trick for chrome - to do the same as above*/
+            }
+            @media screen and (min-width: $mdScreen) and (max-width: $xlScreen){
+                padding-top: 136px;
+            }
         }
     }
 </style>

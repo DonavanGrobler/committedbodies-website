@@ -8,7 +8,7 @@
     import LogoWrap from "$lib/components/navigation/logoWrap.svelte";
     export let y;
     // $: if (browser) {
-    //        if (y > 100) {
+    //        if (y > 80) {
     //            document.body.classList.add('scrolled');
     //        } else {
     //         document.body.classList.remove('scrolled');
@@ -25,8 +25,8 @@
 <ActionNav></ActionNav>
 <Overlay></Overlay>
 
-<div class="navColor {y > 100 ? 'scrolled' : ''}"></div>
-<div class="shadow {y > 100 ? 'scrolled' : ''}"></div>
+<div class="navColor {y > 80 ? 'scrolled' : ''}"></div>
+<div class="shadow {y > 80 ? 'scrolled' : ''}"></div>
 
 <!-- Main content -->
 <main on:scroll="{(e)=>y=e.target.scrollTop}">

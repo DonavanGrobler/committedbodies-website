@@ -3,7 +3,7 @@
     export let y;
 </script>
 
-<div class="logoWrap {y > 100 ? 'scrolled' : ''}">
+<div class="logoWrap {y > 80 ? 'scrolled' : ''}">
     <Logo myClass="defaultLogo"></Logo>
     <Logo myClass="mdScreenLogo"></Logo>
 </div>
@@ -52,9 +52,12 @@
     @media screen and (min-width: $xlScreen) {
         .logoWrap {
             display: flex;
-            max-height: 200px;
             justify-content: center;
             align-items: center;
+            padding: $space3;
+            :global(svg) {
+                height: 160px;
+            }
         }
     }
 
