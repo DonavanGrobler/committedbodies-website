@@ -8,6 +8,7 @@
 <!-- Add hidden icon paths to use across all components -->
 <IconsCombined></IconsCombined>
 
+<!-- Navigation Components -->
 <div class="logo">
     <Logo></Logo>
 </div>
