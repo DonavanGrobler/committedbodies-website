@@ -15,7 +15,7 @@ const config = {
 
     preprocess: [
         preprocess({
-            scss: {  prependData: `@import 'src/styles/theme-variables.scss';`},
+            scss: {  prependData: `@import 'src/styles/themeVars.scss';`},
         }),
         mdsvex(mdsvexConfig)
     ]

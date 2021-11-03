@@ -1,54 +1,96 @@
-// GLOBAL STYLES
-// Styling in componenents may override these basic styles
-// These styles will ensure that user inserted content (eg. blog posts) look beautiful.
-
 // Dependant stylesheets
-@import url(https://unpkg.com/sanitize.css);
-@import url(https://unpkg.com/sanitize.css/forms.css);
-@import url(https://unpkg.com/sanitize.css/assets.css);
-@import url(https://unpkg.com/sanitize.css/typography.css);
+@import './themeVars.scss';
 
-// Sonya todo: light/dark theme
-@import './theme-variables.scss';
 
-// BASE ELEMENTS
-:root {
-    font-family: $font_brand;
-    // font sizes based on tut: https://www.youtube.com/watch?v=wARbgs5Fmuw
-    // https://codepen.io/kevinpowell/pen/MWoYgrN
-    --fs-xl: clamp(3.5rem, 6vw + 1rem, 12rem);
-    --fs-600: 2rem;
-    --fs-400: 1rem;
 
-    @media (min-width: 40em) {
-        --fs-600: 3rem;
-        --fs-400: 1.125rem;
-    }
-}
-
-html, body {
-    padding: 0;
+* {
     margin: 0;
-}
-body {
-    background-color: $light1;
-    text-rendering: optimizeLegibility;
-    color: $transparent_dark2;
-    font-size: var(--fs-400);
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a {
-    color: $brand3;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
+html {
+    border: 1px solid red;
+    height: 100%;
+}
+
+body {
+    border: 5px dashed blue;
+    // height: 100vh;
+    height: 100%;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 40px 1fr 40px;
+    grid-template-areas:
+    "logo topNav"
+    "main main"
+    "actionNav actionNav";
+
+    @media screen and (min-width: $mdScreen) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 40px 1fr;
+        grid-template-areas:
+        "logo topNav actionNav"
+        "main main main";
+    }
+
+    @media screen and (min-width: $xlScreen) {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas:
+        "logo main"
+        "actionNav main"
+        "topNav main";
     }
 }
-// needed to facilitate smooth transitions
-// https://stackoverflow.com/questions/59882179/svelte-transition-between-two-elements-jumps
-.pageWrap {
-    position: absolute;
+
+.logo {
+    grid-area: logo;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    svg {
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+nav.topNav {
+    grid-area: topNav;
+    background-color: green;
+    color: #ffffff;
+    z-index: 1000;
+}
+nav.actionNav {
+    grid-area: actionNav;
+    background-color: lime;
+    color: #ffffff;
+    z-index: 1000;
+}
+nav.overlay {
+    position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
-    width: 100vw;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2000;
+    display: none;
+}
+main {
+    overflow-y: scroll;
+    grid-area: main;
+    z-index: 1;
+    // On normal desktop sizes we want the top nav to overlay the main content
+    // so that we can do cool stuff with transparency, height and shadow
+    @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
+        grid-column: 1 / span 3 ;
+        grid-row: 1 / span 2;
+    }
+    footer {
+        background-color: brown;
+    }
 }

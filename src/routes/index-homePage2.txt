@@ -1,0 +1,142 @@
+<script>
+    import homePage from '$lib/data/homePage.json'
+    import { onMount } from 'svelte';
+	import AnimatedLogo from '$lib/logo/Animated-LOGO.svelte';
+    import JillsStory from '$lib/components/home/JillsStory.svelte';
+    import StartsNow from '$lib/components/home/StartsNow.svelte';
+    import SectionWrap from '$lib/components/home/SectionWrap.svelte';
+    import ContactSection from '$lib/components/sections/ContactSection.svelte';
+
+    // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
+    // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689403/ui-assets/woman_f4955x.png"
+    // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689417/ui-assets/dumbbell-FG_auovbf.png"
+
+    // SECTIONS FROM DATA
+    let sections = homePage.sections;
+
+
+    // ANIMATION WITH GSAP
+    onMount(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(CustomEase);
+
+        // Allow gsap to determine the center anchor for all svg transforms
+        gsap.set('svg *', {transformOrigin:"center center", transformStyle:"preserve-3d"});
+
+        // console.clear();
+
+        // INTRODUCE THE HERO LOGO
+        function initIntro() {
+            let tl = gsap.timeline({delay:1, id:"intro"});
+
+            tl.from("#bannerCenter, #bodies",{duration:0.4, autoAlpha:0, scaleX:0});
+            tl.fromTo('#committed path', {scaleX:0.2, scaleY:1.8, y:-300, autoAlpha:0}, {duration:1, y:0, scaleX:1, scaleY:1, autoAlpha:1, ease:"bounce.out"},"<")
+            tl.from('#man', {duration:1, autoAlpha:0, yPercent:30},"<");
+            tl.from('#sphere', {duration:1, scale:0.3, yPercent:20, autoAlpha:0, ease:"expo.out"},"<");
+            tl.from('#bannerRight', {duration:0.3, xPercent:-50, yPercent:-10, autoAlpha:0, ease:"expo.out"},"<");
+            tl.from('#bannerLeft', {duration:0.3, xPercent:50, yPercent:-10, autoAlpha:0, ease:"expo.out"},"<");
+            tl.from("#shield, #kettlebell",{duration:0.6, autoAlpha:0, scale:0, ease:"expo.out"},"<0.3");
+            tl.from("#barbell-Left",{duration:0.7, autoAlpha:0, rotate:-20, transformOrigin:"right top", ease:"bounce.out"} ,">");
+            tl.from("#barbell-Right",{duration:0.7, autoAlpha:0, rotate:20, transformOrigin:"left top", ease:"bounce.out"} ,"<");
+            tl.from('#woman, #woman-dumbbell', {duration:3, yPercent:10, autoAlpha:0, ease:"expo.out"},"<");
+            tl.from("#slogan",{duration:0.5, autoAlpha:0, rotate:-60, transformOrigin:"center center", ease:"expo.out"},"<+0.5");
+            // GSDevTools.create();
+
+            // SCROLLTRIGGER OUT ANIMATION
+            let stl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.intro',
+                    // markers:true,
+                    scrub: 1,
+                    start: "center 49%",
+                    end: "bottom top"
+                }
+            });
+            stl.to('#sphere', {duration:4, y:-20},"<");
+            stl.to('#man', {duration:4, y:-10},"<");
+
+            stl.to("#cmtd-t1",{duration:1, xPercent:5 },"<");
+            stl.to("#cmtd-t2",{duration:1, xPercent:15 },"<");
+            stl.to("#cmtd-e",{duration:1, xPercent:20 },"<");
+            stl.to("#cmtd-d",{duration:1, xPercent:35 },"<");
+
+            stl.to("#cmtd-m2",{duration:1, xPercent:-5 },"<");
+            stl.to("#cmtd-m1",{duration:1, xPercent:-15 },"<");
+            stl.to("#cmtd-o",{duration:1, xPercent:-20 },"<");
+            stl.to("#cmtd-c",{duration:1, xPercent:-35 },"<");
+
+            stl.to('#woman, #woman-dumbbell', {duration:4, y:10},"<");
+            stl.to("#bannerLeft, #bannerRight, #bannerCenter, #bodies",{duration:4, y:20},"<");
+            stl.to("#barbell-Left path, #barbell-Right path",{duration:4, y:30},"<");
+            stl.to("#kettlebell path",{duration:4, y:40},"<");
+            stl.to("#shield",{duration:4, y:40},"<");
+        }
+
+        // INITIALISE THE TIMELINES
+        function init() {
+            gsap.set(".stage", { autoAlpha: 1 });
+            initIntro();
+        }
+
+        init();
+    });
+
+    //RESOURCES
+    // https://www.psychologytoday.com/us/blog/never-binge-again/201812/in-weight-loss-character-trumps-willpower
+</script>
+
+
+<div class="stage">
+    <!-- Intro: Hero logo -->
+    <section class="intro">
+       <AnimatedLogo></AnimatedLogo>
+    </section>
+
+    <!-- Jill's story -->
+    <JillsStory></JillsStory>
+
+    <!-- Starts now -->
+    <StartsNow></StartsNow>
+
+    <!-- Numbered Sections -->
+    {#each sections as section (section)}
+        <SectionWrap {section}></SectionWrap>
+    {/each}
+
+    <!-- Contact -->
+    <ContactSection></ContactSection>
+
+</div>
+
+
+<style lang="scss">
+    .stage {
+        position: relative;
+        background: $light2;
+        visibility: hidden;
+    }
+    .intro {
+        position: relative;
+        background: linear-gradient(180deg, #2E9494 0%, #42A640 36.66%, #A9CF45 95.45%);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        :global(svg){
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            overflow: visible; /* This prevents clipping when animating the expanding/enlarging */
+            box-shadow : 0px -0px 10000px transparent; /*overflow trick for chrome - to do the same as above*/
+        }
+    }
+
+    // RESPONSIVE STYLES
+    @media all and (min-width: 1300px) {
+        .intro {
+            padding: 3rem;
+        }
+    }
+</style>
