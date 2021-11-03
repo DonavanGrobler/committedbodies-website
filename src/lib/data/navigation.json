@@ -22,7 +22,7 @@
         {
             "title":"Contact",
             "link":"/contact",
-            "icon": "at-sign",
+            "icon": "phone",
             "class": "ghost hideMD hideLG"
         },
         {
