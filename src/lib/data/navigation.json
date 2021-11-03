@@ -1,23 +1,14 @@
 {
-    "general":{
-        "logo":"assets/images/logo.png",
-        "name" : "Company Name"
-    },
-    "navlist1":[
+    "topNav":[
         {
-            "title":"Home",
-            "link":"/",
-            "icon": "home"
-        },
-        {
-            "title":"About",
-            "link":"/about",
+            "title":"Explore",
+            "link":"/explore",
             "icon": "menu"
         },
         {
-            "title":"Membership",
+            "title":"Memberships",
             "link":"/membership",
-            "icon": "user"
+            "icon": "user-plus"
         },
         {
             "title":"News",
@@ -27,7 +18,28 @@
         {
             "title":"Contact",
             "link":"/contact",
-            "icon": "at-sign"
+            "icon": "at-sign",
+            "class": "hideSM"
+        }
+    ],
+    "actionNav":[
+        {
+            "title":"Contact",
+            "link":"/contact",
+            "icon": "at-sign",
+            "class": "ghost hideMD hideLG"
+        },
+        {
+            "title":"Log-in",
+            "link":"/portal",
+            "icon": "user",
+            "class": "ghost"
+        },
+        {
+            "title":"Join",
+            "link":"/membership",
+            "icon": "user-plus",
+            "class": "primary"
         }
     ]
 }

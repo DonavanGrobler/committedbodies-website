@@ -6,8 +6,25 @@ $font_cursiveEmphasis: 'Homemade Apple', cursive;
 
 
 // ---BREAKPOINTS FOR MAIN LAYOUT STRUCTURE
-$mdScreen: 576px; //min-width for medium layout is 576
+$mdScreen: 800px; //min-width for medium layout is 800
 $xlScreen: 1400px; //min-width for xl screen layout is 1200
+
+// ---UTILITY CLASSES
+@media screen and (max-width: $mdScreen) {
+    .hideSM {
+        display: none;
+    }
+}
+@media screen and (min-width: $mdScreen) and (max-width: $xlScreen){
+    .hideMD {
+        display: none;
+    }
+}
+@media screen and (min-width: $xlScreen){
+    .hideLG {
+        display: none;
+    }
+}
 
 // ---BRAND COLORS (Numbers mean nothing here)
 $brand1: #a9cf45;
@@ -42,10 +59,7 @@ $radius2: 1rem;
 $radius3: 2rem;
 
 // ---BUTTONS
-@mixin buttonPrimary {
-    border: 1px solid $brand2;
-    background: $brand2;
-    color: $fontColorLight3;
+@mixin button {
     font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
@@ -58,10 +72,23 @@ $radius3: 2rem;
     width: fit-content;
     box-shadow: 0 0 0 rgb(0 0 0 / 0), 0 0 0 rgb(0 0 0 / 0);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@mixin buttonPrimary {
+    border: 1px solid $brand2;
+    background: $brand2;
+    color: $fontColorLight3;
     &:hover {
         border: 1px solid $dark1;
         background: $dark1;
         color: $fontColorLight3;
+        box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    }
+}
+@mixin buttonGhost {
+    border: 1px solid $fontColorLight3;
+    background: transparent;
+    color: $fontColorLight3;
+    &:hover {
         box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
     }
 }

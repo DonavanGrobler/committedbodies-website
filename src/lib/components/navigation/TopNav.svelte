@@ -1,14 +1,16 @@
+<script>
+    import navigation from '$lib/data/navigation.json';
+    let topNavList = navigation.topNav;
+</script>
+
+
 <nav class="topNav">
     <ul>
-        <li>
-            <a href="/">Explore</a>
+        {#each topNavList as item (item)}
+        <li class="{item.class}">
+            <a href="{item.link}">{item.title}</a>
         </li>
-        <li>
-            <a href="/">Memberships</a>
-        </li>
-        <li>
-            <a href="/">Blog</a>
-        </li>
+        {/each}
     </ul>
 </nav>
 
@@ -28,27 +30,42 @@
             justify-content: center;
             align-items: center;
             li {
-                margin: $space1;
                 a {
+                    font-size: 0.625rem;
                     color: inherit;
                     text-decoration: none;
-                    padding: $space1 $space2;
+                    padding: $space1;
+                    white-space: nowrap;
                 }
             }
         }
     }
     // Responsive styles
+
     @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
         .topNav {
             background-color: transparent;
             color: $fontColorLight3;
+            ul {
+                li {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
     }
     @media screen and (min-width: $xlScreen) {
         .topNav {
+            padding: $space2;
             ul {
                 justify-content: flex-start;
                 flex-direction: column;
+                li {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }

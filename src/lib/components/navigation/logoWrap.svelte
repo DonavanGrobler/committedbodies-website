@@ -27,5 +27,12 @@
             background-color: transparent;
         }
     }
+    @media screen and (min-width: $xlScreen) {
+        .logoWrap {
+            max-height: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 
 </style>

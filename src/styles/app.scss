@@ -22,7 +22,7 @@ body {
     max-width: 100vw;
     display: grid;
     grid-template-columns: 50px 1fr;
-    grid-template-rows: 40px 1fr 40px;
+    grid-template-rows: 48px 1fr 48px;
     grid-template-areas:
     "logo topNav"
     "main main"
@@ -37,7 +37,7 @@ body {
     }
 
     @media screen and (min-width: $xlScreen) {
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 1fr 3fr;
         grid-template-rows: auto auto 1fr;
         grid-template-areas:
         "logo main"
@@ -67,7 +67,10 @@ nav.overlay {
     display: none;
 }
 main {
+    // border: 10px solid red;
+    position: relative;
     overflow-y: scroll;
+    height: 100%;
     grid-area: main;
     z-index: 1;
     // On normal desktop sizes we want the top nav to overlay the main content
@@ -75,5 +78,24 @@ main {
     @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
         grid-column: 1 / span 3 ;
         grid-row: 1 / span 2;
+    }
+}
+// Little hack to make a shadow for nav elements.
+.shadow {
+    z-index: 20;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    grid-area: main;
+    box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.15), inset 0 2px 3px rgba(0, 0, 0, 0.15);
+
+    @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
+        grid-column: 1 / span 3 ;
+        grid-row: 1;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    }
+    @media screen and (min-width: $xlScreen) {
+        grid-area: main;
+        box-shadow: inset 2px 0 3px rgba(0, 0, 0, 0.15);
     }
 }
