@@ -2,23 +2,19 @@
     "topNav":[
         {
             "title":"Explore",
-            "link":"/explore",
-            "icon": "menu"
+            "link":"/explore"
         },
         {
             "title":"Memberships",
-            "link":"/membership",
-            "icon": "user-plus"
+            "link":"/membership"
         },
         {
             "title":"News",
-            "link":"/blog",
-            "icon": "list"
+            "link":"/blog"
         },
         {
             "title":"Contact",
             "link":"/contact",
-            "icon": "at-sign",
             "class": "hideSM"
         }
     ],
@@ -32,7 +28,7 @@
         {
             "title":"Log-in",
             "link":"/portal",
-            "icon": "user",
+            "icon": "log-in",
             "class": "ghost"
         },
         {
