@@ -9,23 +9,6 @@ $font_cursiveEmphasis: 'Homemade Apple', cursive;
 $mdScreen: 800px; //min-width for medium layout is 800
 $xlScreen: 1400px; //min-width for xl screen layout is 1200
 
-// ---UTILITY CLASSES
-@media screen and (max-width: $mdScreen) {
-    .hideSM {
-        display: none;
-    }
-}
-@media screen and (min-width: $mdScreen) and (max-width: $xlScreen){
-    .hideMD {
-        display: none;
-    }
-}
-@media screen and (min-width: $xlScreen){
-    .hideLG {
-        display: none;
-    }
-}
-
 // ---BRAND COLORS (Numbers mean nothing here)
 $brand1: #a9cf45;
 $brand2: #fd6c17;

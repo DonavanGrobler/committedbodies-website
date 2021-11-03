@@ -1,10 +1,11 @@
 <script>
     import navigation from '$lib/data/navigation.json';
     let topNavList = navigation.topNav;
+    export let y;
 </script>
 
 
-<nav class="topNav">
+<nav class="topNav {y > 100 ? 'scrolled' : ''}">
     <ul>
         {#each topNavList as item (item)}
         <li class="{item.class}">
@@ -46,12 +47,16 @@
         .topNav {
             background-color: transparent;
             color: $fontColorLight3;
+            transition: all 0.5s linear;
             ul {
                 li {
                     a {
                         font-size: 1rem;
                     }
                 }
+            }
+            &.scrolled {
+                color: $fontColorDark3;
             }
         }
     }
