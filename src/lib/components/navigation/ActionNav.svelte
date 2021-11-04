@@ -4,7 +4,7 @@
     let actionNavList = navigation.actionNav;
 </script>
 
-<nav class="actionNav">
+<nav class="actionNav" areia-label="Action navigation">
     <ul>
         {#each actionNavList as item (item)}
             <li class="{item.class}" class:active={item.link === $page.path}>

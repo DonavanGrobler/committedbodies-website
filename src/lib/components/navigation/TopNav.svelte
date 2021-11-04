@@ -8,7 +8,7 @@
 </script>
 
 
-<nav class="topNav {y > 80 ? 'scrolled' : ''}">
+<nav class="topNav {y > 80 ? 'scrolled' : ''}" aria-label="Primary Navigation">
     <ul>
         {#each topNavList as item (item)}
         <li class="{item.class}" class:active={item.link === $page.path}>
@@ -103,9 +103,12 @@
             justify-content: flex-start;
             background-color: transparent;
             ul {
-                display: block;
+                display: flex;
                 padding: 0;
-                // border: 1px solid blue;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 5%;
                 li {
                     // border: 1px solid white;
                     a {
@@ -118,7 +121,8 @@
                         // border: 1px solid green;
                         ul {
                             padding: 0;
-                            // border: 1px solid blue;
+                            line-height: 1.5;
+                            margin-top: 0.3rem;
                             li {
                                 margin-bottom: 0;
                                 a {
