@@ -1,5 +1,5 @@
 <script>
-    import BreadCrumbs from "./navigation/BreadCrumbs.svelte";
+    import BreadCrumbs from "../navigation/BreadCrumbs.svelte";
 </script>
 
 

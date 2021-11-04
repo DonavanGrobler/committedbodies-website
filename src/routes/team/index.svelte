@@ -20,7 +20,7 @@
 </script>
 
 <script>
-    import Header from '$lib/components/Header.svelte';
+    import Header from '$lib/components/ui-elements/Header.svelte';
     import { slideFadeIn, slideFadeOut } from "$lib/animation/transition-slideFade";
     export let teamMembers;
 </script>

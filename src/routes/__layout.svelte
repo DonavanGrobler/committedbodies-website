@@ -4,7 +4,7 @@
     import IconsCombined from "$lib/svg/icons/Icons_combined.svelte";
     import TopNav from "$lib/components/navigation/TopNav.svelte";
     import ActionNav from "$lib/components/navigation/ActionNav.svelte";
-    import Overlay from "$lib/components/navigation/Overlay.svelte";
+    import Overlay from "$lib/components/ui-elements/Overlay.svelte";
     import LogoWrap from "$lib/components/navigation/logoWrap.svelte";
     export let y;
     // $: if (browser) {
