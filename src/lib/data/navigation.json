@@ -7,11 +7,42 @@
         },
         {
             "title":"Explore",
-            "link":"/explore"
+            "link":"/explore",
+            "subnavClass": "hideSM hideMD",
+            "subnav": [
+                {
+                    "title":"Facility",
+                    "link":"/explore#facility",
+                    "class": "scrollTo "
+                },
+                {
+                    "title":"Trainers",
+                    "link":"/explore#trainers",
+                    "class": "scrollTo "
+                },
+                {
+                    "title":"Services",
+                    "link":"/explore#services",
+                    "class": "scrollTo "
+                }
+            ]
         },
         {
-            "title":"Memberships",
-            "link":"/membership"
+            "title":"Membership",
+            "link":"/membership",
+            "subnavClass": "hideSM hideMD",
+            "subnav": [
+                {
+                    "title":"Gym Memberships",
+                    "link":"/membership#memberships",
+                    "class": "scrollTo"
+                },
+                {
+                    "title":"Take back your life",
+                    "link":"/services/take-back-your-life",
+                    "class": "open"
+                }
+            ]
         },
         {
             "title":"News",

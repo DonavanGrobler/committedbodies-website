@@ -3,6 +3,7 @@
     import navigation from '$lib/data/navigation.json';
     let topNavList = navigation.topNav;
     export let y;
+    console.log(topNavList);
 </script>
 
 
@@ -11,6 +12,20 @@
         {#each topNavList as item (item)}
         <li class="{item.class}" class:active={item.link === $page.path}>
             <a href="{item.link}">{item.title}</a>
+
+            {#if item.subnav}
+                <div class="subNav {item.subnavClass}">
+                    <ul>
+                        {#each item.subnav as subnavItem}
+                            <li class="{subnavItem.class}">
+                                <a href="{subnavItem.link}">
+                                    {subnavItem.title}
+                                </a>
+                            </li>
+                        {/each}
+                    </ul>
+                </div>
+            {/if}
         </li>
         {/each}
     </ul>
@@ -76,11 +91,28 @@
             justify-content: center;
             padding: $space2;
             ul {
+                // align-items: flex-start;
                 justify-content: flex-start;
                 flex-direction: column;
                 li {
                     a {
-                        font-size: 1rem;
+                        text-align: center;
+                        font-size: 1.3rem;
+                        color: $fontColorDark3;
+                        font-weight: 500;
+                    }
+                    .subNav {
+                        ul {
+                            // padding-left: $space1;
+                            li {
+                                a {
+                                    text-align: center;
+                                    font-size: 1rem;
+                                    color: $fontColorDark2;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
                     }
                 }
             }
