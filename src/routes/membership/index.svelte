@@ -40,7 +40,7 @@
 
 <style lang="scss">
     section {
-        padding: $space3;
-        margin: $space3;
+        padding: $space2;
+        max-width: 100%;
     }
 </style>
