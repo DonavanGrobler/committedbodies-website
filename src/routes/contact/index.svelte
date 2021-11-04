@@ -6,6 +6,9 @@
 <div class="pageWrap" in:slideFadeIn out:slideFadeOut>
     <Header>CONTACT</Header>
     <div class="contentWrap">
+        <h2>How can we help?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quisquam repudiandae similique assumenda at. Laudantium, quaerat aliquid distinctio nesciunt, fugiat mollitia commodi, illum rerum veritatis nihil cumque eum hic voluptate!</p>
+        <p>Perferendis facere numquam assumenda ipsam, modi, quam eum vel nobis iure fugit blanditiis, autem architecto. Quisquam asperiores consectetur aspernatur, porro perspiciatis quidem! Maiores eligendi ad repellendus quas eius. Dolor, ipsum?</p>
         <form name="contact" method="POST" data-netlify="true">
             <p>
                 <label>Your Name: <input type="text" name="name" /></label>
@@ -31,8 +34,16 @@
 
 <style lang="scss">
     .contentWrap {
-        padding: $spaceLG;
-        margin: $spaceLG;
-        @include themewrap0;
+        padding: $space4;
+        background-color: $light1;
+        form {
+            margin-top: $space4;
+            background-color: #ffffff;
+            padding: $space3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
     }
 </style>
