@@ -52,6 +52,14 @@
                 opacity: 1;
             }
         }
+        @media screen and (min-width: $xlScreen) {
+            display: block;
+            opacity: 1;
+            grid-column: 1;
+            grid-row: 1 / span 3;
+            background-color: $brand1;
+            z-index: 2;
+        }
     }
 
     // Little hack to make a shadow nav elements.

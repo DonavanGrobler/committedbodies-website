@@ -1,9 +1,10 @@
 <script>
     import { page } from '$app/stores';
     import navigation from '$lib/data/navigation.json';
+    import contactData from '$lib/data/contact.json';
     let topNavList = navigation.topNav;
+    let contacts = contactData.contacts;
     export let y;
-    console.log(topNavList);
 </script>
 
 
@@ -24,6 +25,14 @@
                             </li>
                         {/each}
                     </ul>
+                </div>
+            {/if}
+            {#if item.title == "Contact"}
+                <div class="littleContacts hideSM hideMD">
+                    {#each contacts as contact (contact)}
+                        <div>{contact.phone}</div>
+                        <div>{contact.email}</div>
+                    {/each}
                 </div>
             {/if}
         </li>
@@ -88,28 +97,35 @@
     }
     @media screen and (min-width: $xlScreen) {
         .topNav {
-            justify-content: center;
-            padding: $space2;
+            overflow-y: scroll;
+            // border: 1px solid red;
+            padding: 5% 10%;
+            justify-content: flex-start;
+            background-color: transparent;
             ul {
-                // align-items: flex-start;
-                justify-content: flex-start;
-                flex-direction: column;
+                display: block;
+                padding: 0;
+                // border: 1px solid blue;
                 li {
+                    // border: 1px solid white;
                     a {
-                        text-align: center;
                         font-size: 1.3rem;
                         color: $fontColorDark3;
                         font-weight: 500;
+                        padding: 0;
                     }
                     .subNav {
+                        // border: 1px solid green;
                         ul {
-                            // padding-left: $space1;
+                            padding: 0;
+                            // border: 1px solid blue;
                             li {
+                                margin-bottom: 0;
                                 a {
-                                    text-align: center;
                                     font-size: 1rem;
                                     color: $fontColorDark2;
                                     font-weight: 400;
+                                    padding: 0;
                                 }
                             }
                         }

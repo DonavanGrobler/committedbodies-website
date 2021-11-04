@@ -129,11 +129,14 @@
 
     @media screen and (min-width: $xlScreen) {
         .actionNav {
-            background-color: $brand1;
+            // border: 1px solid red;
+            background-color: transparent;
             box-shadow: none;
-            padding: 0;
+            padding: 5% 10%;
+            justify-content: flex-start;
             ul {
-                justify-content: center;
+                // border: 1px solid blue;
+                justify-content: flex-start;
                 gap: $space1;
                 flex: unset;
                 li {
