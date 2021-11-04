@@ -28,6 +28,13 @@
 <div class="pageWrap" in:slideFadeIn out:slideFadeOut>
     <Header>TEAM</Header>
     <section>
+        <h3>Something about our team</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem eius ea sit unde reprehenderit non? Amet pariatur itaque ipsam quam. Fuga, tenetur recusandae. Cupiditate praesentium temporibus amet magnam natus quos?</p>
+        <p>Beatae asperiores atque exercitationem dolorum dolore neque tempore possimus hic velit cumque laudantium consequatur commodi temporibus a perferendis illum earum explicabo fugit, vitae enim corporis aliquam blanditiis expedita iusto? Quod!</p>
+        <p>At veritatis cum repellat, vel debitis placeat velit accusamus, minus rem eaque vero qui necessitatibus minima omnis ex commodi deleniti unde consequatur rerum. Suscipit error quod at quas, vel sit?</p>
+        <p>Quod illum alias autem architecto corrupti ea id eius ab optio rerum eveniet odit animi, laudantium ad maiores ullam amet inventore placeat sint exercitationem mollitia suscipit commodi. Ratione, dolorem ullam.</p>
+    </section>
+    <section class="grid">
         {#each teamMembers as {path, metadata}}
         <article>
             <header>
@@ -50,41 +57,56 @@
 
 <style lang="scss">
     section {
-        padding: $spaceLG;
-        margin: $spaceLG;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: $spaceLG;
-        article {
+        background-color: $light1;
+        padding: $space3;
+        &.grid {
             display: grid;
-            grid-template-rows: auto 1fr 60px;
+            grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );
+            grid-gap: $space3;
             justify-content: space-between;
-
-            @include themewrap0;
-            &:hover {
-                @include themewrap0-E;
-            }
+            align-items: center;
+        }
+        article {
+            background: #ffffff;
+            display: grid;
+            grid-template-rows: 200px 1fr 60px;
+            justify-content: center;
+            align-content: center;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
             header {
                 img {
                     background: $brand1;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
                 }
             }
             .content {
                 h3 {
                     margin: 0 0;
                 }
-                padding: $spaceSM;
+                padding: $space1;
             }
             footer {
-                padding: $spaceSM;
-                background-color: $light2;
+                padding: $space1;
+                // background-color: $light2;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: flex-end;
                 a {
                     position: relative;
+                    @include button;
                     @include buttonPrimary;
+                }
+            }
+            &:nth-of-type(odd) {
+                header {
+                    img {
+                        background-color: $brand2;
+                    }
                 }
             }
         }
