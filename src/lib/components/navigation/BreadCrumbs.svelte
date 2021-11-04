@@ -21,7 +21,7 @@
 <ul class="breadcrumbs">
     {#each breadcrumbs as crumb, i}
         {#if crumb.url == $page.path}
-            <li class="yourAreHere">
+            <li class="youAreHere">
                 <span class="divider">/</span>
                 <span class="crumb">{crumb.title}</span>
             </li>
@@ -48,14 +48,20 @@
         padding: 0;
         margin: 0;
         li {
+            color: $fontColorLight1;
             .divider {
-                // border: 1px solid red;
-                padding: $spaceSM 0;
-                color: $brand3;
+                padding: $space1 0;
+                color: inherit;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+                &:hover {
+                    color: $fontColorLight3;
+                }
             }
             .crumb {
-                // border: 1px solid yellow;
-                padding: $spaceSM;
+                padding: $space1;
                 font-size: small;
                 text-transform: capitalize;
             }
@@ -63,6 +69,9 @@
                 .divider {
                     display: none;
                 }
+            }
+            &.youAreHere {
+                color: $fontColorLight3;
             }
         }
     }
