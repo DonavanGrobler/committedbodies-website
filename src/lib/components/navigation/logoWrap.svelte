@@ -4,8 +4,10 @@
 </script>
 
 <div class="logoWrap {y > 80 ? 'scrolled' : ''}">
-    <Logo myClass="defaultLogo"></Logo>
-    <Logo myClass="mdScreenLogo"></Logo>
+    <a href="/" alt="Go to home page">
+        <Logo myClass="defaultLogo"></Logo>
+        <Logo myClass="mdScreenLogo"></Logo>
+    </a>
 </div>
 
 <style lang="scss">
@@ -21,6 +23,12 @@
             max-height: 100%;
             max-width: 100%;
         }
+        a {
+            height: 100%;
+            width: auto;
+            display: block;
+            text-decoration: none;
+        }
         :global(svg.mdScreenLogo) {
             display: none;
         }
@@ -31,21 +39,18 @@
         .logoWrap {
             display: flex;
             background-color: transparent;
+            height: 120px;
+            transform-origin: left top;
+            transition: all 0.5s linear;
+            will-change: height;
             :global(svg.defaultLogo) {
                 display: none;
             }
             :global(svg.mdScreenLogo) {
                 display: block;
-                height: 120px;
-                transform-origin: left top;
-                transition: all 0.5s linear;
-                will-change: transform;
             }
             &.scrolled {
-                :global(svg.mdScreenLogo) {
-                    height: 60px;
-                }
-
+                height: 60px;
             }
         }
     }
