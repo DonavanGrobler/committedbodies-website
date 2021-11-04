@@ -5,7 +5,7 @@
 
 <header>
     <div class="titleWrap">
-        <h1>
+        <h1 class="titleLarge">
             <slot />
         </h1>
         <BreadCrumbs></BreadCrumbs>
@@ -22,13 +22,12 @@
         align-items: center;
         background-image: $brandGradient;
         .titleWrap {
-            padding: $space4;
+            padding-bottom: $space4;
             z-index: 3;
             color: $fontColorLight1;
             h1 {
                 color: $fontColorLight3;
                 font-family: $font_boldEmphasis;
-                font-size: 5.143em;
                 font-weight: 700;
                 font-style: normal;
                 line-height: 0.9301em;
