@@ -1,6 +1,11 @@
 {
     "topNav":[
         {
+            "title":"Home",
+            "link":"/",
+            "class": "hideSM hideMD"
+        },
+        {
             "title":"Explore",
             "link":"/explore"
         },
