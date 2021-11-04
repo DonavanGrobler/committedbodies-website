@@ -1,4 +1,5 @@
 <script>
+    import { page } from '$app/stores';
     import navigation from '$lib/data/navigation.json';
     let actionNavList = navigation.actionNav;
 </script>
@@ -6,7 +7,7 @@
 <nav class="actionNav">
     <ul>
         {#each actionNavList as item (item)}
-            <li class="{item.class}">
+            <li class="{item.class}" class:active={item.link === $page.path}>
                 <a href="{item.link}">
                 <i>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -25,20 +26,21 @@
 <style lang="scss">
     // Default mobile-first styles
     .actionNav {
-        background-color: $brand1;
         color: $fontColorDark3;
         padding: 0;
         ul {
             list-style-type: none;
             display: flex;
-            justify-content: space-around;
+            // justify-content: space-around;
             align-items: center;
             height: 100%;
-            gap: $space2;
+            // gap: $space2;
             li {
                 flex:1;
+                position: relative;
                 a {
-                    font-size: 0.625rem;
+                    height: 100%;
+                    font-size: 0.7rem;
                     color: inherit;
                     text-decoration: none;
                     white-space: nowrap;
@@ -51,6 +53,48 @@
         }
     }
     // Responsive styles
+
+    // MOBILE IS VERY DIFFERENT > MEDIA QUERY
+    @media screen and (max-width: $mdScreen) {
+        .actionNav {
+            background-color: $brand1;
+            filter: drop-shadow(0 -1px 2px rgba(0,0,0,0.15));
+            ul {
+                li {
+                    // border: 1px solid red;
+                    height: 100%;
+                    a {
+                        // border: 1px solid yellow;
+                        i {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            padding: 0;
+                            width: 30px;
+                            height: 30px;
+                            top: 4px;
+                            transition: all 0.3s ease-in;
+                        }
+                        span {
+                            position: absolute;
+                            bottom: 3px;
+                        }
+                    }
+                    &.active {
+                        a {
+                            i {
+                                padding: $space1;
+                                transform: scale(1.5) translateY(-40%);
+                                background-color: $light1;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     @media screen and (min-width: $mdScreen) {
         .actionNav {
             background-color: transparent;

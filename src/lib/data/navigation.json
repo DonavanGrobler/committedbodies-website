@@ -28,13 +28,13 @@
         {
             "title":"Log-in",
             "link":"/portal",
-            "icon": "log-in",
+            "icon": "user",
             "class": "ghost"
         },
         {
             "title":"Join",
             "link":"/membership",
-            "icon": "user-plus",
+            "icon": "log-in",
             "class": "primary"
         }
     ]

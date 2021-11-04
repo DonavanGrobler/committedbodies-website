@@ -61,7 +61,8 @@
         width: 100%;
         height: 100%;
         grid-area: main;
-        box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.15), inset 0 2px 3px rgba(0, 0, 0, 0.15);
+        // box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.15), inset 0 2px 3px rgba(0, 0, 0, 0.15);
+        box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.15);
 
         @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
             grid-column: 1 / span 3 ;

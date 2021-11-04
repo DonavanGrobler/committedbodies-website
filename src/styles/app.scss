@@ -10,11 +10,28 @@
     box-sizing: border-box;
 }
 html {
-    font-family: $font_brand;
     height: 100%;
+}
+
+// TODO: SHOULD THIS NOT RATHER BE IN THEME VARS?
+:root {
+    font-family: $font_brand;
+    // font sizes based on tut: https://www.youtube.com/watch?v=wARbgs5Fmuw
+    // https://codepen.io/kevinpowell/pen/MWoYgrN
+    --fs-xl: clamp(3.5rem, 6vw + 1rem, 12rem);
+    --fs-600: 2rem;
+    --fs-400: 1rem;
+
+    @media (min-width: 40em) {
+        --fs-600: 3rem;
+        --fs-400: 1.125rem;
+    }
 }
 p {
     margin-top: $space2;
+}
+.titleLarge {
+    font-size: var(--fs-600);
 }
 
 // ---LAYOUT
