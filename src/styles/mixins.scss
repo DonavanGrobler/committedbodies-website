@@ -49,13 +49,13 @@
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 @mixin buttonPrimary {
-    border: 1px solid var($--theme-secondary);
-    background: var($--theme-secondary);
-    color: var($--theme-on-secondary);
+    border: 1px solid var($--theme-accent);
+    background: var($--theme-accent);
+    color: var($--theme-on-accent);
     &:hover {
-        border: 1px solid var($--theme-dark);
-        background: var($--theme-dark);
-        color: var($--theme-on-dark);
+        border: 1px solid var($--theme-background2);
+        background: var($--theme-background2);
+        color: var($--theme-on-background2);
         box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
     }
 }

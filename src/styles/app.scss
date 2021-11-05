@@ -113,20 +113,22 @@ body {
             display: none;
         }
     }
-    p {
-        margin-top: $space2;
-        line-height: 1.5;
-    }
-    .titleLarge {
-        font-size: var(--fs-600);
-    }
     .theme-on-primary {
         color: var($--theme-on-primary);
     }
-    .theme-on-secondary {
-        color: var($--theme-on-secondary);
+    .theme-on-accent {
+        color: var($--theme-on-accent);
     }
     .theme-on-image {
         color: var($--theme-on-image);
     }
+}
+
+// TYPOGRAPHY
+p {
+    margin-top: $space2;
+    line-height: 1.5;
+}
+.titleLarge {
+    font-size: var(--fs-600);
 }

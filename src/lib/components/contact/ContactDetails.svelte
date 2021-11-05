@@ -62,7 +62,7 @@
                 a {
                     i {
                         svg {
-                            fill: var($--theme-secondary);
+                            fill: var($--theme-accent);
                         }
                     }
                 }
