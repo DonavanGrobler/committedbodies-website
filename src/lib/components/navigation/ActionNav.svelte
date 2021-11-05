@@ -86,7 +86,7 @@
                             i {
                                 padding: $space1;
                                 transform: scale(1.5) translateY(-40%);
-                                background-color: var($--theme-background);
+                                background-color: var($--theme-accent);
                                 border-radius: 50%;
                             }
                         }
