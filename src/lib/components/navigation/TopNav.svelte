@@ -2,8 +2,9 @@
     import { page } from '$app/stores';
     import navigation from '$lib/data/navigation.json';
     import contactData from '$lib/data/contact.json';
+    import ContactDetails from '$lib/components/contact/ContactDetails.svelte'
     let topNavList = navigation.topNav;
-    let contacts = contactData.contacts;
+    let contact = contactData.contacts[0];
     export let y;
 </script>
 
@@ -28,11 +29,8 @@
                 </div>
             {/if}
             {#if item.title == "Contact"}
-                <div class="littleContacts hideSM hideMD">
-                    {#each contacts as contact (contact)}
-                        <div>{contact.phone}</div>
-                        <div>{contact.email}</div>
-                    {/each}
+                <div class="subNav hideSM hideMD">
+                    <ContactDetails {contact} classList="bgBrand1"></ContactDetails>
                 </div>
             {/if}
         </li>
@@ -65,6 +63,7 @@
                     white-space: nowrap;
                     transform: scale(1);
                     transition: all 0.2s ease-in;
+                    transform-origin: center;
                     &:hover {
                         color: $fontColorDark1;
                         transform: scale(1.06);
@@ -118,7 +117,7 @@
                         padding: 0;
                     }
                     .subNav {
-                        // border: 1px solid green;
+                        border: 1px solid green;
                         ul {
                             padding: 0;
                             line-height: 1.5;
