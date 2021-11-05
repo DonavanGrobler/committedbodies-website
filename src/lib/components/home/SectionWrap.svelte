@@ -64,7 +64,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: var(--fs-600);
+                // font-size: var(--fs-600);
                 font-weight: 900;
                 color: #ffffff;
             }
@@ -73,7 +73,7 @@
             padding: 3vw;
             h2 {
                 font-family: $font_boldEmphasis;
-                font-size: var(--fs-600);
+                // font-size: var(--fs-600);
                 line-height: 1;
                 margin: 0;
                 color: #000000;

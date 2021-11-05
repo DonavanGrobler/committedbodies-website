@@ -1,40 +1,18 @@
 // MIXINS
 
-@mixin spread-map($map: ()) {
-    @each $key, $value in $map {
-        #{$key}: $value;
-    }
-}
-
 // CONTENTS
 // Mixins used across all components
 
-// 1. Typography
-// 2. Buttons
+// 1. Buttons
+// 2. Font Size
 
 
-// 1. TYPOGRAPHY
-:root {
-    font-family: $font_brand;
-    // font sizes based on tut: https://www.youtube.com/watch?v=wARbgs5Fmuw
-    // https://codepen.io/kevinpowell/pen/MWoYgrN
-    --fs-xl: clamp(3.5rem, 6vw + 1rem, 12rem);
-    --fs-600: 2rem;
-    --fs-400: 1rem;
-
-    @media (min-width: 40em) {
-        --fs-600: 3rem;
-        --fs-400: 1.125rem;
-    }
-}
-
-
-// 2. BUTTONS
+// ---1. BUTTONS
 @mixin button {
     font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
-    padding: $space1 $space2;
+    padding: 0.3em 1em;
     border-radius: $radius1;
     text-decoration: none;
     display: flex;
@@ -45,21 +23,59 @@
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 @mixin buttonPrimary {
-    border: 1px solid var($--theme-accent);
-    background: var($--theme-accent);
-    color: var($--theme-on-accent);
+    border: 1px solid var(--theme-accent);
+    background: var(--theme-accent);
+    color: var(--theme-on-accent);
     &:hover {
-        border: 1px solid var($--theme-accent2);
-        background: var($--theme-accent2);
-        color: var($--theme-on-accent2);
+        border: 1px solid var(--theme-accent2);
+        background: var(--theme-accent2);
+        color: var(--theme-on-accent2);
         box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
     }
 }
 @mixin buttonGhost {
-    border: 1px solid var($--theme-on-image);
+    border: 1px solid var(--theme-on-image);
     background: transparent;
-    color: var($--theme-on-image);
+    color: var(--theme-on-image);
     &:hover {
         box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
     }
 }
+
+// ---2. FONT SIZE
+@mixin awesome-pixel-sizes($desktop-size, $desktop-px, $mobile-size, $mobile-px) {
+    ///desktop & mobile
+    //$desktop-size: 1440;
+    //$mobile-size: 780;
+    $rem: 16;
+
+    ///calcs
+    $delta: ($desktop-px - $mobile-px) / ($desktop-size - $mobile-size); ///slope
+    $delta-rounded: round($delta * 1000) / 1000; ///slope rounded.. round slope
+    $deltavw: ($delta-rounded * 100);
+
+    $intercept: ($mobile-px - ($delta-rounded * $mobile-size)); ///y intercept
+
+    ///pixel based
+    $calc-vw: (($desktop-px - $rem) * 100) / $desktop-size;
+    $calc-01: (($calc-vw * $mobile-size) * .01) + $rem;
+    $calc-01-rounded: round($calc-01 * 10000) / 10000;
+    $final-rem: ($mobile-px / $calc-01-rounded);
+    $final-rem-rounded: round($final-rem * 10000) / 10000;
+
+    ///results
+    ///for compatibility
+    font-size: calc(#{$calc-vw}vw + #{$final-rem-rounded}rem);
+
+    ////for clamps 
+    @if $intercept < 0 {
+      $thecalc: ($intercept * -1);
+      font-size: clamp(#{$mobile-px}px, calc(#{$deltavw}vw - #{$thecalc}px), #{$desktop-px}px);
+    } @else {
+      $thecalc: $intercept;
+      font-size: clamp(#{$mobile-px}px, calc(#{$deltavw}vw + #{$thecalc}px), #{$desktop-px}px);
+    }
+  }
+  @mixin fontSM {
+    font-size: 0.75em;
+  }

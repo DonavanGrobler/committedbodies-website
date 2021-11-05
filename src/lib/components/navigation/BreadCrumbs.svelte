@@ -63,7 +63,7 @@
             }
             .crumb {
                 padding: $space1;
-                font-size: small;
+                // font-size: small;
                 text-transform: capitalize;
             }
             &:first-of-type {

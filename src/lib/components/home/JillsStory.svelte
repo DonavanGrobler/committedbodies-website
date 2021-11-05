@@ -67,7 +67,7 @@
             h2 {
                 font-family: $font_boldEmphasis;
                 text-transform: uppercase;
-                font-size: var(--fs-xl);
+                // font-size: var(--fs-xl);
                 line-height: 1;
                 font-weight: 900;
                 margin: 0;
@@ -76,7 +76,7 @@
         }
         p.signature {
             font-family: $font_cursiveEmphasis;
-            font-size: 2rem;
+            // font-size: 2rem;
             margin: 0;
             // color: $brand3
         }

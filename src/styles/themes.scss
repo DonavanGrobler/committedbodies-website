@@ -1,9 +1,0 @@
-@import './themeVars.scss';
-@import './mixins.scss';
-
-:root.light {
-    @include spread-map($theme-map-light);
-}
-:root.dark {
-    @include spread-map($theme-map-dark);
-}

@@ -14,7 +14,7 @@
 
 <style lang="scss">
     header {
-        padding-top: 120px;
+        padding-top: 200px;
         position: relative;
         width: 100%;
         display: flex;
@@ -22,18 +22,18 @@
         align-items: center;
         background-image: $brandGradient;
         .titleWrap {
-            padding-bottom: $space4;
+            padding-bottom: 120px;
             z-index: 3;
-            color: var($--theme-on-primary);
+            color: var(--theme-on-primary);
             h1 {
-                color: var($--theme-on-primary);
+                color: var(--theme-on-primary);
                 font-family: $font_boldEmphasis;
-                font-weight: 700;
+                font-weight: 900;
                 font-style: normal;
-                line-height: 0.9301em;
                 text-decoration: none;
                 text-transform: uppercase;
                 letter-spacing: 0px;
+                text-align: center;
                 padding: 0;
                 margin: 0;
             }

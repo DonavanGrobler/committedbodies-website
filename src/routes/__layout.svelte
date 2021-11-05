@@ -41,7 +41,7 @@
     .navColor {
         grid-row: 1;
         grid-column: 1 / span 2;
-        background-color: var($--theme-primary);
+        background-color: var(--theme-primary);
         z-index: 2;
         @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
             display: block;

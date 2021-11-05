@@ -26,7 +26,7 @@
 <style lang="scss">
     // Default mobile-first styles
     .actionNav {
-        color: var($--theme-on-primary);
+        color: var(--theme-on-primary);
         padding: 0;
         ul {
             list-style-type: none;
@@ -40,7 +40,6 @@
                 position: relative;
                 a {
                     height: 100%;
-                    font-size: 0.7rem;
                     color: inherit;
                     text-decoration: none;
                     white-space: nowrap;
@@ -57,13 +56,14 @@
     // MOBILE IS VERY DIFFERENT > MEDIA QUERY
     @media screen and (max-width: $mdScreen) {
         .actionNav {
-            background-color: var($--theme-primary);
+            background-color: var(--theme-primary);
             filter: drop-shadow(0 -1px 2px rgba(0,0,0,0.15));
             ul {
                 li {
                     // border: 1px solid red;
                     height: 100%;
                     a {
+                        @include fontSM;
                         // border: 1px solid yellow;
                         i {
                             display: flex;
@@ -86,7 +86,7 @@
                             i {
                                 padding: $space1;
                                 transform: scale(1.5) translateY(-40%);
-                                background-color: var($--theme-accent);
+                                background-color: var(--theme-accent);
                                 border-radius: 50%;
                             }
                         }
@@ -105,7 +105,7 @@
                 li {
                     flex: unset;
                     a {
-                        font-size: 1rem;
+                        // font-size: 1rem;
                         i {
                             display: none;
                         }
@@ -139,7 +139,7 @@
                 flex: unset;
                 li {
                     a {
-                        font-size: 1rem;
+                        // font-size: 1rem;
                         i {
                             display: none;
                         }

@@ -1,102 +1,70 @@
-// ---FONTS & TYPOGRAPHY
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Rajdhani:wght@400;500;600;700;900&display=swap');
+// CONTENTS
+// 1. Breakpoints
+// 2. Colors
+// 3. Themeing
+// 4. Spacing
+// 5. Curviness
+
+
+// ---1. BREAKPOINTS FOR MAIN LAYOUT STRUCTURE
+// We're going to try to only use breakpoints for the main page layout changes (Main and Navigation components)
+$mdScreen: 800px; //min-width for medium layout is 800
+$xlScreen: 1400px; //min-width for xl screen layout is 1200
+
 $font_brand: 'Montserrat', sans-serif;
 $font_boldEmphasis: 'Rajdhani', sans-serif;
 $font_cursiveEmphasis: 'Homemade Apple', cursive;
 
-
-// ---BREAKPOINTS FOR MAIN LAYOUT STRUCTURE
-$mdScreen: 800px; //min-width for medium layout is 800
-$xlScreen: 1400px; //min-width for xl screen layout is 1200
-
-// ---BRAND COLORS
+// ---2. BRAND COLORS
 $brand1: #a9cf45;
 $brand2: #fd6c17;
 $brandGradient: linear-gradient(180deg, #2E9494 0%, #42A640 36.66%, #A9CF45 95.45%);
-
-// ---BACKGROUND/CONTRAST COLORS
 $light1: #fbf9f2;
 $light2: #ECEBD3;
 $dark1: #424040;
 $dark2: #2B2A2A;
 
-// ---THEME COLORS
+// ---3. THEMEING
 // Using normal css vars in styling so that we can allow switching between light and dark themes
-// https://bcodes.io/blog/post/theming-css-variables-in-scss
-$--theme-primary: --theme-primary;
-$--theme-on-primary: --theme-on-primary;
+:root.light {
+    --theme-primary: #{$brand1};
+    --theme-on-primary: #000000;
+    --theme-accent: #{$brand2};
+    --theme-on-accent: #000000;
+    --theme-accent2: #{$dark2};
+    --theme-on-accent2: #ffffff;
+    --theme-surface: #ffffff;
+    --theme-on-surface: #000000;
+    --theme-background: #{$light1};
+    --theme-on-background: #000000;
+    --theme-background2: #{$light2};
+    --theme-on-background2: #000000;
+    --theme-on-image: #ffffff;
+  }
+  :root.dark {
+    --theme-primary: #{$brand1};
+    --theme-on-primary: #000000;
+    --theme-accent: #{$brand2};
+    --theme-on-accent: #000000;
+    --theme-accent2: #{$light2};
+    --theme-on-accent2: #000000;
+    --theme-surface: #{$dark1};
+    --theme-on-surface: #ffffff;
+    --theme-background: #{$dark2};
+    --theme-on-background: #ffffff;
+    --theme-background2: #{$dark1};
+    --theme-on-background2: #ffffff;
+    --theme-on-image: #ffffff;
+  }
 
-$--theme-accent: --theme-accent;
-$--theme-on-accent: --theme-on-accent;
-
-$--theme-accent2: --theme-accent2;
-$--theme-on-accent2: --theme-on-accent2;
-
-
-$--theme-surface: --theme-surface;
-$--theme-on-surface: --theme-on-surface;
-
-$--theme-background: --theme-background;
-$--theme-on-background: --theme-on-background;
-$--theme-background2: --theme-background2;
-$--theme-on-background2: --theme-on-background2;
-
-$--theme-on-image: --theme-on-image;
-
-// Default theme (Light)
-$theme-map-light: (
-    $--theme-primary: $brand1,
-    $--theme-on-primary: #000000,
-
-    $--theme-accent: $brand2,
-    $--theme-on-accent: #000000,
-
-    $--theme-accent2: $dark2,
-    $--theme-on-accent2: #ffffff,
-
-    $--theme-surface: #ffffff,
-    $--theme-on-surface: #000000,
-
-    $--theme-background: $light1,
-    $--theme-on-background: #000000,
-    $--theme-background2: $light2,
-    $--theme-on-background2: #000000,
-
-    $--theme-on-image: #ffffff,
-);
-
-// Override the default theme (-Dark)
-// TODO - These have not yet been tested
-// Default theme (Light)
-$theme-map-dark: (
-    $--theme-primary: $brand1,
-    $--theme-on-primary: #000000,
-
-    $--theme-accent: $brand2,
-    $--theme-on-accent: #000000,
-
-    $--theme-accent2: $light2,
-    $--theme-on-accent2: #000000,
-
-    $--theme-surface: $dark1,
-    $--theme-on-surface: #ffffff,
-
-    $--theme-background: $dark2,
-    $--theme-on-background: #ffffff,
-    $--theme-background2: $dark1,
-    $--theme-on-background2: #ffffff,
-
-    $--theme-on-image: #ffffff,
-);
-
-// ---SPACING (Smallest to largest)
+// ---4. SPACING (Smallest to largest)
 $space1: 0.5rem;
 $space2: 1rem;
 $space3: 2rem;
 $space4: 4rem;
 $space5: 8rem;
 
-// ---CURVINESS (Least to most)
+// ---5. CURVINESS (Least to most)
 $radius1: 2px;
 $radius2: 1rem;
 $radius3: 2rem;

@@ -7,32 +7,27 @@
 </section>
 
 <section>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at cum laborum ducimus dolorem doloremque expedita debitis, nam temporibus quos voluptatem perspiciatis dolor fugit harum culpa eveniet officia voluptate reiciendis commodi accusantium ratione dolorum saepe nihil. Voluptatum, ratione. Cupiditate, alias? Accusamus consequatur eaque alias delectus dignissimos facilis in ea sunt.
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
+</section>
+<section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
+</section>
+<section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
+</section>
+<section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
+</section>
+<section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
+</section>
+<section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
+</section>
+<section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
 </section>
 
-<section>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at cum laborum ducimus dolorem doloremque expedita debitis, nam temporibus quos voluptatem perspiciatis dolor fugit harum culpa eveniet officia voluptate reiciendis commodi accusantium ratione dolorum saepe nihil. Voluptatum, ratione. Cupiditate, alias? Accusamus consequatur eaque alias delectus dignissimos facilis in ea sunt.
-</section>
-
-<section>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at cum laborum ducimus dolorem doloremque expedita debitis, nam temporibus quos voluptatem perspiciatis dolor fugit harum culpa eveniet officia voluptate reiciendis commodi accusantium ratione dolorum saepe nihil. Voluptatum, ratione. Cupiditate, alias? Accusamus consequatur eaque alias delectus dignissimos facilis in ea sunt.
-</section>
-
-<section>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at cum laborum ducimus dolorem doloremque expedita debitis, nam temporibus quos voluptatem perspiciatis dolor fugit harum culpa eveniet officia voluptate reiciendis commodi accusantium ratione dolorum saepe nihil. Voluptatum, ratione. Cupiditate, alias? Accusamus consequatur eaque alias delectus dignissimos facilis in ea sunt.
-</section>
-
-<section>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at cum laborum ducimus dolorem doloremque expedita debitis, nam temporibus quos voluptatem perspiciatis dolor fugit harum culpa eveniet officia voluptate reiciendis commodi accusantium ratione dolorum saepe nihil. Voluptatum, ratione. Cupiditate, alias? Accusamus consequatur eaque alias delectus dignissimos facilis in ea sunt.
-</section>
-
-<section>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at cum laborum ducimus dolorem doloremque expedita debitis, nam temporibus quos voluptatem perspiciatis dolor fugit harum culpa eveniet officia voluptate reiciendis commodi accusantium ratione dolorum saepe nihil. Voluptatum, ratione. Cupiditate, alias? Accusamus consequatur eaque alias delectus dignissimos facilis in ea sunt.
-</section>
-
-<section>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at cum laborum ducimus dolorem doloremque expedita debitis, nam temporibus quos voluptatem perspiciatis dolor fugit harum culpa eveniet officia voluptate reiciendis commodi accusantium ratione dolorum saepe nihil. Voluptatum, ratione. Cupiditate, alias? Accusamus consequatur eaque alias delectus dignissimos facilis in ea sunt.
-</section>
 
 
 <style lang="scss">
@@ -40,7 +35,7 @@
         padding: 1rem;
         // background-color: cornsilk;
         &:nth-child(odd) {
-            background-color: var($--theme-surface);
+            background-color: var(--theme-surface);
         }
         &.hero {
             height: 100%;

@@ -115,7 +115,7 @@
                 backdrop-filter: blur(5px);
                 h2 {
                     font-family: $font_boldEmphasis;
-                    font-size: 5em;
+                    // font-size: 5em;
                     text-transform: uppercase;
                     margin: 0;
                     padding: 0;
@@ -128,13 +128,13 @@
                     &.subtitle {
                         font-family: $font_cursiveEmphasis;
                         color: $brand1;
-                        font-size: 2rem;
+                        // font-size: 2rem;
                         margin-bottom: 1rem;
                     }
                 }
                 button {
                     @include buttonPrimary;
-                    font-size: larger;
+                    // font-size: larger;
                     text-transform: uppercase;
                     font-family: $font-boldEmphasis;
                     margin-top: 1rem;

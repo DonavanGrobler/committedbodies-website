@@ -43,9 +43,10 @@
     // Background-Color is set in a __layout : div.navColor
     .topNav {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
-        color: var($--theme-on-primary);
+        padding-right: 50px;
+        color: var(--theme-on-primary);
         height: 100%;
         ul {
             list-style-type: none;
@@ -56,7 +57,6 @@
             li {
                 a {
                     display: block;
-                    font-size: 0.7rem;
                     color: inherit;
                     text-decoration: none;
                     padding: $space1;
@@ -79,23 +79,24 @@
     // Responsive styles
     @media screen and (min-width: $mdScreen) {
         .topNav {
-            color: var($--theme-on-image);
+            padding-right: 0;
+            color: var(--theme-on-image);
             transition: all 0.5s linear;
             ul {
                 li {
                     a {
-                        font-size: 1.1rem;
+                        text-decoration: none;
                     }
                 }
             }
             &.scrolled {
-                color: var($--theme-on-primary);
+                color: var(--theme-on-primary);
             }
         }
     }
     @media screen and (min-width: $xlScreen) {
         .topNav {
-            color: var($--theme-on-primary);
+            color: var(--theme-on-primary);
             overflow-y: scroll;
             padding: 5% 10% 10% 10%;
             justify-content: flex-start;
@@ -106,27 +107,23 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
-                gap: 5%;
+                gap: 1em;
                 li {
-                    // border: 1px solid white;
                     a {
-                        font-size: 1.3rem;
                         font-weight: 600;
                         padding: 0;
                         transform-origin: left center;
                     }
                     .subNav {
-                        // border: 1px solid green;
-                        margin-top: $space1;
+                        // margin-top: $space1;
                         ul {
-                            // border: 1px solid red;
                             padding: 0;
                             line-height: 1.5;
                             margin: 0;
+                            gap: 0;
                             li {
                                 margin-bottom: 0;
                                 a {
-                                    font-size: 1rem;
                                     font-weight: 400;
                                     padding: 0;
                                     transform-origin: left center;

@@ -45,7 +45,7 @@
         line-height: 1.5;
         li {
             a {
-                font-size: inherit;
+                // font-size: inherit;
                 color: inherit;
                 text-decoration: none;
                 display: grid;
@@ -62,7 +62,7 @@
                 a {
                     i {
                         svg {
-                            fill: var($--theme-accent);
+                            fill: var(--theme-accent);
                         }
                     }
                 }

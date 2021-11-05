@@ -38,7 +38,7 @@
             h2 {
                 font-family: $font_boldEmphasis;
                 color: #ffffff;
-                font-size: var(--fs-xl);
+                // font-size: var(--fs-xl);
                 margin: 0;
             }
             .buttonWrap {
