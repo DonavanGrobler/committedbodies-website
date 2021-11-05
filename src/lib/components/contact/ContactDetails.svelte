@@ -26,7 +26,7 @@
     <li>
         <a href="{contact.mapLink}">
             <i>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                     <use xlink:href="#map-pin"></use>
                 </svg>
             </i>
@@ -41,19 +41,30 @@
         padding: 0;
         margin: 0;
         list-style-type: none;
-        display: flex;
-        flex-direction: column;
+        display: block;
         line-height: 1.5;
         li {
             a {
+                font-size: inherit;
                 color: inherit;
                 text-decoration: none;
-                transform: scale(1);
-                transition: all 0.2s ease-in;
-                transform-origin: center;
-                &:hover {
-                    opacity: 0.7;
-                    transform: scale(1.06);
+                display: grid;
+                grid-template-columns: auto 1fr;
+                i {
+                    margin-right: $space1;
+                    svg {
+                        fill: transparent;
+                        transition: all 0.2s ease-in;
+                    }
+                }
+            }
+            &:hover {
+                a {
+                    i {
+                        svg {
+                            fill: var($--theme-secondary);
+                        }
+                    }
                 }
             }
         }
