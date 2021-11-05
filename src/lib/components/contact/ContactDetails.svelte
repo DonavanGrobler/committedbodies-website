@@ -38,7 +38,6 @@
 
 <style lang="scss">
     ul.contactDetails {
-        color: $fontColorLight2;
         padding: 0;
         margin: 0;
         list-style-type: none;
@@ -49,8 +48,12 @@
             a {
                 color: inherit;
                 text-decoration: none;
+                transform: scale(1);
+                transition: all 0.2s ease-in;
+                transform-origin: center;
                 &:hover {
-                    color: $fontColorDark3;
+                    opacity: 0.7;
+                    transform: scale(1.06);
                 }
             }
         }

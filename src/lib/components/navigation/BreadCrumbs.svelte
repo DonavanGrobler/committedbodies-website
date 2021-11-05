@@ -1,6 +1,7 @@
 <script>
     import { page } from '$app/stores';
     export let path = $page.path;
+    export let classList;
 
     // create array from path
     let paths = path.split("/");
@@ -18,7 +19,7 @@
     });
 </script>
 
-<ul class="breadcrumbs">
+<ul class="breadcrumbs {classList}">
     {#each breadcrumbs as crumb, i}
         {#if crumb.url == $page.path}
             <li class="youAreHere">
@@ -48,7 +49,7 @@
         padding: 0;
         margin: 0;
         li {
-            color: $fontColorLight1;
+            color: inherit;
             .divider {
                 padding: $space1 0;
                 color: inherit;
@@ -57,7 +58,7 @@
                 text-decoration: none;
                 color: inherit;
                 &:hover {
-                    color: $fontColorLight3;
+                    opacity: 0.7;
                 }
             }
             .crumb {
@@ -71,7 +72,7 @@
                 }
             }
             &.youAreHere {
-                color: $fontColorLight3;
+                opacity: 0.7;
             }
         }
     }

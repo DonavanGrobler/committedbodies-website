@@ -38,9 +38,9 @@
 <style lang="scss">
     section {
         padding: 1rem;
-        background-color: cornsilk;
+        // background-color: cornsilk;
         &:nth-child(odd) {
-            background-color:burlywood;
+            background-color: var($--theme-surface);
         }
         &.hero {
             height: 100%;

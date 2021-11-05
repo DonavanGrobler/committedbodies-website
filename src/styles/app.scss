@@ -1,9 +1,24 @@
-// ---Themeing and utility classes
+// ---Import the theme and utility classes
 @import './themeVars.scss';
+@import './themes.scss';
+
+// *****************
+// TO CHANGE THE SITE LOOK-FEEL:
+// 1. Change the colors, fonts and other variables in themeVars.scss
+// 2. Edit the mixins in mixins.scss
+// 3. Adjust the layouts and global classes in this file
+// 4. Edit the component files for more specific changes
+// 5. Change the icons in lib/svg/icons/iconsCombined.svelte
+// *****************
+
+// CONTENTS
+// 1 Reset and Body Style
+// 2 Layout
+// 3 Helper Classes
+// 4 Typography
 
 
-
-// ---RESET AND TYPOGRAPHY
+// ---RESET
 * {
     margin: 0;
     padding: 0;
@@ -12,27 +27,8 @@
 html {
     height: 100%;
 }
-
-// TODO: SHOULD THIS NOT RATHER BE IN THEME VARS?
-:root {
-    font-family: $font_brand;
-    // font sizes based on tut: https://www.youtube.com/watch?v=wARbgs5Fmuw
-    // https://codepen.io/kevinpowell/pen/MWoYgrN
-    --fs-xl: clamp(3.5rem, 6vw + 1rem, 12rem);
-    --fs-600: 2rem;
-    --fs-400: 1rem;
-
-    @media (min-width: 40em) {
-        --fs-600: 3rem;
-        --fs-400: 1.125rem;
-    }
-}
-p {
-    margin-top: $space2;
-    line-height: 1.5;
-}
-.titleLarge {
-    font-size: var(--fs-600);
+body {
+    background-color: var($--theme-background);
 }
 
 // ---LAYOUT
@@ -98,7 +94,7 @@ main {
     }
 }
 
-// ---UTILITY CLASSES
+// HELPER CLASSES
 body {
     @media screen and (max-width: $mdScreen) {
         .hideSM {
@@ -114,5 +110,21 @@ body {
         .hideLG {
             display: none;
         }
+    }
+    p {
+        margin-top: $space2;
+        line-height: 1.5;
+    }
+    .titleLarge {
+        font-size: var(--fs-600);
+    }
+    .theme-on-primary {
+        color: var($--theme-on-primary);
+    }
+    .theme-on-secondary {
+        color: var($--theme-on-secondary);
+    }
+    .theme-on-image {
+        color: var($--theme-on-image);
     }
 }

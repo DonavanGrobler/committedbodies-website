@@ -8,7 +8,7 @@
         <h1 class="titleLarge">
             <slot />
         </h1>
-        <BreadCrumbs></BreadCrumbs>
+        <BreadCrumbs classList="theme-on-primary"></BreadCrumbs>
     </div>
 </header>
 
@@ -24,9 +24,9 @@
         .titleWrap {
             padding-bottom: $space4;
             z-index: 3;
-            color: $fontColorLight1;
+            color: var($--theme-on-primary);
             h1 {
-                color: $fontColorLight3;
+                color: var($--theme-on-primary);
                 font-family: $font_boldEmphasis;
                 font-weight: 700;
                 font-style: normal;

@@ -26,7 +26,7 @@
 <style lang="scss">
     // Default mobile-first styles
     .actionNav {
-        color: $fontColorDark3;
+        color: var($--theme-on-primary);
         padding: 0;
         ul {
             list-style-type: none;
@@ -57,7 +57,7 @@
     // MOBILE IS VERY DIFFERENT > MEDIA QUERY
     @media screen and (max-width: $mdScreen) {
         .actionNav {
-            background-color: $brand1;
+            background-color: var($--theme-primary);
             filter: drop-shadow(0 -1px 2px rgba(0,0,0,0.15));
             ul {
                 li {
@@ -86,7 +86,7 @@
                             i {
                                 padding: $space1;
                                 transform: scale(1.5) translateY(-40%);
-                                background-color: $light1;
+                                background-color: var($--theme-background);
                                 border-radius: 50%;
                             }
                         }
@@ -98,7 +98,6 @@
     @media screen and (min-width: $mdScreen) {
         .actionNav {
             background-color: transparent;
-            color: $fontColorLight3;
             padding: 0 $space1;
             ul {
                 justify-content: flex-end;
@@ -131,7 +130,6 @@
         .actionNav {
             // border: 1px solid red;
             background-color: transparent;
-            box-shadow: none;
             padding: 5% 10%;
             justify-content: flex-start;
             ul {

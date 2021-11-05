@@ -1,6 +1,6 @@
 <script>
     import "../styles/app.scss";
-    import { browser } from '$app/env'
+    // import { browser } from '$app/env'
     import IconsCombined from "$lib/svg/icons/Icons_combined.svelte";
     import TopNav from "$lib/components/navigation/TopNav.svelte";
     import ActionNav from "$lib/components/navigation/ActionNav.svelte";
@@ -39,14 +39,15 @@
 <style lang="scss">
     //  Little hack to make a background color for topnav on scroll
     .navColor {
-        display: none;
+        grid-row: 1;
+        grid-column: 1 / span 2;
+        background-color: var($--theme-primary);
+        z-index: 2;
         @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
             display: block;
-            z-index: 2;
             grid-column: 1 / span 3 ;
             grid-row: 1;
             opacity:0;
-            background-color: $brand1;
             transition: all 0.5s linear;
             &.scrolled {
                 opacity: 1;
@@ -57,8 +58,6 @@
             opacity: 1;
             grid-column: 1;
             grid-row: 1 / span 3;
-            background-color: $brand1;
-            z-index: 2;
         }
     }
 

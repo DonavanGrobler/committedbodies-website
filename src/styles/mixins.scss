@@ -1,0 +1,69 @@
+// MIXINS
+
+@mixin spread-map($map: ()) {
+    @each $key, $value in $map {
+        #{$key}: $value;
+    }
+}
+
+
+
+
+// CONTENTS
+// Mixins used across all components
+
+// 1. Typography
+// 2. Buttons
+// 3. Global helper classes
+
+
+// 1. TYPOGRAPHY
+:root {
+    font-family: $font_brand;
+    // font sizes based on tut: https://www.youtube.com/watch?v=wARbgs5Fmuw
+    // https://codepen.io/kevinpowell/pen/MWoYgrN
+    --fs-xl: clamp(3.5rem, 6vw + 1rem, 12rem);
+    --fs-600: 2rem;
+    --fs-400: 1rem;
+
+    @media (min-width: 40em) {
+        --fs-600: 3rem;
+        --fs-400: 1.125rem;
+    }
+}
+
+
+// 2. BUTTONS
+@mixin button {
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: $space1 $space2;
+    border-radius: $radius1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    box-shadow: 0 0 0 rgb(0 0 0 / 0), 0 0 0 rgb(0 0 0 / 0);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@mixin buttonPrimary {
+    border: 1px solid var($--theme-secondary);
+    background: var($--theme-secondary);
+    color: var($--theme-on-secondary);
+    &:hover {
+        border: 1px solid var($--theme-dark);
+        background: var($--theme-dark);
+        color: var($--theme-on-dark);
+        box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    }
+}
+@mixin buttonGhost {
+    border: 1px solid var($--theme-on-image);
+    background: transparent;
+    color: var($--theme-on-image);
+    &:hover {
+        box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    }
+}
