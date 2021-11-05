@@ -75,8 +75,8 @@
             }
         }
     }
-    // Responsive styles
 
+    // Responsive styles
     @media screen and (min-width: $mdScreen) {
         .topNav {
             color: var($--theme-on-image);
@@ -113,6 +113,7 @@
                         color: var($--theme-on-primary);
                         font-weight: 500;
                         padding: 0;
+                        transform-origin: left center;
                     }
                     .subNav {
                         // border: 1px solid green;
@@ -127,6 +128,7 @@
                                     color: var($--theme-on-primary);
                                     font-weight: 400;
                                     padding: 0;
+                                    transform-origin: left center;
                                 }
                             }
                         }
