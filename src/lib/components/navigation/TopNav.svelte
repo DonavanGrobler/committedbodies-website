@@ -95,8 +95,9 @@
     }
     @media screen and (min-width: $xlScreen) {
         .topNav {
+            color: var($--theme-on-primary);
             overflow-y: scroll;
-            padding: 5% 10%;
+            padding: 5% 10% 10% 10%;
             justify-content: flex-start;
             background-color: transparent;
             ul {
@@ -110,22 +111,22 @@
                     // border: 1px solid white;
                     a {
                         font-size: 1.3rem;
-                        color: var($--theme-on-primary);
-                        font-weight: 500;
+                        font-weight: 600;
                         padding: 0;
                         transform-origin: left center;
                     }
                     .subNav {
                         // border: 1px solid green;
+                        margin-top: $space1;
                         ul {
+                            // border: 1px solid red;
                             padding: 0;
                             line-height: 1.5;
-                            margin-top: 0.3rem;
+                            margin: 0;
                             li {
                                 margin-bottom: 0;
                                 a {
                                     font-size: 1rem;
-                                    color: var($--theme-on-primary);
                                     font-weight: 400;
                                     padding: 0;
                                     transform-origin: left center;
