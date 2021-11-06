@@ -19,7 +19,7 @@
     <AnimatedLogo></AnimatedLogo>
 </section>
 
-<div class="pageWrap">
+<div class="pageWrap background2">
     <!-- Page Content -->
     <div class="pageContentWrap">
         <!-- Jill's story -->

@@ -131,6 +131,10 @@ body {
         background: var(--theme-background2);
         color: var(--theme-on-background2);
     }
+    .background {
+        background: var(--theme-background);
+        color: var(--theme-on-background);
+    }
 }
 
 // ---4. TYPOGRAPHY
@@ -320,6 +324,7 @@ body {
 }
 
 // ---5. BUTTONS
+// Using mixins - we need to research pros=cons of mixins in sveltekit
 
 // ---6. MEDIA
 body {

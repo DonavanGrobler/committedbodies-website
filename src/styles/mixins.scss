@@ -82,6 +82,10 @@
       font-size: clamp(#{$mobile-px}px, calc(#{$deltavw}vw + #{$thecalc}px), #{$desktop-px}px);
     }
   }
+
+  // TODO: remove this mixin?
+  // It's used in the actionNav - small screens
+  // Put the style in the component
   @mixin fontSM {
     font-size: 0.75em;
   }

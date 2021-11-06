@@ -31,10 +31,8 @@
         ul {
             list-style-type: none;
             display: flex;
-            // justify-content: space-around;
             align-items: center;
             height: 100%;
-            // gap: $space2;
             li {
                 flex:1;
                 position: relative;
