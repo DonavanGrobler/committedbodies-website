@@ -1,43 +1,49 @@
 <script>
+    import homePage from '$lib/data/homePage.json'
     import AnimatedLogo from "$lib/svg/logo/Animated-LOGO.svelte";
+    import JillsStory from '$lib/components/home/JillsStory.svelte';
+    import StartsNow from '$lib/components/home/StartsNow.svelte';
+    import SectionWrap from '$lib/components/home/SectionWrap.svelte';
+    // import ContactSection from '$lib/components/sections/ContactSection.svelte';
+
+    // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
+    // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689403/ui-assets/woman_f4955x.png"
+    // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689417/ui-assets/dumbbell-FG_auovbf.png"
+
+    // SECTIONS FROM DATA
+    let sections = homePage.sections;
 </script>
 
-<section class="hero">
-    <AnimatedLogo></AnimatedLogo>
-</section>
+<div class="pageWrap">
+    <!-- Intro: Hero logo -->
+    <section class="intro">
+        <AnimatedLogo></AnimatedLogo>
+    </section>
 
-<section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
-</section>
-<section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
-</section>
-<section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
-</section>
-<section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
-</section>
-<section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
-</section>
-<section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
-</section>
-<section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod provident nihil tenetur ratione error sit voluptas. Ex veritatis maxime sunt? Ipsam error porro officiis quam odio eum dolor rerum.</p>
-</section>
+    <!-- Page Content -->
+    <div class="pageContentWrap">
+        <!-- Jill's story -->
+        <!-- <JillsStory></JillsStory> -->
+
+        <!-- Starts now -->
+        <!-- <StartsNow></StartsNow> -->
+
+        <!-- Numbered Sections -->
+        {#each sections as section (section)}
+            <SectionWrap {section}></SectionWrap>
+        {/each}
+
+        <!-- Contact -->
+        <!-- <ContactSection></ContactSection> -->
+    </div>
+</div>
 
 
 
 <style lang="scss">
-    section {
-        padding: 1rem;
-        // background-color: cornsilk;
-        &:nth-child(odd) {
-            background-color: var(--theme-surface);
-        }
-        &.hero {
+    .pageWrap {
+        // Intro: Hero logo
+        .intro {
             height: 100%;
             background-image: $brandGradient;
             display: flex;
@@ -55,5 +61,12 @@
                 padding-top: 136px;
             }
         }
+        // .pageContentWrap {
+        //     section {
+        //         margin: 4wv;
+        //         padding: 4vw;
+        //     }
+        // }
+
     }
 </style>

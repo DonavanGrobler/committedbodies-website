@@ -119,6 +119,7 @@
                     &.ghost {
                         a {
                             @include buttonGhost;
+                            border-color: var(--theme-on-image);
                         }
                     }
                 }
@@ -153,6 +154,7 @@
                     &.ghost {
                         a {
                             @include buttonGhost;
+                            border-color: var(--theme-on-primary);
                         }
                     }
                 }

@@ -3,7 +3,7 @@
 @import './mixins.scss';
 
 // ---FONTS & TYPOGRAPHY
-@import url('https://fonts.googleapis.com/css2&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&family=Homemade+Apple&family=Rajdhani:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&family=Homemade+Apple&family=Rajdhani:wght@400;500;600;700;900&display=swap');
 
 // *****************
 // TO CHANGE THE SITE LOOK-FEEL:
@@ -21,6 +21,8 @@
 // 2 Layout
 // 3 Helper Classes
 // 4 Typography
+// 5 Buttons
+// 6 Media (Images and Vid)
 
 
 // ---1. RESET
@@ -125,6 +127,10 @@ body {
     .theme-on-image {
         color: var(--theme-on-image);
     }
+    .background2 {
+        background: var(--theme-background2);
+        color: var(--theme-on-background2);
+    }
 }
 
 // ---4. TYPOGRAPHY
@@ -201,7 +207,7 @@ body {
     main {
         .pageWrap {
             .pageContentWrap {
-                a {
+                a:not(.button) {
                     // Defaults to theme color on surface
                     text-decoration: none;
                     color: var(--theme-link-on-surface);
@@ -310,5 +316,14 @@ body {
                 }
             }
         }
+    }
+}
+
+// ---5. BUTTONS
+
+// ---6. MEDIA
+body {
+    img {
+        max-width: 100%;
     }
 }
