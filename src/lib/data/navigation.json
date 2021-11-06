@@ -56,10 +56,16 @@
     ],
     "actionNav":[
         {
+            "title":"HOME",
+            "link":"/",
+            "icon": "home",
+            "class": "hideMD hideLG"
+        },
+        {
             "title":"Contact",
             "link":"/contact",
             "icon": "phone",
-            "class": "ghost hideMD hideLG"
+            "class": "hideMD hideLG"
         },
         {
             "title":"Log-in",
