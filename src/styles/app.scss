@@ -92,7 +92,7 @@ body {
         z-index: 1;
         // On normal desktop sizes we want the top nav to overlay the main content
         // so that we can do cool stuff with transparency, height and shadow
-        @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
+        @media screen and (min-width: $mdScreen) and (max-width: $xlScreen - 1) {
             grid-column: 1 / span 3 ;
             grid-row: 1 / span 2;
         }
@@ -101,12 +101,12 @@ body {
 
 // ---3. HELPER CLASSES
 body {
-    @media screen and (max-width: $mdScreen) {
+    @media screen and (max-width: $mdScreen - 1) {
         .hideSM {
             display: none;
         }
     }
-    @media screen and (min-width: $mdScreen) and (max-width: $xlScreen){
+    @media screen and (min-width: $mdScreen) and (max-width: $xlScreen - 1){
         .hideMD {
             display: none;
         }
