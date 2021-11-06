@@ -45,6 +45,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        // Padding right balances the logo that has a grid-column of 50px;
         padding-right: 50px;
         color: var(--theme-on-primary);
         height: 100%;
@@ -77,6 +78,12 @@
     }
 
     // Responsive styles
+    // Remove padding from really small screens
+    @media screen and (max-width: 390px) {
+        .topNav {
+            padding-right: 0;
+        }
+    }
     @media screen and (min-width: $mdScreen) {
         .topNav {
             padding-right: 0;
@@ -98,7 +105,7 @@
         .topNav {
             color: var(--theme-on-primary);
             overflow-y: scroll;
-            padding: 5% 10% 10% 10%;
+            padding: 0 10% 10% 10%;
             justify-content: flex-start;
             background-color: transparent;
             ul {
@@ -110,6 +117,7 @@
                 gap: 1em;
                 li {
                     a {
+                        font-size: 1.6em;
                         font-weight: 600;
                         padding: 0;
                         transform-origin: left center;
@@ -124,6 +132,7 @@
                             li {
                                 margin-bottom: 0;
                                 a {
+                                    font-size: 1em;
                                     font-weight: 400;
                                     padding: 0;
                                     transform-origin: left center;

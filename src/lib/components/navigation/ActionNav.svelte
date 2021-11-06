@@ -130,7 +130,7 @@
         .actionNav {
             // border: 1px solid red;
             background-color: transparent;
-            padding: 5% 10%;
+            padding: 0 0 10% 10%;
             justify-content: flex-start;
             ul {
                 // border: 1px solid blue;
