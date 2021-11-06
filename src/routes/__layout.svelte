@@ -31,9 +31,6 @@
 <!-- Main content -->
 <main on:scroll="{(e)=>y=e.target.scrollTop}">
     <slot></slot>
-    <footer>
-        footer here
-    </footer>
 </main>
 
 <style lang="scss">

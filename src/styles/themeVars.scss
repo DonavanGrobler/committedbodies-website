@@ -11,7 +11,7 @@
 $mdScreen: 800px; //min-width for medium layout is 800
 $xlScreen: 1400px; //min-width for xl screen layout is 1200
 
-$font_brand: 'Montserrat', sans-serif;
+$font_brand: 'Playfair', sans-serif;
 $font_boldEmphasis: 'Rajdhani', sans-serif;
 $font_cursiveEmphasis: 'Homemade Apple', cursive;
 
@@ -35,10 +35,13 @@ $dark2: #2B2A2A;
     --theme-on-accent2: #ffffff;
     --theme-surface: #ffffff;
     --theme-on-surface: #000000;
+    --theme-link-on-surface: #{$brand2};
     --theme-background: #{$light1};
     --theme-on-background: #000000;
+    --theme-link-on-background: #{$brand2};
     --theme-background2: #{$light2};
     --theme-on-background2: #000000;
+    --theme-link-on-background2: #{$brand2};
     --theme-on-image: #ffffff;
   }
   :root.dark {
@@ -50,10 +53,13 @@ $dark2: #2B2A2A;
     --theme-on-accent2: #000000;
     --theme-surface: #{$dark1};
     --theme-on-surface: #ffffff;
+    --theme-link-on-surface: #{$brand2};
     --theme-background: #{$dark2};
     --theme-on-background: #ffffff;
+    --theme-link-on-background: #{$brand2};
     --theme-background2: #{$dark1};
     --theme-on-background2: #ffffff;
+    --theme-link-on-background2: #{$brand2};
     --theme-on-image: #ffffff;
   }
 

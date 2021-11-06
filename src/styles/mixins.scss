@@ -5,6 +5,7 @@
 
 // 1. Buttons
 // 2. Font Size
+// 3. Element styles
 
 
 // ---1. BUTTONS
@@ -43,6 +44,8 @@
 }
 
 // ---2. FONT SIZE
+// Mixin for fluid font
+// Credit: https://almostinevitable.com/responsive-web-typography-crash-course/
 @mixin awesome-pixel-sizes($desktop-size, $desktop-px, $mobile-size, $mobile-px) {
     ///desktop & mobile
     //$desktop-size: 1440;
@@ -78,4 +81,27 @@
   }
   @mixin fontSM {
     font-size: 0.75em;
+  }
+
+  // ---3. ELEMENT STYLES
+  @mixin fancyList {
+    ul {
+      list-style-type: none;
+      li {
+        padding-left: 1em;
+        margin-left: 1em;
+        display: block;
+        position: relative;
+        &:before {
+          content: "";
+          width: 1em;
+          height: 0.3em;
+          background-color: var(--theme-primary);
+          display: block;
+          position: absolute;
+          left: -1em;
+          top: 0.65em;
+        }
+      }
+    }
   }

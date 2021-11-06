@@ -6,7 +6,7 @@
 <div class="pageWrap" in:slideFadeIn out:slideFadeOut>
     <Header>ABOUT</Header>
 
-    <div class="contentWrap">
+    <div class="pageContentWrap">
         <h1>Heading One - a long one so we can check line height for headings.</h1>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, excepturi? Labore asperiores culpa amet, nisi modi doloremque corrupti nihil quo maxime, ipsa voluptatibus eveniet! Numquam atque ducimus praesentium accusamus tempore?
@@ -19,6 +19,7 @@
         <p>
             This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again until it does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again until it does wrap. This is a paragraph of text that should be long enough to wrap.
         </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laboriosam iure, ut, voluptate quos excepturi nulla sed non, accusamus officia id repellendus? Fuga saepe ut officia aspernatur optio quo quia?</p>
         <h3>Heading Three</h3>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem officiis, obcaecati molestiae deleniti aliquid reiciendis debitis possimus soluta unde animi eum rem earum ullam at illo error nobis labore?
@@ -162,7 +163,7 @@
 </div>
 
 <style lang="scss">
-    .contentWrap {
+    .pageContentWrap {
         margin: 4vw;
         background-color: var(--theme-surface);
         color: var(--theme-on-surface);
