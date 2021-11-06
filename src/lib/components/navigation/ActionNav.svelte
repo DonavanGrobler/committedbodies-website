@@ -54,7 +54,7 @@
     // Responsive styles
 
     // MOBILE IS VERY DIFFERENT > MEDIA QUERY
-    @media screen and (max-width: $mdScreen) {
+    @media screen and (max-width: $mdScreen - 1 ) {
         .actionNav {
             background-color: var(--theme-primary);
             filter: drop-shadow(0 -1px 2px rgba(0,0,0,0.15));
