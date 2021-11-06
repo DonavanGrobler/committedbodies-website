@@ -14,12 +14,12 @@
     let sections = homePage.sections;
 </script>
 
-<div class="pageWrap">
-    <!-- Intro: Hero logo -->
-    <section class="intro">
-        <AnimatedLogo></AnimatedLogo>
-    </section>
+<!-- Intro: Hero logo -->
+<section class="intro">
+    <AnimatedLogo></AnimatedLogo>
+</section>
 
+<div class="pageWrap">
     <!-- Page Content -->
     <div class="pageContentWrap">
         <!-- Jill's story -->
@@ -41,32 +41,22 @@
 
 
 <style lang="scss">
-    .pageWrap {
-        // Intro: Hero logo
-        .intro {
+    .intro {
+        height: 100%;
+        background-image: $brandGradient;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        :global(svg){
             height: 100%;
-            background-image: $brandGradient;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            :global(svg){
-                height: 100%;
-                width: auto;
-                max-width: 100%;
-                overflow: visible; /* This prevents clipping when animating the expanding/enlarging */
-                box-shadow : 0px -0px 10000px transparent; /*overflow trick for chrome - to do the same as above*/
-            }
-            @media screen and (min-width: $mdScreen) and (max-width: $xlScreen){
-                padding-top: 136px;
-            }
+            width: auto;
+            max-width: 100%;
+            overflow: visible; /* This prevents clipping when animating the expanding/enlarging */
+            box-shadow : 0px -0px 10000px transparent; /*overflow trick for chrome - to do the same as above*/
         }
-        // .pageContentWrap {
-        //     section {
-        //         margin: 4wv;
-        //         padding: 4vw;
-        //     }
-        // }
-
+        @media screen and (min-width: $mdScreen) and (max-width: $xlScreen){
+            padding-top: 136px;
+        }
     }
 </style>
