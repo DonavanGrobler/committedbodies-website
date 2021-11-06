@@ -57,25 +57,10 @@
     @media screen and (min-width: $xlScreen) {
         .logoWrap {
             background-color: transparent;
-            // border: 1px solid red;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             padding: 10% 10% 5% 10%;
-            a {
-                :global(svg) {
-                    // border: 1px solid blue;
-                    height: 100px;
-                }
-            }
-            @media screen and (min-height: 1000px) {
-                a {
-                    :global(svg) {
-                        // border: 1px solid blue;
-                        height: 250px;
-                    }
-                }
-            }
         }
     }
 

@@ -12,7 +12,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, excepturi? Labore asperiores culpa amet, nisi modi doloremque corrupti nihil quo maxime, ipsa voluptatibus eveniet! Numquam atque ducimus praesentium accusamus tempore?
             Totam dignissimos quas, non delectus iusto corrupti repudiandae facilis beatae eos pariatur eaque impedit sunt nulla voluptatem a sit exercitationem necessitatibus deleniti cumque eveniet distinctio itaque optio quam? Harum, sunt?
             Illo dicta voluptatum harum iusto esse quae hic iste ratione laborum cupiditate reiciendis, amet modi cum veritatis necessitatibus maiores veniam aperiam nostrum placeat quas mollitia doloremque quisquam sed. Tempora, molestiae?
-            Temporibus, laudantium cumque dolore provident nemo placeat, neque cupiditate aspernatur minima debitis rerum ducimus velit ex nisi ullam incidunt sed corporis quasi nesciunt eligendi cum molestiae necessitatibus? Placeat, exercitationem magni.
+            Temporibus, <a href="/">This is a link to the home page</a> laudantium cumque dolore provident nemo placeat, neque cupiditate aspernatur minima debitis rerum ducimus velit ex nisi ullam incidunt sed corporis quasi nesciunt eligendi cum molestiae necessitatibus? Placeat, exercitationem magni.
             Repellendus doloribus quia id ipsum est incidunt, tenetur laboriosam voluptas animi excepturi, quod officia eum amet voluptatem perspiciatis aliquam sequi exercitationem eaque, pariatur corrupti libero! Modi nisi nulla iure accusantium.
         </p>
         <h2>Heading Two</h2>
@@ -73,6 +73,7 @@
             <li>Koyaanisqatsi</li>
             <li>Powaqqatsi</li>
             <li>Naqoyqatsi</li>
+            <li><a href="/">This is a link to the home page</a></li>
         </ul>
         <p>
             This is an ordered list:
@@ -129,7 +130,7 @@
                 <tr>
                     <th>Table Header 1</th>
                     <th>Table Header 2</th>
-                    <th>Table Header 3</th>
+                    <th><a href="/">Table Link</a></th>
                 </tr>
             </thead>
             <tfoot>
