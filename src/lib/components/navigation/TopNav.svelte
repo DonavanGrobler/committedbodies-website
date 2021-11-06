@@ -55,6 +55,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            &:hover {
+                li {
+                    a {
+                        opacity: 0.6;
+                    }
+                }
+            }
             li {
                 a {
                     display: block;
@@ -66,12 +73,9 @@
                     transition: all 0.2s ease-in;
                     transform-origin: center;
                     &:hover {
-                        opacity: 0.7;
+                        opacity: 1;
                         transform: scale(1.06);
                     }
-                }
-                &.active {
-                    opacity: 0.7;
                 }
             }
         }
