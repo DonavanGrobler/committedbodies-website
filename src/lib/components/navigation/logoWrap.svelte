@@ -35,7 +35,7 @@
     }
 
     // Responsive styles
-    @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
+    @media screen and (min-width: $mdScreen) and (max-width: $xlScreen - 1) {
         .logoWrap {
             display: flex;
             background-color: transparent;
