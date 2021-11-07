@@ -94,9 +94,10 @@
     }
 
     // Responsive styles
-    // Target only mobile devices to hide the svg line - it makes not sense at the center of the screen
-    @media screen and (minwidth: $mdScreen ) {
-        section {
+
+    // MED > SCREENS SECTION LAYOUTS
+	@media screen and (min-width: $mdScreen) {
+		section {
             .contentWrap {
                 .buttonWrap {
                     svg {
@@ -104,6 +105,6 @@
                     }
                 }
             }
-        }
-    }
+		}
+	}
 </style>
