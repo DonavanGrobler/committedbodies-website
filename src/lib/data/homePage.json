@@ -1,4 +1,21 @@
 {
+    "intro": [
+        {
+            "title": "I took back my life",
+            "subtitle": "You can too",
+            "text": "<p>The day I turned 52, I looked in the mirror and did not recognise the woman staring back at me. I had lost my energy, enthusiasm and figure. I looked like I felt - old, flabby and tired. I had two choices - continue down this road, or I could take back my life. Nine months later I had transformed my body and my life.</p><p>In 2018, my husband and I launched Committed Bodies Gym. We specialise in transformations - our mission is to help you take back your life.</p><p class=\"signature\">Jill Myburgh</p>",
+            "imageBefore": "https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1635584514/ui-assets/beforeFront2_s0blvc.png",
+            "imageAfter": "https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1635583370/ui-assets/afterFront_2_up6xo9.png",
+            "buttonText": "Read my story",
+            "buttonLink": "/blog/jills-story"
+        },
+        {
+            "title": "Your journey starts now!",
+            "primaryButtonText": "Watch",
+            "primaryButtonLink": "/",
+            "videoUrl": "https://res.cloudinary.com/committed-bodies/video/upload/ac_none,q_auto,vc_auto/v1635629163/video/CommittedBodies-Take-Back-Your-Life_pvhloh.mp4"
+        }
+    ],
     "sections":[
         {
             "number": 1,
