@@ -140,11 +140,18 @@ body {
 // ---4. TYPOGRAPHY
 :root {
     font-family: $font_brand;
+    // font-family: Arial, Helvetica, sans-serif;
 }
 // Font Sizes
 // Mixin for fluid font
 // Credit: https://almostinevitable.com/responsive-web-typography-crash-course/
 body {
+    .lookAtMeTitle {
+        @include awesome-pixel-sizes(1440, 88, 780, 56);
+        font-family: $font_boldEmphasis;
+        line-height: 0.9;
+        margin: 2em 0 0.25em 0;
+    }
     h1, .h1 {
         @include awesome-pixel-sizes(1440, 44, 780, 28);
         line-height: 1.1;
@@ -193,15 +200,15 @@ body {
     }
 }
 // Spacing
-body {
-    // Remove top and bottom margins for first and last elements in container
-    * > :first-child {
-        margin-top: 0;
-    }
-    * > :last-child {
-        margin-bottom: 0;
-    }
-}
+// body {
+//     // Remove top and bottom margins for first and last elements in container
+//     * > :first-child {
+//         margin-top: 0;
+//     }
+//     * > :last-child {
+//         margin-bottom: 0;
+//     }
+// }
 // Typography Styling
 // Defaults designed for blog pages and general copy
 // Assumption is the copy will be on theme-surface. (override in component file if necessary)
@@ -316,7 +323,7 @@ body {
                     }
                 }
                 hr {
-                    margin-bottom: em;
+                    margin-bottom: 1em;
                 }
             }
         }
@@ -328,7 +335,7 @@ body {
 
 // ---6. MEDIA
 body {
-    img {
+    img, video {
         max-width: 100%;
     }
 }
