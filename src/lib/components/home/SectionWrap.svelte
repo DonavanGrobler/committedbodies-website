@@ -4,7 +4,7 @@
 <section class="background2">
 	<!-- <slot name="contentPrimary"></slot> -->
 	<div class="contentPrimary">
-		<h2>{section.title}</h2>
+		<h3 class="h1">{section.title}</h3>
 		<p class="subtitle h4">{section.subtitle}</p>
 		{@html section.text}
 		<div class="actionRow">
@@ -67,10 +67,10 @@
 		}
 		.contentPrimary {
 			padding: 3vw;
-			h2 {
+			h3 {
 				font-family: $font_boldEmphasis;
 				line-height: 1;
-				color: #000000;
+				color: var(--theme-on-background2);
 			}
 			.subtitle {
 				font-family: $font_cursiveEmphasis;
