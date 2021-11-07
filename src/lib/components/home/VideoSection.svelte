@@ -31,6 +31,11 @@
         overflow: hidden;
         justify-content: center;
         align-items: center;
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
         &:before {
             content: "";
             position: absolute;
@@ -51,7 +56,7 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
             padding: 0;
             .buttonWrap {
@@ -60,7 +65,6 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                height: 30%;
                 svg {
                     height: 100%;
                     stroke-width: 4px;
@@ -86,6 +90,7 @@
                 align-items: center;
                 h2.lookAtMeTitle {
                     text-align: center;
+                    margin-top: 0;
                     color: var(--theme-on-image);
                     max-width: 16ch;
                 }
@@ -98,8 +103,11 @@
     // MED > SCREENS SECTION LAYOUTS
 	@media screen and (min-width: $mdScreen) {
 		section {
+			// border: 10px solid red;
             .contentWrap {
+                justify-content: flex-end;
                 .buttonWrap {
+                    height: 30%;
                     svg {
                         visibility: visible;
                     }
