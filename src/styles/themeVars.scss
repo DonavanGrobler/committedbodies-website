@@ -4,6 +4,7 @@
 // 3. Themeing
 // 4. Spacing
 // 5. Curviness
+// 6. Font Sizes
 
 
 // ---1. BREAKPOINTS FOR MAIN LAYOUT STRUCTURE
@@ -27,41 +28,41 @@ $dark2: #2B2A2A;
 // ---3. THEMEING
 // Using normal css vars in styling so that we can allow switching between light and dark themes
 :root.light {
-    --theme-primary: #{$brand1};
-    --theme-on-primary: #000000;
-    --theme-accent: #{$brand2};
-    --theme-on-accent: #ffffff;
-    --theme-accent2: #{$dark2};
-    --theme-on-accent2: #ffffff;
-    --theme-surface: #ffffff;
-    --theme-on-surface: #000000;
-    --theme-link-on-surface: #{$brand2};
-    --theme-background: #{$light1};
-    --theme-on-background: #000000;
-    --theme-link-on-background: #{$brand2};
-    --theme-background2: #{$light2};
-    --theme-on-background2: #000000;
-    --theme-link-on-background2: #{$brand2};
-    --theme-on-image: #ffffff;
-  }
-  :root.dark {
-    --theme-primary: #{$brand1};
-    --theme-on-primary: #000000;
-    --theme-accent: #{$brand2};
-    --theme-on-accent: #000000;
-    --theme-accent2: #{$light2};
-    --theme-on-accent2: #000000;
-    --theme-surface: #{$dark1};
-    --theme-on-surface: #ffffff;
-    --theme-link-on-surface: #{$brand2};
-    --theme-background: #{$dark2};
-    --theme-on-background: #878484;
-    --theme-link-on-background: #{$brand2};
-    --theme-background2: #{$dark1};
-    --theme-on-background2: #ffffff;
-    --theme-link-on-background2: #{$brand2};
-    --theme-on-image: #ffffff;
-  }
+  --theme-primary: #{$brand1};
+  --theme-on-primary: #000000;
+  --theme-accent: #{$brand2};
+  --theme-on-accent: #ffffff;
+  --theme-accent2: #{$dark2};
+  --theme-on-accent2: #ffffff;
+  --theme-surface: #ffffff;
+  --theme-on-surface: #716e67;;
+  --theme-link-on-surface: #{$brand2};
+  --theme-background: #{$light1};
+  --theme-on-background: #000000;
+  --theme-link-on-background: #{$brand2};
+  --theme-background2: #{$light2};
+  --theme-on-background2: #5d5d53;
+  --theme-link-on-background2: #{$brand2};
+  --theme-on-image: #ffffff;
+}
+:root.dark {
+  --theme-primary: #{$brand1};
+  --theme-on-primary: #000000;
+  --theme-accent: #{$brand2};
+  --theme-on-accent: #000000;
+  --theme-accent2: #{$light2};
+  --theme-on-accent2: #000000;
+  --theme-surface: #{$dark1};
+  --theme-on-surface: #ffffff;
+  --theme-link-on-surface: #{$brand2};
+  --theme-background: #{$dark2};
+  --theme-on-background: #878484;
+  --theme-link-on-background: #{$brand2};
+  --theme-background2: #{$dark1};
+  --theme-on-background2: #ffffff;
+  --theme-link-on-background2: #{$brand2};
+  --theme-on-image: #ffffff;
+}
 
 // ---4. SPACING (Smallest to largest)
 $space1: 0.5rem;
@@ -74,3 +75,14 @@ $space5: 8rem;
 $radius1: 2px;
 $radius2: 1rem;
 $radius3: 2rem;
+
+// ---6. FONT SIZES
+$ratio: 0.3;
+$fontSize0: 1rem;
+$fontSize-1: $fontSize0 - $ratio;
+$fontSize1: $fontSize0 + $ratio;
+$fontSize2: $fontSize1 + $ratio;
+$fontSize3: $fontSize2 + $ratio;
+$fontSize4: $fontSize3 + $ratio;
+$fontSize5: $fontSize4 + $ratio;
+$fontSize6: $fontSize5 + $ratio;

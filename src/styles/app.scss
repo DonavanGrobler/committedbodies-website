@@ -139,66 +139,68 @@ body {
 
 // ---4. TYPOGRAPHY
 :root {
-    font-family: $font_brand;
-    // font-family: Arial, Helvetica, sans-serif;
+    // font-family: $font_brand;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $fontSize0;
+    line-height: 1.6;
 }
+
+
 // Font Sizes
-// Mixin for fluid font
-// Credit: https://almostinevitable.com/responsive-web-typography-crash-course/
+
 body {
-    .lookAtMeTitle {
-        @include awesome-pixel-sizes(1440, 90, 780, 40);
-        font-family: $font_boldEmphasis;
-        line-height: 0.9;
-        margin: 2em 0 0.25em 0;
-    }
+
     h1, .h1 {
-        @include awesome-pixel-sizes(1440, 44, 780, 28);
+        font-size: $fontSize6;
         line-height: 1.1;
-        // letter-spacing: 0.03em;
-        margin: 2em 0 0.25em 0;
-        font-family: $font_boldEmphasis;
+        margin: 1.5em 0 0 0;
+        filter: brightness(40%);
     }
     h2, .h2 {
-        @include awesome-pixel-sizes(1440, 40, 780, 26);
+        font-size: $fontSize5;
         line-height: 1.2;
-        letter-spacing: 0.03em;
-        margin: 2em 0 0.25em 0;
-        font-family: $font_boldEmphasis;
+        margin: 1.5em 0 0 0;
+        filter: brightness(50%);
     }
     h3, .h3 {
-        @include awesome-pixel-sizes(1440, 26, 780, 22);
+        font-size: $fontSize4;
         line-height: 1.3;
-        letter-spacing: 0.03em;
-        margin: 2em 0 0.25em 0;
+        margin: 1.5em 0 0 0;
+        filter: brightness(60%);
     }
     h4, .h4 {
-        @include awesome-pixel-sizes(1440, 24, 780, 20);
-        line-height: 1.3;
-        letter-spacing: 0.03em;
-        margin: 2em 0 0.25em 0;
+        font-size: $fontSize3;
+        line-height: 1.6;
+        margin: 1.5em 0 0 0;
+        filter: brightness(70%);
     }
     h5, .h5 {
-        @include awesome-pixel-sizes(1440, 22, 780, 18);
-        line-height: 1.3;
-        margin: 2em 0 0.25em 0;
+        font-size: $fontSize2;
+        line-height: 1.6;
+        margin: 1.5em 0 0 0;
+        filter: brightness(80%);
     }
     h6, .h6 {
-        @include awesome-pixel-sizes(1440, 20, 780, 16);
-        line-height: 1.3;
-        margin: 2em 0 0.25em 0;
+        font-size: $fontSize1;
+        line-height: 1.6;
+        margin: 1.5em 0 0 0;
+        filter: brightness(90%);
     }
     p {
         line-height: 1.6;
-        @include awesome-pixel-sizes(1440, 16, 780, 14);
-        margin: 0 0 1em 0;
+        font-size: $fontSize0;
+        margin: 1.5em 0 1em 0;
     }
     li {
-        line-height: 1.6;
-        @include awesome-pixel-sizes(1440, 16, 780, 14);
+        line-height: 1.7;
+        font-size: $fontSize0;
         margin: 0;
     }
+    hr {
+        margin: 1em 0;
+    }
 }
+
 // Spacing
 // body {
 //     // Remove top and bottom margins for first and last elements in container
@@ -282,7 +284,7 @@ body {
                             align-self: center;
                             content: "";
                             position: absolute;
-                            left: calc(1em + 1.5px);
+                            left: calc(1em - 1.5px);
                             width: 3px;
                             top: 1em;
                             bottom: 0;
@@ -296,9 +298,6 @@ body {
                             }
                         }
                     }
-                }
-                hr {
-                    margin-bottom: 1em;
                 }
             }
         }

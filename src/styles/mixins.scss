@@ -45,44 +45,6 @@
     }
 }
 
-// ---2. FONT SIZE
-// NB warnings about the depreciation of / for divide calc
-// Mixin for fluid font
-// Credit: https://almostinevitable.com/responsive-web-typography-crash-course/
-@mixin awesome-pixel-sizes($desktop-size, $desktop-px, $mobile-size, $mobile-px) {
-    ///desktop & mobile
-    //$desktop-size: 1440;
-    //$mobile-size: 780;
-    $rem: 16;
-
-    ///calcs
-    $delta: ($desktop-px - $mobile-px) / ($desktop-size - $mobile-size); ///slope
-    $delta-rounded: round($delta * 1000) / 1000; ///slope rounded.. round slope
-    $deltavw: ($delta-rounded * 100);
-
-    $intercept: ($mobile-px - ($delta-rounded * $mobile-size)); ///y intercept
-
-    ///pixel based
-    $calc-vw: (($desktop-px - $rem) * 100) / $desktop-size;
-    $calc-01: (($calc-vw * $mobile-size) * .01) + $rem;
-    $calc-01-rounded: round($calc-01 * 10000) / 10000;
-    $final-rem: ($mobile-px / $calc-01-rounded);
-    $final-rem-rounded: round($final-rem * 10000) / 10000;
-
-    ///results
-    ///for compatibility
-    font-size: calc(#{$calc-vw}vw + #{$final-rem-rounded}rem);
-
-    ////for clamps 
-    @if $intercept < 0 {
-      $thecalc: ($intercept * -1);
-      font-size: clamp(#{$mobile-px}px, calc(#{$deltavw}vw - #{$thecalc}px), #{$desktop-px}px);
-    } @else {
-      $thecalc: $intercept;
-      font-size: clamp(#{$mobile-px}px, calc(#{$deltavw}vw + #{$thecalc}px), #{$desktop-px}px);
-    }
-  }
-
   // TODO: remove this mixin?
   // It's used in the actionNav - small screens
   // Put the style in the component
