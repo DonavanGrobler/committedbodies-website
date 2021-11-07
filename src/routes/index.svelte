@@ -4,7 +4,7 @@
     import Intro from '$lib/components/home/Intro.svelte';
     import VideoSection from '$lib/components/home/VideoSection.svelte'
     import SectionWrap from '$lib/components/home/SectionWrap.svelte';
-    import ContactSection from '$lib/components/contact/ContactSection.svelte';
+    // import ContactSection from '$lib/components/contact/ContactSection.txt';
 
     // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
     // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689403/ui-assets/woman_f4955x.png"
