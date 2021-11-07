@@ -209,45 +209,20 @@ body {
 //         margin-bottom: 0;
 //     }
 // }
+
 // Typography Styling
-// Defaults designed for blog pages and general copy
-// Assumption is the copy will be on theme-surface. (override in component file if necessary)
-// All general pages will have a specific structure: pageWrap > Header;pageContentWrap;Footer
-// allowing us to target the structural elements for global styling
 body {
     main {
         .pageWrap {
             .pageContentWrap {
                 a:not(.button) {
                     // Defaults to theme color on surface
+                    display: inline-block;
                     text-decoration: none;
                     color: var(--theme-link-on-surface);
                     transition: all 0.3s ease-in;
-                    position: relative;
-                    display: inline-block;
-                    &:before {
-                        content: "Open ➟";
-                        transform:scaleX(0);
-                        transform-origin: left center;
-                        position: absolute;
-                        color: var(--theme-on-surface);
-                        font-weight: 600;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        opacity: 0;
-                        text-transform: uppercase;
-                        backdrop-filter: blur(3px);
-                        transition: all 0.3s ease-in;
-                        z-index: 2;
-                        text-align: left;
-                    }
                     &:hover {
-                        &:before {
-                            transform: scaleX(1);
-                            opacity: 1;
-                            backdrop-filter: blur(3px);
-                        }
+                        text-decoration: underline;
                     }
                 }
                 ul {
