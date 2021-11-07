@@ -147,7 +147,7 @@ body {
 // Credit: https://almostinevitable.com/responsive-web-typography-crash-course/
 body {
     .lookAtMeTitle {
-        @include awesome-pixel-sizes(1440, 88, 780, 56);
+        @include awesome-pixel-sizes(1440, 90, 780, 40);
         font-family: $font_boldEmphasis;
         line-height: 0.9;
         margin: 2em 0 0.25em 0;
