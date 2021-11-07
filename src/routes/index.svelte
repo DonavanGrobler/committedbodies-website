@@ -1,10 +1,10 @@
 <script>
     import homePage from '$lib/data/homePage.json'
     import AnimatedLogo from "$lib/svg/logo/Animated-LOGO.svelte";
-    import JillsStory from '$lib/components/home/JillsStory.svelte';
-    import StartsNow from '$lib/components/home/StartsNow.svelte';
+    import Intro from '$lib/components/home/Intro.svelte';
+    import VideoSection from '$lib/components/home/VideoSection.svelte'
     import SectionWrap from '$lib/components/home/SectionWrap.svelte';
-    // import ContactSection from '$lib/components/sections/ContactSection.svelte';
+    import ContactSection from '$lib/components/contact/ContactSection.svelte';
 
     // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
     // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689403/ui-assets/woman_f4955x.png"
@@ -12,21 +12,23 @@
 
     // SECTIONS FROM DATA
     let sections = homePage.sections;
+    let introSections = homePage.intro;
 </script>
 
 <!-- Intro: Hero logo -->
-<section class="intro">
+<section class="hero">
     <AnimatedLogo></AnimatedLogo>
 </section>
 
 <div class="pageWrap background2">
     <!-- Page Content -->
     <div class="pageContentWrap">
-        <!-- Jill's story -->
-        <!-- <JillsStory></JillsStory> -->
 
-        <!-- Starts now -->
-        <!-- <StartsNow></StartsNow> -->
+        <!-- Jill's story -->
+        <!-- <Intro {introSections}></Intro> -->
+
+        <!-- Video Preview -->
+        <VideoSection {introSections}></VideoSection>
 
         <!-- Numbered Sections -->
         {#each sections as section (section)}
@@ -41,7 +43,7 @@
 
 
 <style lang="scss">
-    .intro {
+    .hero {
         height: 100%;
         background-image: $brandGradient;
         display: flex;
