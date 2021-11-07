@@ -8,8 +8,8 @@
 
 // ---1. BREAKPOINTS FOR MAIN LAYOUT STRUCTURE
 // We're going to try to only use breakpoints for the main page layout changes (Main and Navigation components)
-$mdScreen: 800px; //min-width for medium layout is 800
-$xlScreen: 1400px; //min-width for xl screen layout is 1200
+$mdScreen: 780px; //min-width for medium layout
+$xlScreen: 1430px; //min-width for xl screen layout 2560px
 
 $font_brand: 'Playfair', sans-serif;
 $font_boldEmphasis: 'Rajdhani', sans-serif;
@@ -30,7 +30,7 @@ $dark2: #2B2A2A;
     --theme-primary: #{$brand1};
     --theme-on-primary: #000000;
     --theme-accent: #{$brand2};
-    --theme-on-accent: #000000;
+    --theme-on-accent: #ffffff;
     --theme-accent2: #{$dark2};
     --theme-on-accent2: #ffffff;
     --theme-surface: #ffffff;
