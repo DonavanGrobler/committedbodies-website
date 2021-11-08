@@ -1,10 +1,11 @@
 // CONTENTS
 // 1. Breakpoints
-// 2. Colors
-// 3. Themeing
-// 4. Spacing
-// 5. Curviness
-// 6. Font Sizes
+// 2. Fonts
+// 3. Font-Sizes
+// 4. Brand Colors
+// 5. Theming
+// 6. Spacing
+// 7. Curviness
 
 
 // ---1. BREAKPOINTS FOR MAIN LAYOUT STRUCTURE
@@ -12,11 +13,43 @@
 $mdScreen: 780px; //min-width for medium layout
 $xlScreen: 1430px; //min-width for xl screen layout 2560px
 
+// ---2. FONTS
 $font_brand: 'Playfair', sans-serif;
 $font_boldEmphasis: 'Rajdhani', sans-serif;
 $font_cursiveEmphasis: 'Homemade Apple', cursive;
 
-// ---2. BRAND COLORS
+// ---3. FONT-SIZES
+
+// Default font size
+:root {
+  --fontIncrement: 0.2rem;
+  --fontSizeBase: 1rem;
+}
+@media screen and (min-width: $mdScreen) {
+  :root {
+    --fontIncrement: 0.3rem;
+    --fontSizeBase: 1.05rem;
+  }
+}
+@media screen and (min-width: $xlScreen) {
+  :root {
+    --fontIncrement:0.3rem;
+    --fontSizeBase: 1.05rem;
+  }
+}
+:root {
+  --fontSizeSmall: calc(var(--fontSizeBase) - var(--fontIncrement));
+  --fontSizeMd: var(--fontSizeBase);
+  --fontSizeH6: calc(var(--fontSizeMd) + var(--fontIncrement));
+  --fontSizeH5: calc(var(--fontSizeH6) + var(--fontIncrement));
+  --fontSizeH4: calc(var(--fontSizeH5) + var(--fontIncrement));
+  --fontSizeH3: calc(var(--fontSizeH4) + var(--fontIncrement));
+  --fontSizeH2: calc(var(--fontSizeH3) + var(--fontIncrement));
+  --fontSizeH1: calc(var(--fontSizeH2) + var(--fontIncrement));
+  --fontSizeXXXL: calc(var(--fontSizeH1) + var(--fontIncrement));
+}
+
+// ---4. BRAND COLORS
 $brand1: #a9cf45;
 $brand2: #fd6c17;
 $brandGradient: linear-gradient(180deg, #2E9494 0%, #42A640 36.66%, #A9CF45 95.45%);
@@ -25,7 +58,7 @@ $light2: #ECEBD3;
 $dark1: #424040;
 $dark2: #2B2A2A;
 
-// ---3. THEMEING
+// ---5. THEMEING
 // Using normal css vars in styling so that we can allow switching between light and dark themes
 :root.light {
   --theme-primary: #{$brand1};
@@ -64,7 +97,7 @@ $dark2: #2B2A2A;
   --theme-on-image: #ffffff;
 }
 
-// ---4. SPACING (Smallest to largest)
+// ---6. SPACING (Smallest to largest)
 $space1: 0.5rem;
 $space2: 1rem;
 $space3: 2rem;
@@ -75,14 +108,3 @@ $space5: 8rem;
 $radius1: 2px;
 $radius2: 1rem;
 $radius3: 2rem;
-
-// ---6. FONT SIZES
-$ratio: 0.3;
-$fontSize0: 1rem;
-$fontSize-1: $fontSize0 - $ratio;
-$fontSize1: $fontSize0 + $ratio;
-$fontSize2: $fontSize1 + $ratio;
-$fontSize3: $fontSize2 + $ratio;
-$fontSize4: $fontSize3 + $ratio;
-$fontSize5: $fontSize4 + $ratio;
-$fontSize6: $fontSize5 + $ratio;
