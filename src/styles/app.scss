@@ -147,7 +147,6 @@ body {
 
 
 // Font Sizes
-
 body {
 
     h1, .h1 {
@@ -201,22 +200,18 @@ body {
     }
 }
 
-// Spacing
-// body {
-//     // Remove top and bottom margins for first and last elements in container
-//     * > :first-child {
-//         margin-top: 0;
-//     }
-//     * > :last-child {
-//         margin-bottom: 0;
-//     }
-// }
-
-// Typography Styling
+// Typography Styling (Targeting inner copy)
 body {
     main {
         .pageWrap {
             .pageContentWrap {
+                // Remove top and bottom margins for first and last elements in container
+                * > :first-child {
+                    margin-top: 0;
+                }
+                * > :last-child {
+                    margin-bottom: 0;
+                }
                 a:not(.button) {
                     // Defaults to theme color on surface
                     display: inline-block;
@@ -255,7 +250,7 @@ body {
                         padding-left: 0;
                         margin-left: 0;
                         display: grid;
-                        grid-template-columns: 2em 1fr;
+                        grid-template-columns: 3em 1fr;
                         justify-content: flex-start;
                         align-items: flex-start;
                         position: relative;
@@ -268,8 +263,8 @@ body {
                             counter-increment: section;
                             content: counter(section);
                             width: 100%;
-                            aspect-ratio: 1 / 1;
-                            font-size: 1.3em;
+                            aspect-ratio: 1/1;
+                            font-size: 1.5em;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -278,13 +273,15 @@ body {
                             border-radius: 50%;
                             z-index: 2;
                             margin-top: -0.3em;
+                            overflow: hidden;
+                            font-weight: 600;
                         }
                         &:before {
                             font-size: 1em;
                             align-self: center;
                             content: "";
                             position: absolute;
-                            left: calc(1em - 1.5px);
+                            left: calc(1.5em - 1.5px);
                             width: 3px;
                             top: 1em;
                             bottom: 0;
