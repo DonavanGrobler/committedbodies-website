@@ -51,7 +51,7 @@
 				position: absolute;
 			}
 			.number {
-				font-size: 3em;
+				font-size: 2.5em;
 				position: absolute;
 				top: 1em;
 				width: 100%;
