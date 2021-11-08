@@ -7,8 +7,51 @@
     <Header>ABOUT</Header>
 
     <div class="pageContentWrap removeTopBottom">
+        <section class="colorPalette">
+            <h1>COLOR PALETTE</h1>
+            <div class="gridWrap">
+                <div class="colorBlock primary">
+                    <div class="shade1">Shade 10</div>
+                    <div class="shade2">Shade 20</div>
+                    <div class="shade3">Shade 30</div>
+                    <div class="shade4">Shade 40</div>
+                    <div class="shade5">BRAND PRIMARY (50)</div>
+                    <div class="shade8">Shade 80</div>
+                    <div class="shade9">Shade 90</div>
+                    <div class="shade10">Shade 100</div>
+                </div>
+                <div class="colorBlock accent">
+                    <div class="shade1">Shade 1</div>
+                    <div class="shade2">Shade 2</div>
+                    <div class="shade3">Shade 3</div>
+                    <div class="shade4">Shade 4</div>
+                    <div class="shade5">BRAND ACCENT (5)</div>
+                    <div class="shade8">Shade 8</div>
+                    <div class="shade9">Shade 9</div>
+                </div>
+                <div class="colorBlock neutralLight">
+                    <div class="shade1">Shade 1</div>
+                    <div class="shade2">Shade 2</div>
+                    <div class="shade3">Shade 3</div>
+                    <div class="shade4">Shade 4</div>
+                    <div class="shade5">Shade 5</div>
+                    <div class="shade8">Shade 8</div>
+                    <div class="shade9">Shade 9</div>
+                </div>
+                <div class="colorBlock neutralDark">
+                    <div class="shade1">Shade 1</div>
+                    <div class="shade2">Shade 2</div>
+                    <div class="shade3">Shade 3</div>
+                    <div class="shade4">Shade 4</div>
+                    <div class="shade5">Shade 5</div>
+                    <div class="shade8">Shade 8</div>
+                    <div class="shade9">Shade 9</div>
+                </div>
+
+            </div>
+        </section>
         <section>
-        <h1>Heading One - a long one so we can check line height for headings.</h1>
+            <h1>Heading One - a long one so we can check line height for headings.</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, excepturi? Labore asperiores culpa amet, nisi modi doloremque corrupti nihil quo maxime, ipsa voluptatibus eveniet! Numquam atque ducimus praesentium accusamus tempore?
                 Totam dignissimos quas, non delectus iusto corrupti repudiandae facilis beatae eos pariatur eaque impedit sunt nulla voluptatem a sit exercitationem necessitatibus deleniti cumque eveniet distinctio itaque optio quam? Harum, sunt?
@@ -38,7 +81,6 @@
                 This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again until it does wrap. This is a paragraph of text that should be long enough to wrap. If not, we can repeat it over and over again until it does wrap. This is a paragraph of text that should be long enough to wrap.
             </p>
         </section>
-
         <section>
             <p>
                 <em>This is italic text, made with em.</em> <i>This is italic text as well, made with i.</i>
@@ -148,7 +190,6 @@
                 Then back five spaces.
             </pre>
         </section>
-
         <section>
             <p>
                 Here's a table with a border, a caption, colgroups, cols, thead, tfoot, & tbody:
@@ -205,6 +246,65 @@
             color: var(--theme-on-surface);
             padding: 4vw;
             margin: 4vw;
+        }
+        .colorPalette {
+            .gridWrap {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                .colorBlock {
+                    display: grid;
+                    grid-template-rows: repeat(8, 4em);
+                    div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                .primary {
+                    .shade1 {
+                        background: hsl(var(--primaryColor) var(--l-10));
+                        color: hsl(var(--primaryColor) var(--l-40));
+                    }
+                    .shade2 {
+                        background: hsl(var(--primaryColor) var(--l-20));
+                        color: hsl(var(--primaryColor) var(--l-50));
+                    }
+                    .shade3 {
+                        background: hsl(var(--primaryColor) var(--l-30));
+                        color: hsl(var(--primaryColor) var(--l-50));
+                    }
+                    .shade4 {
+                        background: hsl(var(--primaryColor) var(--l-40));
+                        color: hsl(var(--primaryColor) var(--l-80));
+                    }
+                    .shade5 {
+                        background: hsl(var(--primaryColor) var(--l-50));
+                        color: hsl(var(--primaryColor) var(--l-10));
+                    }
+                    .shade8 {
+                        background: hsl(var(--primaryColor) var(--l-80));
+                        color: hsl(var(--primaryColor) var(--l-20));
+                    }
+                    .shade9 {
+                        background: hsl(var(--primaryColor) var(--l-90));
+                        color: hsl(var(--primaryColor) var(--l-30));
+                    }
+                    .shade10 {
+                        background: hsl(var(--primaryColor) var(--l-100));
+                        color: hsl(var(--primaryColor) var(--l-10));
+                    }
+                }
+                .accent {
+                    background-color: hsl(var(--accentColor) 54%);
+                }
+                .neutralLight {
+                    background-color: hsl(var(--neutralColorLight) 88%);
+                }
+                .neutralDark {
+                    background-color: hsl(var(--neutralColorDark) 17%);
+                }
+            }
         }
     }
 </style>

@@ -103,6 +103,7 @@ body {
 
 // ---3. HELPER CLASSES
 body {
+    // Hide stuff at various screen sizes
     @media screen and (max-width: ($mdScreen - 1)) {
         .hideSM {
             display: none;
@@ -127,6 +128,7 @@ body {
             margin-bottom: 0;
         }
     }
+    // TODO: remove these! It's easy enough to put the theme color vars in coponents
     .theme-on-primary {
         color: var(--theme-on-primary);
     }
