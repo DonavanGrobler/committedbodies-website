@@ -61,7 +61,7 @@
                     // border: 1px solid red;
                     height: 100%;
                     a {
-                        @include fontSM;
+                        font-size: var(--fontSizeSm);
                         // border: 1px solid yellow;
                         i {
                             display: flex;

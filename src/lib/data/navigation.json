@@ -56,7 +56,7 @@
     ],
     "actionNav":[
         {
-            "title":"HOME",
+            "title":"Home",
             "link":"/",
             "icon": "home",
             "class": "hideMD hideLG"
