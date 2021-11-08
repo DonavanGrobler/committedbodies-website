@@ -8,12 +8,12 @@
     export let y;
 </script>
 
-
+<!-- As in: Top-Level navigation -->
 <nav class="topNav {y > 80 ? 'scrolled' : ''}" aria-label="Primary Navigation">
     <ul>
         {#each topNavList as item (item)}
         <li class="{item.class}" class:active={item.link === $page.path}>
-            <a href="{item.link}">{item.title}</a>
+            <a class="LinkLevel1" href="{item.link}">{item.title}</a>
 
             {#if item.subnav}
                 <div class="subNav {item.subnavClass}">
@@ -88,6 +88,7 @@
             padding-right: 0;
         }
     }
+    // Md screens
     @media screen and (min-width: $mdScreen) {
         .topNav {
             padding-right: 0;
@@ -105,6 +106,7 @@
             }
         }
     }
+    // Xl screens
     @media screen and (min-width: $xlScreen) {
         .topNav {
             color: var(--theme-on-primary);
@@ -120,14 +122,14 @@
                 align-items: flex-start;
                 gap: 1em;
                 li {
-                    a {
-                        font-size: 1.6em;
+                    a.LinkLevel1 {
+                        font-size: var(--fontSizeH5);
                         font-weight: 600;
                         padding: 0;
                         transform-origin: left center;
                     }
                     .subNav {
-                        // margin-top: $space1;
+                        font-size: var(--fontSizeMd);
                         ul {
                             padding: 0;
                             line-height: 1.5;
@@ -136,7 +138,6 @@
                             li {
                                 margin-bottom: 0;
                                 a {
-                                    font-size: 1em;
                                     font-weight: 400;
                                     padding: 0;
                                     transform-origin: left center;

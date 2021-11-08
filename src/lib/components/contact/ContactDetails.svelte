@@ -38,20 +38,22 @@
 
 <style lang="scss">
     ul.contactDetails {
+        font-size: inherit;
         padding: 0;
         margin: 0;
         list-style-type: none;
         display: block;
         line-height: 1.5;
         li {
+            font-size: inherit;
             a {
-                // font-size: inherit;
+                font-size: inherit;
                 color: inherit;
                 text-decoration: none;
                 display: grid;
                 grid-template-columns: auto 1fr;
                 i {
-                    margin-right: $space1;
+                    margin-right: 1em;
                     svg {
                         fill: transparent;
                         transition: all 0.2s ease-in;
