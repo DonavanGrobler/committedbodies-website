@@ -118,6 +118,15 @@ body {
             display: none;
         }
     }
+    // Remove top and bottom margins for first and last elements in container
+    .removeTopBottom {
+        * > :first-child {
+            margin-top: 0;
+        }
+        * > :last-child {
+            margin-bottom: 0;
+        }
+    }
     .theme-on-primary {
         color: var(--theme-on-primary);
     }
@@ -146,7 +155,7 @@ body {
 }
 
 
-// Font Sizes
+// Font Sizes and font-spacing
 body {
 
     h1, .h1 {
@@ -205,13 +214,6 @@ body {
     main {
         .pageWrap {
             .pageContentWrap {
-                // Remove top and bottom margins for first and last elements in container
-                * > :first-child {
-                    margin-top: 0;
-                }
-                * > :last-child {
-                    margin-bottom: 0;
-                }
                 a:not(.button) {
                     // Defaults to theme color on surface
                     display: inline-block;

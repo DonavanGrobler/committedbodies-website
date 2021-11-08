@@ -6,7 +6,7 @@
 <div class="pageWrap" in:slideFadeIn out:slideFadeOut>
     <Header>ABOUT</Header>
 
-    <div class="pageContentWrap">
+    <div class="pageContentWrap removeTopBottom">
         <section>
         <h1>Heading One - a long one so we can check line height for headings.</h1>
             <p>
