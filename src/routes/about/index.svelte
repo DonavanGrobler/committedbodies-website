@@ -20,14 +20,15 @@
                     <div class="shade9">Shade 90</div>
                     <div class="shade10">Shade 100</div>
                 </div>
-                <div class="colorBlock accent">
+                <div class="colorBlock accent dark">
                     <div class="shade1">Shade 1</div>
                     <div class="shade2">Shade 2</div>
                     <div class="shade3">Shade 3</div>
                     <div class="shade4">Shade 4</div>
-                    <div class="shade5">BRAND ACCENT (5)</div>
+                    <div class="shade5">BRAND ACCENT (50)</div>
                     <div class="shade8">Shade 8</div>
                     <div class="shade9">Shade 9</div>
+                    <div class="shade10">Shade 10</div>
                 </div>
                 <div class="colorBlock neutralLight">
                     <div class="shade1">Shade 1</div>
@@ -37,8 +38,9 @@
                     <div class="shade5">Shade 5</div>
                     <div class="shade8">Shade 8</div>
                     <div class="shade9">Shade 9</div>
+                    <div class="shade10">Shade 10</div>
                 </div>
-                <div class="colorBlock neutralDark">
+                <div class="colorBlock neutralDark dark">
                     <div class="shade1">Shade 1</div>
                     <div class="shade2">Shade 2</div>
                     <div class="shade3">Shade 3</div>
@@ -46,6 +48,7 @@
                     <div class="shade5">Shade 5</div>
                     <div class="shade8">Shade 8</div>
                     <div class="shade9">Shade 9</div>
+                    <div class="shade10">Shade 10</div>
                 </div>
 
             </div>
@@ -295,14 +298,107 @@
                         color: hsl(var(--primaryColor) var(--l-10));
                     }
                 }
-                .accent {
-                    background-color: hsl(var(--accentColor) 54%);
+                .accent {.shade1 {
+                        background: hsl(var(--accentColor) var(--l-10));
+                        color: hsl(var(--accentColor) var(--l-40));
+                    }
+                    .shade2 {
+                        background: hsl(var(--accentColor) var(--l-20));
+                        color: hsl(var(--accentColor) var(--l-50));
+                    }
+                    .shade3 {
+                        background: hsl(var(--accentColor) var(--l-30));
+                        color: hsl(var(--accentColor) var(--l-50));
+                    }
+                    .shade4 {
+                        background: hsl(var(--accentColor) var(--l-40));
+                        color: hsl(var(--accentColor) var(--l-80));
+                    }
+                    .shade5 {
+                        background: hsl(var(--accentColor) var(--l-50));
+                        color: hsl(var(--accentColor) var(--l-10));
+                    }
+                    .shade8 {
+                        background: hsl(var(--accentColor) var(--l-80));
+                        color: hsl(var(--accentColor) var(--l-20));
+                    }
+                    .shade9 {
+                        background: hsl(var(--accentColor) var(--l-90));
+                        color: hsl(var(--accentColor) var(--l-30));
+                    }
+                    .shade10 {
+                        background: hsl(var(--accentColor) var(--l-100));
+                        color: hsl(var(--accentColor) var(--l-10));
+                    }
+                    
                 }
-                .neutralLight {
-                    background-color: hsl(var(--neutralColorLight) 88%);
+                .neutralLight {.shade1 {
+                        background: hsl(var(--neutralColorLight) var(--l-10));
+                        color: hsl(var(--neutralColorLight) var(--l-40));
+                    }
+                    .shade2 {
+                        background: hsl(var(--neutralColorLight) var(--l-20));
+                        color: hsl(var(--neutralColorLight) var(--l-50));
+                    }
+                    .shade3 {
+                        background: hsl(var(--neutralColorLight) var(--l-30));
+                        color: hsl(var(--neutralColorLight) var(--l-50));
+                    }
+                    .shade4 {
+                        background: hsl(var(--neutralColorLight) var(--l-40));
+                        color: hsl(var(--neutralColorLight) var(--l-80));
+                    }
+                    .shade5 {
+                        background: hsl(var(--neutralColorLight) var(--l-50));
+                        color: hsl(var(--neutralColorLight) var(--l-10));
+                    }
+                    .shade8 {
+                        background: hsl(var(--neutralColorLight) var(--l-80));
+                        color: hsl(var(--neutralColorLight) var(--l-20));
+                    }
+                    .shade9 {
+                        background: hsl(var(--neutralColorLight) var(--l-90));
+                        color: hsl(var(--neutralColorLight) var(--l-30));
+                    }
+                    .shade10 {
+                        background: hsl(var(--neutralColorLight) var(--l-100));
+                        color: hsl(var(--neutralColorLight) var(--l-10));
+                    }
+                    
                 }
-                .neutralDark {
-                    background-color: hsl(var(--neutralColorDark) 17%);
+                .neutralDark {.shade1 {
+                        background: hsl(var(--neutralColorDark) var(--l-10));
+                        color: hsl(var(--neutralColorDark) var(--l-40));
+                    }
+                    .shade2 {
+                        background: hsl(var(--neutralColorDark) var(--l-20));
+                        color: hsl(var(--neutralColorDark) var(--l-50));
+                    }
+                    .shade3 {
+                        background: hsl(var(--neutralColorDark) var(--l-30));
+                        color: hsl(var(--neutralColorDark) var(--l-50));
+                    }
+                    .shade4 {
+                        background: hsl(var(--neutralColorDark) var(--l-40));
+                        color: hsl(var(--neutralColorDark) var(--l-80));
+                    }
+                    .shade5 {
+                        background: hsl(var(--neutralColorDark) var(--l-50));
+                        color: hsl(var(--neutralColorDark) var(--l-10));
+                    }
+                    .shade8 {
+                        background: hsl(var(--neutralColorDark) var(--l-80));
+                        color: hsl(var(--neutralColorDark) var(--l-20));
+                    }
+                    .shade9 {
+                        background: hsl(var(--neutralColorDark) var(--l-90));
+                        color: hsl(var(--neutralColorDark) var(--l-30));
+                    }
+                    .shade10 {
+                        background: hsl(var(--neutralColorDark) var(--l-100));
+                        color: hsl(var(--neutralColorDark) var(--l-10));
+                    }
+                    
                 }
             }
         }
