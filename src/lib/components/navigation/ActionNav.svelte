@@ -118,6 +118,7 @@
                         a {
                             @include buttonGhost;
                             border-color: var(--theme-on-image);
+                            color: var(--theme-on-image);
                         }
                     }
                 }
