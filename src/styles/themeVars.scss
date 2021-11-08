@@ -38,7 +38,7 @@ $font_cursiveEmphasis: 'Homemade Apple', cursive;
   }
 }
 :root {
-  --fontSizeSmall: calc(var(--fontSizeBase) - var(--fontIncrement));
+  --fontSizeSm: calc(var(--fontSizeBase) - var(--fontIncrement));
   --fontSizeMd: var(--fontSizeBase);
   --fontSizeH6: calc(var(--fontSizeMd) + var(--fontIncrement));
   --fontSizeH5: calc(var(--fontSizeH6) + var(--fontIncrement));
