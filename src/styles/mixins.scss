@@ -44,12 +44,3 @@
       box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
     }
 }
-
-  // TODO: remove this mixin?
-  // It's used in the actionNav - small screens
-  // Put the style in the component
-  @mixin fontSM {
-    font-size: 0.75em;
-  }
-
-  // ---3. ELEMENT STYLES
