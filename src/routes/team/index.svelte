@@ -76,7 +76,7 @@
             grid-gap: 1rem;
             header {
                 img {
-                    background: $brand1;
+                    background: $brandPrimary;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -105,7 +105,7 @@
             &:nth-of-type(odd) {
                 header {
                     img {
-                        background-color: $brand2;
+                        background-color: $brandAccent;
                     }
                 }
             }

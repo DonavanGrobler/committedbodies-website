@@ -66,7 +66,7 @@
             display: grid;
             grid-template-columns: 1fr 2fr;
             img {
-                background: $brand1;
+                background: $brandPrimary;
             }
             .content {
                 padding: 0;

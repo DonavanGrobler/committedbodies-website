@@ -49,9 +49,9 @@ $font_cursiveEmphasis: 'Homemade Apple', cursive;
 // ---4. BRAND COLORS
 // Preprocessed Gradient and brand colors for svg's.
 // The normal css vars don't seem to work for svg fills / strokes
-$brand1: hsl(77, 59%, 54%);
-$brand2: hsl(22, 98%, 54%);
-$brandGradient: linear-gradient(180deg, hsl(180, 53%, 38%) 0%, hsl(119, 44%, 45%) 36.66%, $brand1 95.45%);
+$brandPrimary: hsl(77, 59%, 54%);
+$brandAccent: hsl(22, 98%, 54%);
+$brandGradient: linear-gradient(180deg, hsl(180, 53%, 38%) 0%, hsl(119, 44%, 45%) 36.66%, $brandPrimary 95.45%);
 
 
 // Tidy these up to match the css vars
@@ -81,27 +81,15 @@ $dark1: hsl(0, 2%, 25%);
   --l-95: 97%;
   --l-100: 100%;
 }
-  // :root {
-  //   .dark {
-  //   --l-10: 100%;
-  //   --l-20: 97%;
-  //   --l-30: 90%;
-  //   --l-40: 80%;
-  //   --l-50: 54%;
-  //   --l-55: 50%;
-  //   --l-80: 40%;
-  //   --l-90: 30%;
-  //   --l-95: 17%;
-  //   --l-100: 10%;
-  //   }
-  // }
 
 
 :root {
-  --theme-primary: #{$brand1};
+  --lightness: 55%;
+
+  --theme-primary: #{$brandPrimary};
   --theme-on-primary: #000000;
 
-  --theme-accent: #{$brand2};
+  --theme-accent: #{$brandAccent};
   --theme-on-accent: #ffffff;
 
   --theme-accent2: #{$dark2};
@@ -110,33 +98,15 @@ $dark1: hsl(0, 2%, 25%);
   --theme-surface: #ffffff;
   --theme-on-surface: #716e67;
 
-  --theme-link-on-surface: #{$brand2};
+  --theme-link-on-surface: #{$brandAccent};
   --theme-background: #{$light1};
 
   --theme-on-background: #000000;
-  --theme-link-on-background: #{$brand2};
+  --theme-link-on-background: #{$brandAccent};
 
   --theme-background2: #{$light2};
   --theme-on-background2: #5d5d53;
-  --theme-link-on-background2: #{$brand2};
-  --theme-on-image: #ffffff;
-}
-:root.dark {
-  --theme-primary: #{$brand1};
-  --theme-on-primary: #000000;
-  --theme-accent: #{$brand2};
-  --theme-on-accent: #000000;
-  --theme-accent2: #{$light2};
-  --theme-on-accent2: #000000;
-  --theme-surface: #{$dark1};
-  --theme-on-surface: #ffffff;
-  --theme-link-on-surface: #{$brand2};
-  --theme-background: #{$dark2};
-  --theme-on-background: #878484;
-  --theme-link-on-background: #{$brand2};
-  --theme-background2: #{$dark1};
-  --theme-on-background2: #ffffff;
-  --theme-link-on-background2: #{$brand2};
+  --theme-link-on-background2: #{$brandAccent};
   --theme-on-image: #ffffff;
 }
 

@@ -47,7 +47,7 @@
 			svg {
 				height: 100%;
 				stroke-width: 4px;
-				stroke: $brand2;
+				stroke: $brandAccent;
 				position: absolute;
 			}
 			.number {
@@ -57,7 +57,7 @@
 				width: 100%;
 				aspect-ratio: 1 / 1;
 				border-radius: 50%;
-				background-color: $brand2;
+				background-color: $brandAccent;
 				display: flex;
 				justify-content: center;
 				align-items: center;

@@ -14,8 +14,8 @@ $font_cursiveEmphasis: 'Homemade Apple', cursive;
 // Todo: define sizes for headings
 
 // COLOR PALLETTE
-$brand1: #a9cf45;
-$brand2: #fd6c17;
+$brandPrimary: #a9cf45;
+$brandAccent: #fd6c17;
 $brand3 : #d72323;
 // $brand4 : #03956d;
 
@@ -85,8 +85,8 @@ $sizeLG: 130px; // Used for nav initial size before scroll
 // ---BUTTONS
 
 @mixin buttonPrimary {
-    border: 1px solid $brand2;
-    background: $brand2;
+    border: 1px solid $brandAccent;
+    background: $brandAccent;
     color: $white;
     font-weight: 500;
     letter-spacing: 1px;
@@ -108,7 +108,7 @@ $sizeLG: 130px; // Used for nav initial size before scroll
     }
 }
 @mixin buttonSecondary {
-    border: 1px solid $brand2;
+    border: 1px solid $brandAccent;
     background: transparent;
     color: $black;
     font-weight: 500;
@@ -148,8 +148,8 @@ $sizeLG: 130px; // Used for nav initial size before scroll
     box-shadow: 0 0 0 rgb(0 0 0 / 0), 0 0 0 rgb(0 0 0 / 0);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     &:hover {
-        border: 1px solid $brand2;
-        background: $brand2;
+        border: 1px solid $brandAccent;
+        background: $brandAccent;
         color: $black;
         box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
     }

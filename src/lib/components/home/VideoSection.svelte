@@ -68,7 +68,7 @@
                 svg {
                     height: 100%;
                     stroke-width: 4px;
-                    stroke: $brand2;
+                    stroke: $brandAccent;
                     position: absolute;
                     z-index: 1;
                     visibility: hidden;
