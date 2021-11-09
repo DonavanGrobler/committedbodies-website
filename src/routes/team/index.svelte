@@ -57,7 +57,7 @@
 
 <style lang="scss">
     section {
-        background-color: $light1;
+        background-color: $neutral1;
         padding: $space3;
         &.grid {
             display: grid;
@@ -91,7 +91,7 @@
             }
             footer {
                 padding: $space1;
-                // background-color: $light2;
+                // background-color: $neutral1;
                 display: flex;
                 flex-direction: row;
                 align-items: center;

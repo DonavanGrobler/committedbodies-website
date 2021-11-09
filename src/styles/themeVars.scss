@@ -46,19 +46,15 @@ $font_cursiveEmphasis: 'Homemade Apple', cursive;
   --fontSizeXXXL: calc(var(--fontSizeH1) + var(--fontIncrement));
 }
 
+
 // ---4. BRAND COLORS
-// Preprocessed Gradient and brand colors for svg's.
+// Preprocessed colors for reference and to use in svg's.
 // The normal css vars don't seem to work for svg fills / strokes
 $brandPrimary: hsl(77, 59%, 54%);
 $brandAccent: hsl(22, 98%, 54%);
 $brandGradient: linear-gradient(180deg, hsl(180, 53%, 38%) 0%, hsl(119, 44%, 45%) 36.66%, $brandPrimary 95.45%);
-
-
-// Tidy these up to match the css vars
-$light2: hsl(50, 40%, 90%);
-$dark2: hsl(0, 1%, 17%);
-$light1: hsl(47, 53%, 97%);
-$dark1: hsl(0, 2%, 25%);
+$neutral1: #f0ecdb;
+$neutral2: #2c2b2b;
 
 
 // ---5. THEMEING

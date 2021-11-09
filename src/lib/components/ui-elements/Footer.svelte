@@ -15,7 +15,7 @@
     footer {
         position: relative;
         width: 100vw;
-        background: $dark1;
+        background: $neutral2;
         padding: 6vw;
         color: #ffffff;
         justify-items: space-between;

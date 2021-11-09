@@ -18,14 +18,14 @@
     section {
         // SMALL DEVICES
         &:global(div) {
-            padding: $spaceMD;
+            padding: $space2;
             border: 1px solid red;
         }
         &.light1 {
-            background-color: $light1;
+            background-color: $neutral1;
         }
         &.light2 {
-            background-color: $light2;
+            background-color: $neutral1;
         }
         // MED - LARGE SCREENS
         @media (min-width: $md) {
