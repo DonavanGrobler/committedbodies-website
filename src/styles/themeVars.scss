@@ -88,19 +88,19 @@ $neutral2: #2c2b2b;
   --theme-accent: #{$brandAccent};
   --theme-on-accent: #ffffff;
 
-  --theme-accent2: #{$dark2};
+  --theme-accent2: #{$neutral2};
   --theme-on-accent2: #ffffff;
 
   --theme-surface: #ffffff;
   --theme-on-surface: #716e67;
 
   --theme-link-on-surface: #{$brandAccent};
-  --theme-background: #{$light1};
+  --theme-background: #{$neutral1};
 
   --theme-on-background: #000000;
   --theme-link-on-background: #{$brandAccent};
 
-  --theme-background2: #{$light2};
+  --theme-background2: #{$neutral2};
   --theme-on-background2: #5d5d53;
   --theme-link-on-background2: #{$brandAccent};
   --theme-on-image: #ffffff;
