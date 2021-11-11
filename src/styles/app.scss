@@ -35,8 +35,9 @@ html {
     height: 100%;
 }
 body {
-    background-color: var(--theme-background);
+    background-color: hsl(var(--neutral1HS) var(--neutral1L));
 }
+
 
 // ---2. LAYOUT
 body {
@@ -129,23 +130,23 @@ body {
         }
     }
     // TODO: remove these! It's easy enough to put the theme color vars in coponents
-    .theme-on-primary {
-        color: var(--theme-on-primary);
-    }
-    .theme-on-accent {
-        color: var(--theme-on-accent);
-    }
-    .theme-on-image {
-        color: var(--theme-on-image);
-    }
-    .background2 {
-        background: var(--theme-background2);
-        color: var(--theme-on-background2);
-    }
-    .background {
-        background: var(--theme-background);
-        color: var(--theme-on-background);
-    }
+    // .theme-on-primary {
+    //     color: var(--theme-on-primary);
+    // }
+    // .theme-on-accent {
+    //     color: var(--theme-on-accent);
+    // }
+    // .theme-on-image {
+    //     color: var(--theme-on-image);
+    // }
+    // .background2 {
+    //     background: var(--theme-background2);
+    //     color: var(--theme-on-background2);
+    // }
+    // .background {
+    //     background: var(--theme-background);
+    //     color: var(--theme-on-background);
+    // }
 }
 
 // ---4. TYPOGRAPHY
