@@ -66,8 +66,7 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            // position: absolute;
-                            padding: 0;
+                            padding: 3px;
                             width: 30px;
                             height: 30px;
                             top: 4px;
