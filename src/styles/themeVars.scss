@@ -47,64 +47,73 @@ $font_cursiveEmphasis: 'Homemade Apple', cursive;
 }
 
 
-// ---4. BRAND COLORS
-// Preprocessed colors for reference and to use in svg's.
-// The normal css vars don't seem to work for svg fills / strokes
+// ---4. BRAND COLORS FOR REFERENCE
+// Preprocessed colors for reference
 $brandPrimary: hsl(77, 59%, 54%);
 $brandAccent: hsl(22, 98%, 54%);
 $brandGradient: linear-gradient(180deg, hsl(180, 53%, 38%) 0%, hsl(119, 44%, 45%) 36.66%, $brandPrimary 95.45%);
-$neutral1: #f0ecdb;
-$neutral2: #2c2b2b;
+$neutral1: hsl(49, 41%, 90%);
+$neutral2: hsl(0, 1%, 17%);
 
 
-// ---5. THEMEING
+// ---5. BRAND COLORS HSL BREAK DOWN WITH DEFAULT LIGHTNESS
+// CSS vars: So we can dynamically adjust lightness in response to theme styling
+// Default light theme lightness values
 :root {
-  --primaryColor: 77 59%;
-  --accentColor: 22 98%;
-  --neutralColor1: 50 40%;
-  --neutralColor2: 0 1%;
+  --primaryHS: 77 59%;
+  --primaryL: 55%; 
+  --accentHS: 22 98%;
+  --accentL: 55%;
+  --neutral1HS: 49 41%;
+  --neutral1L: 90%;
+  --neutral2HS: 0 1%;
+  --neutral2L: 17%;
+}
 
-  --colorOnImage: #ffffff;
-
+:root {
+  --l-0: 0%;
   --l-10: 10%;
-  --l-20: 17%;
-	--l-30: 30%;
-	--l-40: 40%;
-	--l-50: 50%;
-  --l-55: 54%;
+  --l-20: 20%;
+  --l-30: 30%;
+  --l-40: 40%;
+  --l-50: 50%;
+  --l-60: 60%;
+  --l-70: 70%;
   --l-80: 80%;
-	--l-90: 90%;
-  --l-95: 97%;
+  --l-90: 90%;
   --l-100: 100%;
 }
 
 
-:root {
-  --lightness: 55%;
 
-  --theme-primary: #{$brandPrimary};
-  --theme-on-primary: #000000;
 
-  --theme-accent: #{$brandAccent};
-  --theme-on-accent: #ffffff;
+// Default theme colors (light theme)
+// * {
 
-  --theme-accent2: #{$neutral2};
-  --theme-on-accent2: #ffffff;
+//   --theme-primary: #{$brandPrimary};
+//   --theme-on-primary: #000000;
 
-  --theme-surface: #ffffff;
-  --theme-on-surface: #716e67;
+//   --theme-accent: #{$brandAccent};
+//   --theme-on-accent: #ffffff;
 
-  --theme-link-on-surface: #{$brandAccent};
-  --theme-background: #{$neutral1};
+//   --theme-accent2: #{$neutral2};
+//   --theme-on-accent2: #ffffff;
 
-  --theme-on-background: #000000;
-  --theme-link-on-background: #{$brandAccent};
+//   --theme-surface: #ffffff;
+//   --theme-on-surface: #716e67;
 
-  --theme-background2: #{$neutral2};
-  --theme-on-background2: #5d5d53;
-  --theme-link-on-background2: #{$brandAccent};
-  --theme-on-image: #ffffff;
-}
+//   --theme-link-on-surface: #{$brandAccent};
+//   --theme-background: #{$neutral1};
+
+//   --theme-on-background: #000000;
+//   --theme-link-on-background: #{$brandAccent};
+
+//   --theme-background2: #{$neutral2};
+//   --theme-on-background2: #5d5d53;
+//   --theme-link-on-background2: #{$brandAccent};
+  
+//   --theme-on-image: #ffffff;
+// }
 
 // ---6. SPACING (Smallest to largest)
 $space1: 0.5rem;
