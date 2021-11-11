@@ -53,6 +53,10 @@
                 text-decoration: none;
                 display: grid;
                 grid-template-columns: auto 1fr;
+                transition: all 0.2s ease-in;
+                transform-origin: center bottom;
+                transform: scale(1);
+                line-height: 1.5;
                 i {
                     margin-right: 1em;
                     svg {

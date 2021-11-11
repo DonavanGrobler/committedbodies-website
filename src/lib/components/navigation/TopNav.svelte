@@ -64,19 +64,19 @@
             align-items: center;
             li {
                 a {
+                    letter-spacing: 3px;
                     display: block;
                     color: inherit;
                     text-decoration: none;
                     padding: $space1;
                     white-space: nowrap;
-                    // transform: scale(1);
+                    transform: scale(1);
                     transition: all 0.2s ease-in;
-                    transform-origin: center center;
+                    transform-origin: center bottom;
                     letter-spacing: 0;
                     &:hover {
                         opacity: 1;
-                        // transform: scale(1.06);
-                        letter-spacing: 1px;
+                        transform: scale(1.04);
                     }
                 }
             }
@@ -154,6 +154,7 @@
         }
         :global(.topNav:hover ul li .contactSubnav ul li a:hover) {
             opacity: 1;
+            transform: scale(1.04);
         }
     }
 </style>
