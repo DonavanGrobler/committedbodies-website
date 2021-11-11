@@ -26,7 +26,7 @@
 @mixin buttonPrimary {
     border: 1px solid hsl(var(--accentHS) var(--accentL));
     background-color: hsl(var(--accentHS) var(--accentL));
-    color: hsl(var(--accentHS) var(--L-10));
+    color: hsl(var(--accentHS) var(--l-10));
     &:hover {
         border: 1px solid hsl(var(--neutral2HS) var(--neutral2L));
         background: hsl(var(--neutral2HS) var(--neutral2L));
