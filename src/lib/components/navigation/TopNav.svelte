@@ -29,7 +29,7 @@
                 </div>
             {/if}
             {#if item.title == "Contact"}
-                <div class="subNav hideSM hideMD">
+                <div class="subNav contactSubnav hideSM hideMD">
                     <ContactDetails {contact} classList="theme-on-primary"></ContactDetails>
                 </div>
             {/if}
@@ -47,21 +47,21 @@
         align-items: center;
         // Padding right balances the logo that has a grid-column of 50px;
         padding-right: 50px;
-        color: var(--theme-on-primary);
+        color: hsl(var(--primaryHS) var(--l-10));
         height: 100%;
+        &:hover {
+            li {
+                a {
+                    opacity: 0.6;
+                }
+            }
+        }
         ul {
             list-style-type: none;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            &:hover {
-                li {
-                    a {
-                        opacity: 0.6;
-                    }
-                }
-            }
             li {
                 a {
                     display: block;
@@ -69,12 +69,14 @@
                     text-decoration: none;
                     padding: $space1;
                     white-space: nowrap;
-                    transform: scale(1);
+                    // transform: scale(1);
                     transition: all 0.2s ease-in;
-                    transform-origin: center;
+                    transform-origin: center center;
+                    letter-spacing: 0;
                     &:hover {
                         opacity: 1;
-                        transform: scale(1.06);
+                        // transform: scale(1.06);
+                        letter-spacing: 1px;
                     }
                 }
             }
@@ -92,7 +94,7 @@
     @media screen and (min-width: $mdScreen) {
         .topNav {
             padding-right: 0;
-            color: var(--theme-on-image);
+            color: hsl(var(--primaryHS) var(--l-100));
             transition: all 0.5s linear;
             ul {
                 li {
@@ -102,14 +104,14 @@
                 }
             }
             &.scrolled {
-                color: var(--theme-on-primary);
+                color: hsl(var(--primaryHS) var(--l-10));
             }
         }
     }
     // Xl screens
     @media screen and (min-width: $xlScreen) {
         .topNav {
-            color: var(--theme-on-primary);
+            color: hsl(var(--primaryHS) var(--l-10));
             overflow-y: scroll;
             padding: 0 10% 10% 10%;
             justify-content: flex-start;
@@ -120,7 +122,6 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
-                gap: 1em;
                 li {
                     a.LinkLevel1 {
                         font-size: var(--fontSizeH5);
@@ -147,6 +148,12 @@
                     }
                 }
             }
+        }
+        :global(.topNav:hover ul li .contactSubnav ul li a) {
+            opacity: 0.6;
+        }
+        :global(.topNav:hover ul li .contactSubnav ul li a:hover) {
+            opacity: 1;
         }
     }
 </style>

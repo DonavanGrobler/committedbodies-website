@@ -1,8 +1,7 @@
 <script>
     export let contact;
-    export let classList;
 </script>
-<ul class="contactDetails {classList}">
+<ul class="contactDetails">
     <li>
         <a href="tel:{contact.phone}" class="contacts_phone">
             <i>
@@ -44,11 +43,13 @@
         list-style-type: none;
         display: block;
         line-height: 1.5;
+        color: currentColor;
         li {
             font-size: inherit;
+            color: currentColor;
             a {
                 font-size: inherit;
-                color: inherit;
+                color: currentColor;
                 text-decoration: none;
                 display: grid;
                 grid-template-columns: auto 1fr;
@@ -62,9 +63,11 @@
             }
             &:hover {
                 a {
+                    // opacity: 1;
                     i {
                         svg {
-                            fill: var(--theme-accent);
+                            fill: currentColor;
+                            stroke: hsl(var(--primaryHS) var(--primaryL));
                         }
                     }
                 }

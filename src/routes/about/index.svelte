@@ -7,57 +7,61 @@
     <Header>ABOUT</Header>
 
     <div class="pageContentWrap removeTopBottom">
-        <section class="colorPalette">
-            <h1>COLOR PALETTE</h1>
+        <section>
+            <h1>TESTING</h1>
+            <div>
+                What can I do with this color?
+            </div>
+        </section>
+        <section>
+            <h1>TESTING 2</h1>
+            <div>
+                What can I do with this color?
+            </div>
+        </section>
+    </div>
+
+
+        <!-- <section class="colorPalette">
+            <h1>Color Palette</h1>
             <div class="gridWrap">
                 <div class="colorBlock primary">
-                    <div class="shade10">Shade 10</div>
-                    <div class="shade20">Shade 20</div>
-                    <div class="shade30">Shade 30</div>
-                    <div class="shade40">Shade 40</div>
-                    <div class="shade50">Shade 50</div>
-                    <div class="shade55">BRAND PRIMARY (55)</div>
-                    <div class="shade80">Shade 80</div>
-                    <div class="shade90">Shade 90</div>
-                    <div class="shade95">Shade 95</div>
-                    <div class="shade100">Shade 100</div>
+                    <div class="shade shade-15">Shade -15</div>
+                    <div class="shade shade-10">Shade -10</div>
+                    <div class="shade shade-5">Shade -5</div>
+                    <div class="shade shadeDefault">PRIMARY</div>
+                    <div class="shade shade5">Shade +5</div>
+                    <div class="shade shade10">Shade +10</div>
+                    <div class="shade shade15">Shade +15</div>
                 </div>
                 <div class="colorBlock accent">
-                    <div class="shade10">Shade 10</div>
-                    <div class="shade20">Shade 20</div>
-                    <div class="shade30">Shade 30</div>
-                    <div class="shade40">Shade 40</div>
-                    <div class="shade50">Shade 50</div>
-                    <div class="shade55">BRAND ACCENT (55)</div>
-                    <div class="shade80">Shade 80</div>
-                    <div class="shade90">Shade 90</div>
-                    <div class="shade95">Shade 95</div>
-                    <div class="shade100">Shade 100</div>
+                    <div class="shade shade-15">Shade -15</div>
+                    <div class="shade shade-10">Shade -10</div>
+                    <div class="shade shade-5">Shade -5</div>
+                    <div class="shade shadeDefault">ACCENT</div>
+                    <div class="shade shade5">Shade +5</div>
+                    <div class="shade shade10">Shade +10</div>
+                    <div class="shade shade15">Shade +15</div>
                 </div>
-                <div class="colorBlock neutralLight">
-                    <div class="shade10">Shade 10</div>
-                    <div class="shade20">Shade 20</div>
-                    <div class="shade30">Shade 30</div>
-                    <div class="shade40">Shade 40</div>
-                    <div class="shade50">Shade 50</div>
-                    <div class="shade55">Shade 55</div>
-                    <div class="shade80">Shade 80</div>
-                    <div class="shade90">Shade 90</div>
-                    <div class="shade95">Shade 95</div>
-                    <div class="shade100">Shade 100</div>
+                <div class="colorBlock neutral1">
+                    <div class="shade shade-15">Shade -15</div>
+                    <div class="shade shade-10">Shade -10</div>
+                    <div class="shade shade-5">Shade -5</div>
+                    <div class="shade shadeDefault">NEUTRAL1</div>
+                    <div class="shade shade5">Shade +5</div>
+                    <div class="shade shade10">Shade +10</div>
+                    <div class="shade shade15">Shade +15</div>
                 </div>
-                <div class="colorBlock neutralDark">
-                    <div class="shade10">Shade 10</div>
-                    <div class="shade20">Shade 20</div>
-                    <div class="shade30">Shade 30</div>
-                    <div class="shade40">Shade 40</div>
-                    <div class="shade50">Shade 50</div>
-                    <div class="shade55">Shade 55</div>
-                    <div class="shade80">Shade 80</div>
-                    <div class="shade90">Shade 90</div>
-                    <div class="shade95">Shade 95</div>
-                    <div class="shade100">Shade 100</div>
+                <div class="colorBlock neutral2">
+                    <div class="shade shade-15">Shade -15</div>
+                    <div class="shade shade-10">Shade -10</div>
+                    <div class="shade shade-5">Shade -5</div>
+                    <div class="shade shadeDefault">NEUTRAL1</div>
+                    <div class="shade shade5">Shade +5</div>
+                    <div class="shade shade10">Shade +10</div>
+                    <div class="shade shade15">Shade +15</div>
                 </div>
+                
 
             </div>
         </section>
@@ -244,201 +248,19 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
-    </div>
+        </section> -->
 </div>
 
 <style lang="scss">
-    .pageContentWrap {
-        padding: 1vw;
-        background: hsl(var(--neutralColor1) var(--l-90));
-        section {
-            background-color: hsl(var(--neutralColor1) var(--l-95));
-            color: hsl(var(--neutralColor1) var(--l-10));
-            padding: 4vw;
-            margin: 4vw;
-        }
-        .colorPalette {
-            .gridWrap {
-                display: grid;
-                grid-gap: 1rem;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                .colorBlock {
-                    display: grid;
-                    grid-template-rows: repeat(10, 4em);
-                    div {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                }
-                .primary {
-                    .shade10 {
-                        background: hsl(var(--primaryColor) var(--l-10));
-                        color: hsl(var(--primaryColor) var(--l-40));
-                    }
-                    .shade20 {
-                        background: hsl(var(--primaryColor) var(--l-20));
-                        color: hsl(var(--primaryColor) var(--l-50));
-                    }
-                    .shade30 {
-                        background: hsl(var(--primaryColor) var(--l-30));
-                        color: hsl(var(--primaryColor) var(--l-50));
-                    }
-                    .shade40 {
-                        background: hsl(var(--primaryColor) var(--l-40));
-                        color: hsl(var(--primaryColor) var(--l-80));
-                    }
-                    .shade50 {
-                        background: hsl(var(--primaryColor) var(--l-50));
-                        color: hsl(var(--primaryColor) var(--l-10));
-                    }
-                    .shade55 {
-                        background: hsl(var(--primaryColor) var(--l-55));
-                        color: hsl(var(--primaryColor) var(--l-10));
-                    }
-                    .shade80 {
-                        background: hsl(var(--primaryColor) var(--l-80));
-                        color: hsl(var(--primaryColor) var(--l-20));
-                    }
-                    .shade90 {
-                        background: hsl(var(--primaryColor) var(--l-90));
-                        color: hsl(var(--primaryColor) var(--l-30));
-                    }
-                    .shade95 {
-                        background: hsl(var(--primaryColor) var(--l-95));
-                        color: hsl(var(--primaryColor) var(--l-30));
-                    }
-                    .shade100 {
-                        background: hsl(var(--primaryColor) var(--l-100));
-                        color: hsl(var(--primaryColor) var(--l-10));
-                    }
-                }
-                .accent {
-                    .shade10 {
-                        background: hsl(var(--accentColor) var(--l-10));
-                        color: hsl(var(--accentColor) var(--l-40));
-                    }
-                    .shade20 {
-                        background: hsl(var(--accentColor) var(--l-20));
-                        color: hsl(var(--accentColor) var(--l-50));
-                    }
-                    .shade30 {
-                        background: hsl(var(--accentColor) var(--l-30));
-                        color: hsl(var(--accentColor) var(--l-50));
-                    }
-                    .shade40 {
-                        background: hsl(var(--accentColor) var(--l-40));
-                        color: hsl(var(--accentColor) var(--l-80));
-                    }
-                    .shade50 {
-                        background: hsl(var(--accentColor) var(--l-50));
-                        color: hsl(var(--accentColor) var(--l-10));
-                    }
-                    .shade55 {
-                        background: hsl(var(--accentColor) var(--l-55));
-                        color: hsl(var(--accentColor) var(--l-10));
-                    }
-                    .shade80 {
-                        background: hsl(var(--accentColor) var(--l-80));
-                        color: hsl(var(--accentColor) var(--l-20));
-                    }
-                    .shade90 {
-                        background: hsl(var(--accentColor) var(--l-90));
-                        color: hsl(var(--accentColor) var(--l-30));
-                    }
-                    .shade95 {
-                        background: hsl(var(--accentColor) var(--l-95));
-                        color: hsl(var(--accentColor) var(--l-30));
-                    }
-                    .shade100 {
-                        background: hsl(var(--accentColor) var(--l-100));
-                        color: hsl(var(--accentColor) var(--l-10));
-                    } 
-                }
-                .neutralLight {
-                    .shade10 {
-                        background: hsl(var(--neutralColor1) var(--l-10));
-                        color: hsl(var(--neutralColor1) var(--l-40));
-                    }
-                    .shade20 {
-                        background: hsl(var(--neutralColor1) var(--l-20));
-                        color: hsl(var(--neutralColor1) var(--l-50));
-                    }
-                    .shade30 {
-                        background: hsl(var(--neutralColor1) var(--l-30));
-                        color: hsl(var(--neutralColor1) var(--l-50));
-                    }
-                    .shade40 {
-                        background: hsl(var(--neutralColor1) var(--l-40));
-                        color: hsl(var(--neutralColor1) var(--l-80));
-                    }
-                    .shade50 {
-                        background: hsl(var(--neutralColor1) var(--l-50));
-                        color: hsl(var(--neutralColor1) var(--l-10));
-                    }
-                    .shade55 {
-                        background: hsl(var(--neutralColor1) var(--l-55));
-                        color: hsl(var(--neutralColor1) var(--l-10));
-                    }
-                    .shade80 {
-                        background: hsl(var(--neutralColor1) var(--l-80));
-                        color: hsl(var(--neutralColor1) var(--l-20));
-                    }
-                    .shade90 {
-                        background: hsl(var(--neutralColor1) var(--l-90));
-                        color: hsl(var(--neutralColor1) var(--l-30));
-                    }
-                    .shade95 {
-                        background: hsl(var(--neutralColor1) var(--l-95));
-                        color: hsl(var(--neutralColor1) var(--l-30));
-                    }
-                    .shade100 {
-                        background: hsl(var(--neutralColor1) var(--l-100));
-                        color: hsl(var(--neutralColor1) var(--l-10));
-                    }
-                }
-                .neutralDark {
-                    .shade10 {
-                        background: hsl(var(--neutralColor2) var(--l-10));
-                        color: hsl(var(--neutralColor2) var(--l-40));
-                    }
-                    .shade20 {
-                        background: hsl(var(--neutralColor2) var(--l-20));
-                        color: hsl(var(--neutralColor2) var(--l-50));
-                    }
-                    .shade30 {
-                        background: hsl(var(--neutralColor2) var(--l-30));
-                        color: hsl(var(--neutralColor2) var(--l-50));
-                    }
-                    .shade40 {
-                        background: hsl(var(--neutralColor2) var(--l-40));
-                        color: hsl(var(--neutralColor2) var(--l-80));
-                    }
-                    .shade50 {
-                        background: hsl(var(--neutralColor2) var(--l-50));
-                        color: hsl(var(--neutralColor2) var(--l-10));
-                    }
-                    .shade55 {
-                        background: hsl(var(--neutralColor2) var(--l-55));
-                        color: hsl(var(--neutralColor2) var(--l-10));
-                    }
-                    .shade80 {
-                        background: hsl(var(--neutralColor2) var(--l-80));
-                        color: hsl(var(--neutralColor2) var(--l-20));
-                    }
-                    .shade90 {
-                        background: hsl(var(--neutralColor2) var(--l-90));
-                        color: hsl(var(--neutralColor2) var(--l-30));
-                    }
-                    .shade95 {
-                        background: hsl(var(--neutralColor2) var(--l-95));
-                        color: hsl(var(--neutralColor2) var(--l-30));
-                    }
-                    .shade100 {
-                        background: hsl(var(--neutralColor2) var(--l-100));
-                        color: hsl(var(--neutralColor2) var(--l-10));
-                    }
+    .pageWrap {
+        .pageContentWrap {
+            section {
+                background-color: var(--primary);
+                border: 1px solid black;
+                padding: 4vw;
+                margin: 4vw;
+                &:nth-of-type(even) {
+                    --neutral1L: 
                 }
             }
         }
