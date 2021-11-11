@@ -16,7 +16,6 @@
     // Default mobile-first styles
     .logoWrap {
         padding: $space1;
-        background-color: $brandPrimary;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
