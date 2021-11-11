@@ -26,7 +26,7 @@
 <style lang="scss">
     // Default mobile-first styles
     .actionNav {
-        color: var(--theme-on-primary);
+        color: hsl(var(--primaryHS) var(--l-100));
         padding: 0;
         ul {
             list-style-type: none;
@@ -54,20 +54,19 @@
     // MOBILE IS VERY DIFFERENT > MEDIA QUERY
     @media screen and (max-width: ($mdScreen - 1) ) {
         .actionNav {
-            background-color: var(--theme-primary);
+            background-color: hsl(var(--primaryHS) var(--primaryL));
+            color: hsl(var(--primaryHS) var(--l-10));
             filter: drop-shadow(0 -1px 2px rgba(0,0,0,0.15));
             ul {
                 li {
-                    // border: 1px solid red;
                     height: 100%;
                     a {
                         font-size: var(--fontSizeSm);
-                        // border: 1px solid yellow;
                         i {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            position: absolute;
+                            // position: absolute;
                             padding: 0;
                             width: 30px;
                             height: 30px;
@@ -75,8 +74,7 @@
                             transition: all 0.3s ease-in;
                         }
                         span {
-                            position: absolute;
-                            bottom: 3px;
+                            padding-bottom: 3px;
                         }
                     }
                     &.active {
@@ -84,7 +82,7 @@
                             i {
                                 padding: $space1;
                                 transform: scale(1.5) translateY(-40%);
-                                background-color: var(--theme-accent);
+                                background-color: hsl(var(--accentHS) var(--accentL));
                                 border-radius: 50%;
                             }
                         }
@@ -103,7 +101,6 @@
                 li {
                     flex: unset;
                     a {
-                        // font-size: 1rem;
                         i {
                             display: none;
                         }
@@ -117,8 +114,7 @@
                     &.ghost {
                         a {
                             @include buttonGhost;
-                            border-color: var(--theme-on-image);
-                            color: var(--theme-on-image);
+                            color: hsl(var(--primaryHS) var(--l-100));
                         }
                     }
                 }
@@ -128,18 +124,15 @@
 
     @media screen and (min-width: $xlScreen) {
         .actionNav {
-            // border: 1px solid red;
             background-color: transparent;
             padding: 0 0 10% 10%;
             justify-content: flex-start;
             ul {
-                // border: 1px solid blue;
                 justify-content: flex-start;
                 gap: $space1;
                 flex: unset;
                 li {
                     a {
-                        // font-size: 1rem;
                         i {
                             display: none;
                         }
@@ -153,7 +146,6 @@
                     &.ghost {
                         a {
                             @include buttonGhost;
-                            border-color: var(--theme-on-primary);
                         }
                     }
                 }

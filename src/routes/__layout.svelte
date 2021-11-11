@@ -38,9 +38,9 @@
     .navColor {
         grid-row: 1;
         grid-column: 1 / span 2;
-        background-color: var(--theme-primary);
+        background-color: hsl(var(--primaryHS) var(--primaryL));
         z-index: 2;
-        @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
+        @media screen and (min-width: $mdScreen) and (max-width: $xlScreen - 1) {
             display: block;
             grid-column: 1 / span 3 ;
             grid-row: 1;
@@ -55,6 +55,7 @@
             opacity: 1;
             grid-column: 1;
             grid-row: 1 / span 3;
+            background-image: $brandGradient;
         }
     }
 
@@ -65,10 +66,9 @@
         width: 100%;
         height: 100%;
         grid-area: main;
-        // box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.15), inset 0 2px 3px rgba(0, 0, 0, 0.15);
         box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.15);
 
-        @media screen and (min-width: $mdScreen) and (max-width: $xlScreen) {
+        @media screen and (min-width: $mdScreen) and (max-width: $xlScreen - 1) {
             grid-column: 1 / span 3 ;
             grid-row: 1;
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0);
