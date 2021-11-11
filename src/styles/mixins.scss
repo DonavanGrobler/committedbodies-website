@@ -24,23 +24,23 @@
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 @mixin buttonPrimary {
-    border: 1px solid var(--theme-accent);
-    background: var(--theme-accent);
-    color: var(--theme-on-accent);
+    border: 1px solid hsl(var(--accentHS) var(--accentL));
+    background-color: hsl(var(--accentHS) var(--accentL));
+    color: hsl(var(--accentHS) var(--L-10));
     &:hover {
-        border: 1px solid var(--theme-accent2);
-        background: var(--theme-accent2);
-        color: var(--theme-on-accent2);
+        border: 1px solid hsl(var(--neutral2HS) var(--neutral2L));
+        background: hsl(var(--neutral2HS) var(--neutral2L));
+        color: hsl(var(--accentHS) var(--l-90));
         box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
     }
 }
 @mixin buttonGhost {
   // Border color and font color specified in css
-    border: 1px solid;
+    border: 1px solid currentColor;
     background: transparent;
-    color: inherit;
+    color: currentColor;
     &:hover {
-      color: inherit;
+      color: currentColor;
       box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
     }
 }
