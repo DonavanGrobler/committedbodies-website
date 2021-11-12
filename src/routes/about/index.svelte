@@ -13,7 +13,7 @@
                 What can I do with this color?
             </div>
         </section>
-        <section>
+        <section class="dark">
             <h1>TESTING 2</h1>
             <div>
                 What can I do with this color?
