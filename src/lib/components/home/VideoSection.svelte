@@ -41,7 +41,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: $brandGradient;
+            background: var(--brandGradient);
             opacity: 0.8;
             z-index:1;
         }
@@ -92,7 +92,7 @@
                     text-align: center;
                     margin-top: 0;
                     margin-bottom: 0.5em;
-                    color: var(--theme-on-image);
+                    color: hsl(var(--primaryHS) var(--l-10));
                     max-width: 16ch;
                 }
             }

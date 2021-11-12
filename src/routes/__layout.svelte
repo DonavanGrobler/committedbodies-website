@@ -55,7 +55,7 @@
             opacity: 1;
             grid-column: 1;
             grid-row: 1 / span 3;
-            background-image: $brandGradient;
+            background-image: var(--brandGradient);
         }
     }
 

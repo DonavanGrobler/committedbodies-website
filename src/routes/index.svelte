@@ -45,7 +45,7 @@
 <style lang="scss">
     .hero {
         height: 100%;
-        background-image: $brandGradient;
+        background-image: var(--brandGradient);
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -20,7 +20,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: $brandGradient;
+        background-image: var(--brandGradient);
         .titleWrap {
             padding-bottom: 120px;
             z-index: 3;
