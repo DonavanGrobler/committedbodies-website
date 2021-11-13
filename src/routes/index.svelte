@@ -50,6 +50,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 2vw 0;
         :global(svg){
             height: 100%;
             width: auto;
