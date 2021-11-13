@@ -116,7 +116,6 @@
                     &.ghost {
                         a {
                             @include buttonGhost;
-                            // color: hsl(var(--primaryHS) var(--l-100));
                         }
                     }
                 }
@@ -161,4 +160,22 @@
             }
         }
     }
+
+    // Dark theme has a different background color
+	:global(.dark) {
+		.actionNav {
+			color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength1));
+			&.scrolled {
+				color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength1));
+			}
+            @media screen and (max-width: ($mdScreen - 1) ) {
+                background-color: hsl(var(--accentAltHS) var(--accentAltL));
+                .active {
+                    a {
+                        color: hsl(var(--onAccent) / var(--onAccentStrength3));
+                    }
+                }
+            }
+		}
+	}
 </style>

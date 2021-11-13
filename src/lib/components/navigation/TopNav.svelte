@@ -83,6 +83,16 @@
 			}
 		}
 	}
+
+	// Dark theme has a different background color
+	:global(.dark) {
+		.topNav {
+			color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength1));
+			&.scrolled {
+				color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength1));
+			}
+		}
+	}
 	
 	// Responsive styles
 	// Remove padding from really small screens

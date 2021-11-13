@@ -60,6 +60,17 @@
             background-image: var(--brandGradient);
         }
     }
+    // The brand color is too bright for a dark theme nav
+    :global(.dark) {
+        .navColor {
+            background-color: hsl(var(--accentAltHS) var(--accentAltL));
+        }
+    }
+
+
+
+
+
 
     // Little hack to make a shadow nav elements.
     .shadow {

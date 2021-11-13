@@ -35,7 +35,7 @@ html {
 	height: 100%;
 }
 body {
-	background-color: hsl(var(--neutral1HS) var(--neutral1L));
+	background-color: hsl(var(--neutralHS) var(--neutralL));
 }
 
 
@@ -322,6 +322,7 @@ body {
 						--onImageStrength3: 1; //No transparency
 
 						// PRIMARY BRAND COLOR : HS values and lightness for font
+						// TODO: Change to opacity for font?????
 						--primaryHS: 77 59%;
 						--primaryL: 55%;
 						--onPrimary: 77 59%;
@@ -330,15 +331,36 @@ body {
 						--onPrimaryStrength1: 10%;
 						--onPrimaryStrength2: 5%;
 						--onPrimaryStrength3: 0%;
-						
-						
+
+						// ACCENT COLOR : uses opacity for font
 						--accentHS: 22 98%;
 						--accentL: 55%;
-						--accent2HS: 0 1%;
-						--accent2HS: 17%;
-						
-						--neutral1HS: 49 41%;
-						--neutral1L: 90%;
+						--onAccent: 100 100% 100%;
+						--onAccentStrength-1: 0.7;
+						--onAccentStrength0: 0.85; //Base
+						--onAccentStrength1: 0.9;
+						--onAccentStrength2: 0.95;
+						--onAccentStrength3: 1; //No transparency
+
+						// ALTERNATIVE ACCENT COLOR : uses opacity for font
+						--accentAltHS: 0 1%;
+						--accentAltL: 17%;
+						--onAccentAlt: 100 100% 100%;
+						--onAccentAltStrength-1: 0.3;
+						--onAccentAltStrength0: 0.4; //Base
+						--onAccentAltStrength1: 0.5;
+						--onAccentAltStrength2: 0.6;
+						--onAccentAltStrength3: 0.7; //No transparency
+
+						// NEUTRAL COLOR : uses opacity for font
+						--neutralHS: 49 41%;
+						--neutralL: 90%;
+						--onNeutral: 0 0% 0%;
+						--onNeutralStrength-1: 0.6;
+						--onNeutralStrength0: 0.75; //Base
+						--onNeutralStrength1: 0.85;
+						--onNeutralStrength2: 0.95;
+						--onNeutralStrength3: 1; //No transparency
 						
 						// Shade lightness
 						--l-0: 0%;
@@ -372,20 +394,45 @@ body {
 						--onImageStrength2: 0.95;
 						--onImageStrength3: 1; //No transparency
 						
-						// PRIMARY COLOR : HS values and lightness for font
+						// PRIMARY BRAND COLOR : HS values and lightness for font
 						--primaryHS: 77 59%;
-						--primaryL: 50%; //Slightly darker
+						--primaryL: 55%;
 						--onPrimary: 77 59%;
-						--onPrimaryStrength-1: 65%;
-						--onPrimaryStrength0: 75%; //Base
-						--onPrimaryStrength1: 80%;
-						--onPrimaryStrength2: 85%;
-						--onPrimaryStrength3: 90%;
+						--onPrimaryStrength-1: 30%;
+						--onPrimaryStrength0: 15%; //Base
+						--onPrimaryStrength1: 10%;
+						--onPrimaryStrength2: 5%;
+						--onPrimaryStrength3: 0%;
 
-
-
+						// ACCENT COLOR : uses opacity for font
 						--accentHS: 22 98%;
-						--accentL: 45%;
+						--accentL: 55%;
+						--onAccent: 100 100% 100%;
+						--onAccentStrength-1: 0.7;
+						--onAccentStrength0: 0.85; //Base
+						--onAccentStrength1: 0.9;
+						--onAccentStrength2: 0.95;
+						--onAccentStrength3: 1; //No transparency
+
+						// ALTERNATIVE ACCENT COLOR : uses opacity for font
+						--accentAltHS: 211 79%;
+						--accentAltL: 15%;
+						--onAccentAlt: 100 100% 100%;
+						--onAccentAltStrength-1: 0.3;
+						--onAccentAltStrength0: 0.4; //Base
+						--onAccentAltStrength1: 0.5;
+						--onAccentAltStrength2: 0.6;
+						--onAccentAltStrength3: 0.7; //No transparency
+
+						// NEUTRAL COLOR : uses opacity for font
+						--neutralHS: 210 83%;
+						--neutralL: 9%;
+						--onNeutral: 100 100% 100%;
+						--onNeutralStrength-1: 0.6;
+						--onNeutralStrength0: 0.75; //Base
+						--onNeutralStrength1: 0.85;
+						--onNeutralStrength2: 0.95;
+						--onNeutralStrength3: 1; //No transparency
 						
 						
 						
