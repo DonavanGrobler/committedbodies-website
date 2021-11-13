@@ -91,6 +91,12 @@
 			&.scrolled {
 				color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength1));
 			}
+			@media screen and (min-width: $xlScreen) {
+				color: hsl(var(--onGradient) / var(--onGradientStrength0));
+				&.scrolled {
+					color: hsl(var(--onGradient) / var(--onGradientStrength0));
+				}
+			}
 		}
 	}
 	
@@ -139,7 +145,7 @@
 					a.LinkLevel1 {
 						font-size: var(--fontSizeH5);
 						font-weight: 300;
-						color: hsl(var(--onGradient) / var(--onGradientStrength3));
+						color: hsl(var(--onGradient) / var(--onGradientStrength1));
 						padding: 0;
 						transform-origin: left center;
 					}
@@ -153,7 +159,7 @@
 							li {
 								margin-bottom: 0;
 								a {
-									font-weight: 300;
+									font-weight: 200;
 									padding: 0;
 									transform-origin: left center;
 								}
