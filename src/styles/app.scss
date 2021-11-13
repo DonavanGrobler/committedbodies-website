@@ -27,342 +27,394 @@
 
 // ---1. RESET
 *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 html {
-    height: 100%;
+	height: 100%;
 }
 body {
-    background-color: hsl(var(--neutral1HS) var(--neutral1L));
+	background-color: hsl(var(--neutral1HS) var(--neutral1L));
 }
 
 
 // ---2. LAYOUT
 body {
-    height: 100%;
-    max-width: 100vw;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    grid-template-rows: 48px 1fr 48px;
-    grid-template-areas:
-    "logo topNav"
-    "main main"
-    "actionNav actionNav";
-    @media screen and (min-width: $mdScreen) {
-        grid-template-columns: 1fr auto 1fr;
-        grid-template-rows: auto 1fr;
-        grid-template-areas:
-        "logo topNav actionNav"
-        "main main main";
-    }
-    @media screen and (min-width: $xlScreen) {
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: 15vh 1fr auto;
-        grid-template-areas:
-        "logo main"
-        "topNav main"
-        "actionNav main";
-    }
-    .logoWrap {
-        grid-area: logo;
-        z-index: 1000;
-    }
-    nav.topNav {
-        grid-area: topNav;
-        z-index: 1000;
-    }
-    nav.actionNav {
-        grid-area: actionNav;
-        z-index: 1000;
-    }
-    nav.overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 2000;
-        display: none;
-    }
-    main {
-        // border: 10px solid red;
-        position: relative;
-        overflow-y: scroll;
-        height: 100%;
-        grid-area: main;
-        z-index: 1;
-        // On normal desktop sizes we want the top nav to overlay the main content
-        // so that we can do cool stuff with transparency, height and shadow
-        @media screen and (min-width: $mdScreen) and (max-width: ($xlScreen - 1)) {
-            grid-column: 1 / span 3 ;
-            grid-row: 1 / span 2;
-        }
-    }
+	height: 100%;
+	max-width: 100vw;
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	grid-template-rows: 48px 1fr 48px;
+	grid-template-areas:
+	"logo topNav"
+	"main main"
+	"actionNav actionNav";
+	@media screen and (min-width: $mdScreen) {
+		grid-template-columns: 1fr auto 1fr;
+		grid-template-rows: auto 1fr;
+		grid-template-areas:
+		"logo topNav actionNav"
+		"main main main";
+	}
+	@media screen and (min-width: $xlScreen) {
+		grid-template-columns: 1fr 3fr;
+		grid-template-rows: 15vh 1fr auto;
+		grid-template-areas:
+		"logo main"
+		"topNav main"
+		"actionNav main";
+	}
+	.logoWrap {
+		grid-area: logo;
+		z-index: 1000;
+	}
+	nav.topNav {
+		grid-area: topNav;
+		z-index: 1000;
+	}
+	nav.actionNav {
+		grid-area: actionNav;
+		z-index: 1000;
+	}
+	nav.overlay {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 2000;
+		display: none;
+	}
+	main {
+		// border: 10px solid red;
+		position: relative;
+		overflow-y: scroll;
+		height: 100%;
+		grid-area: main;
+		z-index: 1;
+		// On normal desktop sizes we want the top nav to overlay the main content
+		// so that we can do cool stuff with transparency, height and shadow
+		@media screen and (min-width: $mdScreen) and (max-width: ($xlScreen - 1)) {
+			grid-column: 1 / span 3 ;
+			grid-row: 1 / span 2;
+		}
+	}
 }
 
 // ---3. HELPER CLASSES
 body {
-    // Hide stuff at various screen sizes
-    @media screen and (max-width: ($mdScreen - 1)) {
-        .hideSM {
-            display: none;
-        }
-    }
-    @media screen and (min-width: $mdScreen) and (max-width: ($xlScreen - 1)){
-        .hideMD {
-            display: none;
-        }
-    }
-    @media screen and (min-width: $xlScreen){
-        .hideLG {
-            display: none;
-        }
-    }
-    // Remove top and bottom margins for first and last elements in container
-    .removeTopBottom {
-        * > :first-child {
-            margin-top: 0;
-        }
-        * > :last-child {
-            margin-bottom: 0;
-        }
-    }
-    // TODO: remove these! It's easy enough to put the theme color vars in coponents
-    // .theme-on-primary {
-    //     color: var(--theme-on-primary);
-    // }
-    // .theme-on-accent {
-    //     color: var(--theme-on-accent);
-    // }
-    // .theme-on-image {
-    //     color: var(--theme-on-image);
-    // }
-    // .background2 {
-    //     background: var(--theme-background2);
-    //     color: var(--theme-on-background2);
-    // }
-    // .background {
-    //     background: var(--theme-background);
-    //     color: var(--theme-on-background);
-    // }
-}
+	// Hide stuff at various screen sizes
+	@media screen and (max-width: ($mdScreen - 1)) {
+		.hideSM {
+			display: none;
+		}
+	}
+	@media screen and (min-width: $mdScreen) and (max-width: ($xlScreen - 1)){
+		.hideMD {
+			display: none;
+		}
+	}
+	@media screen and (min-width: $xlScreen){
+		.hideLG {
+			display: none;
+		}
+	}
+	// Remove top and bottom margins for first and last elements in container
+	.removeTopBottom {
+		* > :first-child {
+			margin-top: 0;
+		}
+		* > :last-child {
+			margin-bottom: 0;
+		}
+	}
+	// TODO: remove these! It's easy enough to put the theme color vars in coponents
+	// .theme-on-primary {
+		//     color: var(--theme-on-primary);
+		// }
+		// .theme-on-accent {
+			//     color: var(--theme-on-accent);
+			// }
+			// .theme-on-image {
+				//     color: var(--theme-on-image);
+				// }
+				// .background2 {
+					//     background: var(--theme-background2);
+					//     color: var(--theme-on-background2);
+					// }
+					// .background {
+						//     background: var(--theme-background);
+						//     color: var(--theme-on-background);
+						// }
+					}
+					
+					// ---4. TYPOGRAPHY
+					:root {
+						// font-family: $font_brand;
+						font-family: Arial, Helvetica, sans-serif;
+						font-size: var(--fontSizeMd);
+						line-height: 1.6;
+					}
+					
+					// Font Sizes and font-spacing
+					body {
+						
+						h1, .h1 {
+							font-size: var(--fontSizeH1);
+							line-height: 1.1;
+							margin: 1.5em 0 0 0;
+						}
+						h2, .h2 {
+							font-size: var(--fontSizeH2);
+							line-height: 1.2;
+							margin: 1.5em 0 0 0;
+						}
+						h3, .h3 {
+							font-size: var(--fontSizeH3);
+							line-height: 1.3;
+							margin: 1.5em 0 0 0;
+						}
+						h4, .h4 {
+							font-size: var(--fontSizeH4);
+							line-height: 1.6;
+							margin: 1.5em 0 0 0;
+						}
+						h5, .h5 {
+							font-size: var(--fontSizeH5);
+							line-height: 1.6;
+							margin: 1.5em 0 0 0;
+						}
+						h6, .h6 {
+							font-size: var(--fontSizeH6);
+							line-height: 1.6;
+							margin: 1.5em 0 0 0;
+						}
+						p {
+							line-height: 1.6;
+							font-size: var(--fontSizeMd);
+							margin: 1.5em 0 1em 0;
+						}
+						li {
+							line-height: 1.7;
+							font-size: var(--fontSizeMd);
+							margin: 0;
+						}
+					}
+					
+					// Typography Styling (Targeting inner copy)
+					body {
+						main {
+							.pageWrap {
+								.pageContentWrap {
+									a:not(.button) {
+										// Defaults to theme color on surface
+										display: inline-block;
+										text-decoration: none;
+										color: var(--theme-link-on-surface);
+										transition: all 0.3s ease-in;
+										&:hover {
+											text-decoration: underline;
+										}
+									}
+									ul {
+										list-style-type: none;
+										margin-bottom: 1em;
+										li {
+											display: grid;
+											justify-content: flex-start;
+											align-items: flex-start;
+											grid-template-columns: 1em 1fr;
+											grid-gap: 1em;
+											&:before {
+												content: "";
+												width: 100%;
+												height: 0.4em;
+												background-color: var(--theme-primary);
+												display: block;
+												margin: 0.5em 1em 0 0;
+											}
+										}
+									}
+									ol {
+										list-style-type: none;
+										margin-bottom: 1em;
+										counter-reset: section;
+										position: relative;
+										li {
+											padding-left: 0;
+											margin-left: 0;
+											display: grid;
+											grid-template-columns: 3em 1fr;
+											justify-content: flex-start;
+											align-items: flex-start;
+											position: relative;
+											// border: 1px solid red;
+											grid-gap: 1em;
+											padding: 0 0 1em 0;
+											&:after {
+												grid-column: 1;
+												grid-row: 1;
+												counter-increment: section;
+												content: counter(section);
+												width: 100%;
+												aspect-ratio: 1/1;
+												font-size: 1.5em;
+												display: flex;
+												justify-content: center;
+												align-items: center;
+												background-color: var(--theme-surface);
+												border: 3px solid var(--theme-primary);
+												border-radius: 50%;
+												z-index: 2;
+												margin-top: -0.3em;
+												overflow: hidden;
+												font-weight: 600;
+											}
+											&:before {
+												font-size: 1em;
+												align-self: center;
+												content: "";
+												position: absolute;
+												left: calc(1.5em - 1.5px);
+												width: 3px;
+												top: 1em;
+												bottom: 0;
+												background-color: var(--theme-primary);
+												grid-column: 1;
+												grid-row: 1;
+											}
+											&:last-of-type {
+												&:before {
+													bottom: 1em;
+												}
+											}
+										}
+									}
+									hr {
+										margin: 1em 0;
+									}
+								}
+							}
+						}
+					}
+					
+					// ---5. THEME VARIABLES
+					//  WITH DEFAULT LIGHTNESS and SHADE LIGHTNESS VARS
+					// CSS vars: So we can dynamically adjust in response to light/dark theme
+					
+					.light {
+						// GRADIENT: uses opacity for font
+						--brandGradient: #{$brandGradient};
+						--onGradient: 0 0% 0%;
+						--onGradientStrength-1: 0.6;
+						--onGradientStrength0: 0.75; //Base
+						--onGradientStrength1: 0.85;
+						--onGradientStrength2: 0.95;
+						--onGradientStrength3: 1; //No transparency
 
-// ---4. TYPOGRAPHY
-:root {
-    // font-family: $font_brand;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: var(--fontSizeMd);
-    line-height: 1.6;
-}
+						// ONIMAGE: Font color over an image uses opacity
+						--onImage: 100 100% 100%;
+						--onImageStrength-1: 0.6;
+						--onImageStrength0: 0.75; //Base
+						--onImageStrength1: 0.85;
+						--onImageStrength2: 0.95;
+						--onImageStrength3: 1; //No transparency
 
-// Font Sizes and font-spacing
-body {
+						// PRIMARY BRAND COLOR : HS values and lightness for font
+						--primaryHS: 77 59%;
+						--primaryL: 55%;
+						--onPrimary: 77 59%;
+						--onPrimaryStrength-1: 30%;
+						--onPrimaryStrength0: 15%; //Base
+						--onPrimaryStrength1: 10%;
+						--onPrimaryStrength2: 5%;
+						--onPrimaryStrength3: 0%;
+						
+						
+						--accentHS: 22 98%;
+						--accentL: 55%;
+						--accent2HS: 0 1%;
+						--accent2HS: 17%;
+						
+						--neutral1HS: 49 41%;
+						--neutral1L: 90%;
+						
+						// Shade lightness
+						--l-0: 0%;
+						--l-10: 10%;
+						--l-20: 20%;
+						--l-30: 30%;
+						--l-40: 40%;
+						--l-50: 50%;
+						--l-60: 60%;
+						--l-70: 70%;
+						--l-80: 80%;
+						--l-90: 90%;
+						--l-100: 100%;
+					}
+					
+					.dark {
+						// GRADIENT: uses opacity for font
+						--brandGradient: #{$brandGradientDark};
+						--onGradient: 100 100% 100%;
+						--onGradientStrength-1: 0.3;
+						--onGradientStrength0: 0.4; //Base
+						--onGradientStrength1: 0.5;
+						--onGradientStrength2: 0.6;
+						--onGradientStrength3: 0.7; //No transparency
 
-    h1, .h1 {
-        font-size: var(--fontSizeH1);
-        line-height: 1.1;
-        margin: 1.5em 0 0 0;
-    }
-    h2, .h2 {
-        font-size: var(--fontSizeH2);
-        line-height: 1.2;
-        margin: 1.5em 0 0 0;
-    }
-    h3, .h3 {
-        font-size: var(--fontSizeH3);
-        line-height: 1.3;
-        margin: 1.5em 0 0 0;
-    }
-    h4, .h4 {
-        font-size: var(--fontSizeH4);
-        line-height: 1.6;
-        margin: 1.5em 0 0 0;
-    }
-    h5, .h5 {
-        font-size: var(--fontSizeH5);
-        line-height: 1.6;
-        margin: 1.5em 0 0 0;
-    }
-    h6, .h6 {
-        font-size: var(--fontSizeH6);
-        line-height: 1.6;
-        margin: 1.5em 0 0 0;
-    }
-    p {
-        line-height: 1.6;
-        font-size: var(--fontSizeMd);
-        margin: 1.5em 0 1em 0;
-    }
-    li {
-        line-height: 1.7;
-        font-size: var(--fontSizeMd);
-        margin: 0;
-    }
-}
+						// ONIMAGE: Font color over an image uses opacity
+						--onImage: 100 100% 100%;
+						--onImageStrength-1: 0.6;
+						--onImageStrength0: 0.75; //Base
+						--onImageStrength1: 0.85;
+						--onImageStrength2: 0.95;
+						--onImageStrength3: 1; //No transparency
+						
+						// PRIMARY COLOR : HS values and lightness for font
+						--primaryHS: 77 59%;
+						--primaryL: 50%; //Slightly darker
+						--onPrimary: 77 59%;
+						--onPrimaryStrength-1: 65%;
+						--onPrimaryStrength0: 75%; //Base
+						--onPrimaryStrength1: 80%;
+						--onPrimaryStrength2: 85%;
+						--onPrimaryStrength3: 90%;
 
-// Typography Styling (Targeting inner copy)
-body {
-    main {
-        .pageWrap {
-            .pageContentWrap {
-                a:not(.button) {
-                    // Defaults to theme color on surface
-                    display: inline-block;
-                    text-decoration: none;
-                    color: var(--theme-link-on-surface);
-                    transition: all 0.3s ease-in;
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-                ul {
-                    list-style-type: none;
-                    margin-bottom: 1em;
-                    li {
-                        display: grid;
-                        justify-content: flex-start;
-                        align-items: flex-start;
-                        grid-template-columns: 1em 1fr;
-                        grid-gap: 1em;
-                        &:before {
-                            content: "";
-                            width: 100%;
-                            height: 0.4em;
-                            background-color: var(--theme-primary);
-                            display: block;
-                            margin: 0.5em 1em 0 0;
-                        }
-                    }
-                }
-                ol {
-                    list-style-type: none;
-                    margin-bottom: 1em;
-                    counter-reset: section;
-                    position: relative;
-                    li {
-                        padding-left: 0;
-                        margin-left: 0;
-                        display: grid;
-                        grid-template-columns: 3em 1fr;
-                        justify-content: flex-start;
-                        align-items: flex-start;
-                        position: relative;
-                        // border: 1px solid red;
-                        grid-gap: 1em;
-                        padding: 0 0 1em 0;
-                        &:after {
-                            grid-column: 1;
-                            grid-row: 1;
-                            counter-increment: section;
-                            content: counter(section);
-                            width: 100%;
-                            aspect-ratio: 1/1;
-                            font-size: 1.5em;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            background-color: var(--theme-surface);
-                            border: 3px solid var(--theme-primary);
-                            border-radius: 50%;
-                            z-index: 2;
-                            margin-top: -0.3em;
-                            overflow: hidden;
-                            font-weight: 600;
-                        }
-                        &:before {
-                            font-size: 1em;
-                            align-self: center;
-                            content: "";
-                            position: absolute;
-                            left: calc(1.5em - 1.5px);
-                            width: 3px;
-                            top: 1em;
-                            bottom: 0;
-                            background-color: var(--theme-primary);
-                            grid-column: 1;
-                            grid-row: 1;
-                        }
-                        &:last-of-type {
-                            &:before {
-                                bottom: 1em;
-                            }
-                        }
-                    }
-                }
-                hr {
-                    margin: 1em 0;
-                }
-            }
-        }
-    }
-}
 
-// ---5. THEME VARIABLES
-//  WITH DEFAULT LIGHTNESS and SHADE LIGHTNESS VARS
-// CSS vars: So we can dynamically adjust in response to light/dark theme
 
-.light {
-  // HS values and default lightness
-  --brandGradient: #{$brandGradient};
-  --primaryHS: 77 59%;
-  --primaryL: 55%; 
-  --accentHS: 22 98%;
-  --accentL: 55%;
-  --neutral1HS: 49 41%;
-  --neutral1L: 90%;
-  --neutral2HS: 0 1%;
-  --neutral2L: 17%;
-  
-  
-  
-  // Shade lightness
-  --l-0: 0%;
-  --l-10: 10%;
-  --l-20: 20%;
-  --l-30: 30%;
-  --l-40: 40%;
-  --l-50: 50%;
-  --l-60: 60%;
-  --l-70: 70%;
-  --l-80: 80%;
-  --l-90: 90%;
-  --l-100: 100%;
-}
-
-.dark {
-  // reduced lightness 
-  --brandGradient: #{$brandGradientDark};
-  --primaryHS: 77 59%;
-  --primaryL: 45%; 
-  --accentHS: 22 98%;
-  --accentL: 45%;
-  // Switch neutral
-  --neutral2HS: 49 41%;
-  --neutral2L: 90%;
-  --neutral1HS: 0 1%;
-  --neutral1L: 17%;
-  // Shade lightness inverted
-  --l-100: 0%;
-  --l-90: 10%;
-  --l-80: 20%;
-  --l-70: 30%;
-  --l-60: 40%;
-  --l-50: 50%;
-  --l-40: 60%;
-  --l-30: 70%;
-  --l-20: 80%;
-  --l-10: 90%;
-  --l-0: 100%;
-}
-
-// ---5. BUTTONS
-// Using mixins - we need to research pros=cons of mixins in sveltekit
-
-// ---6. MEDIA
-body {
-    img, video {
-        max-width: 100%;
-    }
-}
+						--accentHS: 22 98%;
+						--accentL: 45%;
+						
+						
+						
+						
+						// Switch neutral
+						--neutral2HS: 49 41%;
+						--neutral2L: 90%;
+						--neutral1HS: 0 1%;
+						--neutral1L: 17%;
+						// Shade lightness inverted
+						--l-100: 0%;
+						--l-90: 10%;
+						--l-80: 20%;
+						--l-70: 30%;
+						--l-60: 40%;
+						--l-50: 50%;
+						--l-40: 60%;
+						--l-30: 70%;
+						--l-20: 80%;
+						--l-10: 90%;
+						--l-0: 100%;
+					}
+					
+					// ---5. BUTTONS
+					// Using mixins - we need to research pros=cons of mixins in sveltekit
+					
+					// ---6. MEDIA
+					body {
+						img, video {
+							max-width: 100%;
+						}
+					}

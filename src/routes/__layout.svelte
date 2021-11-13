@@ -22,8 +22,10 @@
 <!-- Navigation Components -->
 <LogoWrap y="{y}"></LogoWrap>
 <TopNav y="{y}"></TopNav>
-<ActionNav></ActionNav>
-<Overlay></Overlay>
+<ActionNav y="{y}"></ActionNav>
+
+<!-- Modal -->
+<Overlay></Overlay> 
 
 <div class="navColor {y > 80 ? 'scrolled' : ''}"></div>
 <div class="shadow {y > 80 ? 'scrolled' : ''}"></div>
@@ -47,7 +49,7 @@
             opacity:0;
             transition: all 0.5s linear;
             &.scrolled {
-                opacity: 1;
+                opacity: 0.7;
             }
         }
         @media screen and (min-width: $xlScreen) {
@@ -74,6 +76,7 @@
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0);
             transition: all 0.5s linear;
             &.scrolled {
+                backdrop-filter: blur(10px);
                 box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
             }
         }

@@ -2,9 +2,10 @@
     import { page } from '$app/stores';
     import navigation from '$lib/data/navigation.json';
     let actionNavList = navigation.actionNav;
+    export let y;
 </script>
 
-<nav class="actionNav" areia-label="Action navigation">
+<nav class="actionNav {y > 80 ? 'scrolled' : ''}" aria-label="Secondary Navigation - take action!">
     <ul>
         {#each actionNavList as item (item)}
             <li class="{item.class}" class:active={item.link === $page.path}>
@@ -27,6 +28,7 @@
     // Default mobile-first styles
     .actionNav {
         color: hsl(var(--primaryHS) var(--l-100));
+        transition: all 0.3s linear;
         padding: 0;
         ul {
             list-style-type: none;
@@ -55,7 +57,7 @@
     @media screen and (max-width: ($mdScreen - 1) ) {
         .actionNav {
             background-color: hsl(var(--primaryHS) var(--primaryL));
-            color: hsl(var(--primaryHS) var(--l-10));
+            color: hsl(var(--primaryHS) var(--onPrimaryStrength2));
             filter: drop-shadow(0 -1px 2px rgba(0,0,0,0.15));
             ul {
                 li {
@@ -92,6 +94,7 @@
     }
     @media screen and (min-width: $mdScreen) {
         .actionNav {
+            color: hsl(var(--onImage) / var(--onImageStrength0));
             background-color: transparent;
             padding: 0 $space1;
             ul {
@@ -113,11 +116,14 @@
                     &.ghost {
                         a {
                             @include buttonGhost;
-                            color: hsl(var(--primaryHS) var(--l-100));
+                            // color: hsl(var(--primaryHS) var(--l-100));
                         }
                     }
                 }
             }
+            &.scrolled {
+				color: hsl(var(--primaryHS) var(--onPrimaryStrength2));
+			}
         }
     }
 
@@ -126,6 +132,10 @@
             background-color: transparent;
             padding: 0 0 10% 10%;
             justify-content: flex-start;
+            color: hsl(var(--onGradient) / var(--onGradientStrength0));
+            &.scrolled {
+				color: hsl(var(--onGradient) / var(--onGradientStrength0));
+			}
             ul {
                 justify-content: flex-start;
                 gap: $space1;
