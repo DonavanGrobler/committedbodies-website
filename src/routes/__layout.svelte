@@ -64,6 +64,9 @@
     :global(.dark) {
         .navColor {
             background-color: hsl(var(--accentAltHS) var(--accentAltL));
+            @media screen and (min-width: $xlScreen) {
+                background-image: none;
+            }
         }
     }
 
