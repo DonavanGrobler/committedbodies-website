@@ -380,11 +380,11 @@ body {
 						// GRADIENT: uses opacity for font
 						--brandGradient: #{$brandGradientDark};
 						--onGradient: 100 100% 100%;
-						--onGradientStrength-1: 0.3;
-						--onGradientStrength0: 0.4; //Base
-						--onGradientStrength1: 0.5;
-						--onGradientStrength2: 0.6;
-						--onGradientStrength3: 0.7; //No transparency
+						--onGradientStrength-1: 0.2;
+						--onGradientStrength0: 0.20; //Base
+						--onGradientStrength1: 0.35;
+						--onGradientStrength2: 0.45;
+						--onGradientStrength3: 0.55; //No transparency
 
 						// ONIMAGE: Font color over an image uses opacity
 						--onImage: 100 100% 100%;
