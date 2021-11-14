@@ -87,14 +87,17 @@
 	// Dark theme has a different background color
 	:global(.dark) {
 		.topNav {
-			color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength1));
+			color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength0));
 			&.scrolled {
-				color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength1));
+				color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength0));
 			}
 			@media screen and (min-width: $xlScreen) {
-				color: hsl(var(--onGradient) / var(--onGradientStrength0));
+				color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength0));
 				&.scrolled {
-					color: hsl(var(--onGradient) / var(--onGradientStrength0));
+					color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength0));
+				}
+				a.LinkLevel1 {
+					color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength1));
 				}
 			}
 		}
