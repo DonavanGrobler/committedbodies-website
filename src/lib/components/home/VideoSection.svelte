@@ -68,7 +68,7 @@
                 svg {
                     height: 100%;
                     stroke-width: 4px;
-                    stroke: $brandAccent;
+                    stroke: hsl(var(--accentHS) var(--accentL));
                     position: absolute;
                     z-index: 1;
                     visibility: hidden;
@@ -92,7 +92,7 @@
                     text-align: center;
                     margin-top: 0;
                     margin-bottom: 0.5em;
-                    color: hsl(var(--primaryHS) var(--l-10));
+                    color: hsl(var(--onImage) / var(--onImageStrength2));
                     max-width: 16ch;
                 }
             }
