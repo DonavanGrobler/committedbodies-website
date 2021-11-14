@@ -377,7 +377,7 @@ body {
 					}
 					
 					.dark {
-						// GRADIENT: uses opacity for font
+						// DARK GRADIENT: uses opacity for font
 						--brandGradient: #{$brandGradientDark};
 						--onGradient: 100 100% 100%;
 						--onGradientStrength-1: 0.2;
@@ -386,7 +386,7 @@ body {
 						--onGradientStrength2: 0.45;
 						--onGradientStrength3: 0.55; //No transparency
 
-						// ONIMAGE: Font color over an image uses opacity
+						// DARK ONIMAGE: Font color over an image uses opacity
 						--onImage: 100 100% 100%;
 						--onImageStrength-1: 0.6;
 						--onImageStrength0: 0.75; //Base
@@ -394,7 +394,7 @@ body {
 						--onImageStrength2: 0.95;
 						--onImageStrength3: 1; //No transparency
 						
-						// PRIMARY BRAND COLOR : HS values and lightness for font
+						// DARK PRIMARY BRAND COLOR : HS values and lightness for font
 						--primaryHS: 77 59%;
 						--primaryL: 55%;
 						--onPrimary: 77 59%;
@@ -404,9 +404,9 @@ body {
 						--onPrimaryStrength2: 5%;
 						--onPrimaryStrength3: 0%;
 
-						// ACCENT COLOR : uses opacity for font
-						--accentHS: 22 98%;
-						--accentL: 55%;
+						// DARK ACCENT COLOR : uses opacity for font
+						--accentHS: 22 70%;
+						--accentL: 40%;
 						--onAccent: 100 100% 100%;
 						--onAccentStrength-1: 0.7;
 						--onAccentStrength0: 0.85; //Base
@@ -414,9 +414,9 @@ body {
 						--onAccentStrength2: 0.95;
 						--onAccentStrength3: 1; //No transparency
 
-						// ALTERNATIVE ACCENT COLOR : uses opacity for font
+						// DARK ALTERNATIVE ACCENT COLOR : uses opacity for font
 						--accentAltHS: 0 1%;
-						--accentAltL: 17%;
+						--accentAltL: 10%;
 						--onAccentAlt: 100 100% 100%;
 						--onAccentAltStrength-1: 0.3;
 						--onAccentAltStrength0: 0.4; //Base
@@ -424,36 +424,15 @@ body {
 						--onAccentAltStrength2: 0.6;
 						--onAccentAltStrength3: 0.7; //No transparency
 
-						// NEUTRAL COLOR : uses opacity for font
+						// DARK NEUTRAL COLOR : uses opacity for font
 						--neutralHS: 0 1%;
 						--neutralL: 23%;
 						--onNeutral: 100 100% 100%;
-						--onNeutralStrength-1: 0.6;
-						--onNeutralStrength0: 0.75; //Base
-						--onNeutralStrength1: 0.85;
-						--onNeutralStrength2: 0.95;
-						--onNeutralStrength3: 1; //No transparency
-						
-						
-						
-						
-						// Switch neutral
-						--neutral2HS: 49 41%;
-						--neutral2L: 90%;
-						--neutral1HS: 0 1%;
-						--neutral1L: 17%;
-						// Shade lightness inverted
-						--l-100: 0%;
-						--l-90: 10%;
-						--l-80: 20%;
-						--l-70: 30%;
-						--l-60: 40%;
-						--l-50: 50%;
-						--l-40: 60%;
-						--l-30: 70%;
-						--l-20: 80%;
-						--l-10: 90%;
-						--l-0: 100%;
+						--onNeutralStrength-1: 0.3;
+						--onNeutralStrength0: 0.4; //Base
+						--onNeutralStrength1: 0.5;
+						--onNeutralStrength2: 0.6;
+						--onNeutralStrength3: 0.7; //No transparency
 					}
 					
 					// ---5. BUTTONS
