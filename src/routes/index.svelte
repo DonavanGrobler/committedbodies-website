@@ -15,6 +15,10 @@
     let introSections = homePage.intro;
 </script>
 
+<svelte:head>
+	<title>Committed Bodies - Weight-loss gym in Benoni</title>
+</svelte:head>
+
 <!-- Intro: Hero logo -->
 <section class="hero">
     <AnimatedLogo></AnimatedLogo>
