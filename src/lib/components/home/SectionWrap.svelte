@@ -47,7 +47,7 @@
 			svg {
 				height: 100%;
 				stroke-width: 4px;
-				stroke: $brandAccent;
+				stroke:  hsl(var(--accentHS) var(--accentL));
 				position: absolute;
 			}
 			.number {
@@ -57,24 +57,26 @@
 				width: 100%;
 				aspect-ratio: 1 / 1;
 				border-radius: 50%;
-				background-color: $brandAccent;
+				background-color: hsl(var(--accentHS) var(--accentL));
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				font-weight: 900;
-				color: #ffffff;
+				color: hsl(var(--onAccent) / var(--onAccentStrength1));
 			}
 		}
 		.contentPrimary {
 			padding: 3vw;
+			color: hsl(var(--onNeutral) / var(--onNeutralStrength0));
 			h3 {
 				font-family: $font_boldEmphasis;
 				line-height: 1;
-				color: var(--theme-on-background2);
+				color: hsl(var(--onNeutral) / var(--onNeutralStrength3));
 			}
 			.subtitle {
 				font-family: $font_cursiveEmphasis;
 				margin-top: 1em;
+				color: hsl(var(--onNeutral) / var(--onNeutralStrength1));
 			}
 			.actionRow {
 				display: flex;
@@ -87,8 +89,11 @@
 					}
 					&.ghost {
 						@include buttonGhost;
-						border-color: var(--theme-accent);
-						color: var(--theme-on-background2);
+						border-color: hsl(var(--onNeutral) / var(--onNeutralStrength3));
+						color: hsl(var(--onNeutral) / var(--onNeutralStrength2));
+						&:hover {
+							color: hsl(var(--onNeutral) / var(--onNeutralStrength3));
+						}
 					}
 				}
 			}
