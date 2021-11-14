@@ -65,7 +65,7 @@
         .navColor {
             background-color: hsl(var(--accentAltHS) var(--accentAltL));
             @media screen and (min-width: $xlScreen) {
-                background-image: none;
+                background-image: linear-gradient(145deg, hsla(0, 0%, 100%, 0.141), transparent);
             }
         }
     }
