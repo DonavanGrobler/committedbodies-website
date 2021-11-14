@@ -30,11 +30,11 @@
 
 <style lang="scss">
 	section {
-		max-width: 70em;
-    	margin: 0 auto;
+		// max-width: 70em;
+    margin: 0 auto;
 		display: grid;
 		grid-template-columns: 4em 1fr;
-    	grid-template-areas: "numbers contentPrimary" "numbers contentSecondary";
+    grid-template-areas: "numbers contentPrimary" "numbers contentSecondary";
 		padding: 0;
 		.numbers {
 			position: relative;
