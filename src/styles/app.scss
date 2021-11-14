@@ -406,11 +406,11 @@ body {
 
 						// DARK ACCENT COLOR : uses opacity for font
 						--accentHS: 22 80%;
-						--accentL: 45%;
+						--accentL: 40%;
 						--onAccent: 100 100% 100%;
-						--onAccentStrength-1: 0.7;
-						--onAccentStrength0: 0.85; //Base
-						--onAccentStrength1: 0.9;
+						--onAccentStrength-1: 0.85;
+						--onAccentStrength0: 0.95; //Base
+						--onAccentStrength1: 0.95;
 						--onAccentStrength2: 0.95;
 						--onAccentStrength3: 1; //No transparency
 
@@ -418,21 +418,21 @@ body {
 						--accentAltHS: 0 1%;
 						--accentAltL: 10%;
 						--onAccentAlt: 100 100% 100%;
-						--onAccentAltStrength-1: 0.35;
-						--onAccentAltStrength0: 0.4; //Base
-						--onAccentAltStrength1: 0.5;
-						--onAccentAltStrength2: 0.6;
-						--onAccentAltStrength3: 0.7; //No transparency
+						--onAccentAltStrength-1: 0.45;
+						--onAccentAltStrength0: 0.47; //Base
+						--onAccentAltStrength1: 0.6;
+						--onAccentAltStrength2: 0.65;
+						--onAccentAltStrength3: 0.7;
 
 						// DARK NEUTRAL COLOR : uses opacity for font
 						--neutralHS: 0 1%;
 						--neutralL: 23%;
 						--onNeutral: 100 100% 100%;
 						--onNeutralStrength-1: 0.3;
-						--onNeutralStrength0: 0.4; //Base
-						--onNeutralStrength1: 0.5;
-						--onNeutralStrength2: 0.6;
-						--onNeutralStrength3: 0.7; //No transparency
+						--onNeutralStrength0: 0.6; //Base
+						--onNeutralStrength1: 0.7;
+						--onNeutralStrength2: 0.8;
+						--onNeutralStrength3: 0.9;
 					}
 					
 					// ---5. BUTTONS
