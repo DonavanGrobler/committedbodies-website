@@ -10,7 +10,7 @@
     </video>
     <div class="contentWrap">
         <header>
-            <h2 class="lookAtMeTitle h1">Your Journey starts now!</h2>
+            <h2 class="lookAtMeTitle">Your Journey starts now!</h2>
         </header>
         <div class="buttonWrap">
             <svg class="line" preserveAspectRatio="none" viewbox="-1 -1 6 800" width="6" height="800">
@@ -89,6 +89,7 @@
                 justify-content: center;
                 align-items: center;
                 .lookAtMeTitle {
+                    font-size: var(--fontSizeXXXL);
                     text-align: center;
                     margin-top: 0;
                     margin-bottom: 0.5em;
