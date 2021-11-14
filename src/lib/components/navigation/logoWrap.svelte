@@ -6,7 +6,7 @@
 <!-- Different logos so that scrolling animation only targets the md screen sizes -->
 <!-- TODO: class shoud not be sent to the svg - put a wrapper around the logo and add the class here -->
 <div class="logoWrap {y > 80 ? 'scrolled' : ''}">
-    <a href="/" alt="Go to home page">
+    <a href="/" aria-label="Go to home page">
         <Logo myClass="defaultLogo"></Logo>
         <Logo myClass="mdScreenLogo"></Logo>
     </a>
