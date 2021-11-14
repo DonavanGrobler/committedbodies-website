@@ -43,7 +43,7 @@ $font_cursiveEmphasis: 'Homemade Apple', cursive;
   --fontSizeH3: calc(var(--fontSizeH4) + var(--fontIncrement));
   --fontSizeH2: calc(var(--fontSizeH3) + var(--fontIncrement));
   --fontSizeH1: calc(var(--fontSizeH2) + var(--fontIncrement));
-  --fontSizeXXXL: calc(var(--fontSizeH1) + var(--fontIncrement));
+  --fontSizeXXXL: clamp(3rem, calc(5vw + 1rem), 6rem);
 }
 
 // ---4. BRAND COLORS FOR REFERENCE
