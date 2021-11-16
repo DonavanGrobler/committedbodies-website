@@ -1,6 +1,6 @@
 <script>
     import "../styles/app.scss";
-    // import { browser } from '$app/env'
+    import { browser } from '$app/env'
     import IconsCombined from "$lib/svg/icons/Icons_combined.svelte";
     import TopNav from "$lib/components/navigation/TopNav.svelte";
     import ActionNav from "$lib/components/navigation/ActionNav.svelte";
