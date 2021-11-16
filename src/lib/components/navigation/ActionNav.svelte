@@ -1,12 +1,16 @@
 <script>
     import { page } from '$app/stores';
     import navigation from '$lib/data/navigation.json';
+    import ThemeSwitcher from '$lib/components/ui-elements/ThemeSwitcher.svelte';
     let actionNavList = navigation.actionNav;
     export let y;
 </script>
 
 <nav class="actionNav {y > 80 ? 'scrolled' : ''}" aria-label="Secondary Navigation - take action!">
     <ul>
+        <li class="themeSwitchWrap">
+            <ThemeSwitcher></ThemeSwitcher>
+        </li>
         {#each actionNavList as item (item)}
             <li class="{item.class}" class:active={item.link === $page.path}>
                 <a href="{item.link}">

@@ -33,10 +33,6 @@ import ThemeSwitcher from '$lib/components/ui-elements/ThemeSwitcher.svelte';
         <!-- Jill's story -->
         <!-- <Intro {introSections}></Intro> -->
 
-        <section>
-            <ThemeSwitcher></ThemeSwitcher>
-        </section>
-
         <!-- Video Preview -->
         <VideoSection {introSections}></VideoSection>
 
