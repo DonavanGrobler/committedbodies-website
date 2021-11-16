@@ -1,26 +1,17 @@
-<!-- <script context="module">
-  import { browser } from '$app/env'
-</script> -->
-
 <script>
   import { browser } from '$app/env';
-  // import { onMount } from 'svelte';
   export let theme = 'dark';
   
   function classToggle() {
     var htmlTag = document.querySelector("html");
     console.log('New theme is ', theme);
-    // console.log('Curent theme is ', currentTheme);
     if (htmlTag) {
       var currentTheme = htmlTag.classList[0];
       htmlTag.classList.toggle(currentTheme);
       htmlTag.classList.toggle(theme);
     }
   }
-
-  // $: theme && classToggle();
   $: if (browser) theme && classToggle(theme);
-  
 </script>
 
 <div class="themeSwitcher {theme}">
