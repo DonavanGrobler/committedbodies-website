@@ -92,6 +92,9 @@
                             }
                         }
                     }
+                    &.themeSwitchWrap {
+                        order: 5;
+                    }
                 }
             }
         }
@@ -144,6 +147,9 @@
                 gap: $space1;
                 flex: unset;
                 li {
+                    &.themeSwitchWrap {
+                        margin-right: 1rem;
+                    }
                     a {
                         i {
                             display: none;
