@@ -1,7 +1,7 @@
 <script>
     export let section;
 </script>
-<section class="background2">
+<section>
 	<!-- <slot name="contentPrimary"></slot> -->
 	<div class="contentPrimary">
 		<h3 class="h1">{section.title}</h3>
