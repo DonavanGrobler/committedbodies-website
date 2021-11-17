@@ -35,6 +35,7 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
+            z-index: 1;
         }
         &:before {
             content: "";
@@ -43,7 +44,7 @@
             height: 100%;
             background: var(--brandGradient);
             opacity: 0.8;
-            z-index:1;
+            z-index:2;
         }
         .contentWrap {
             position: absolute;
@@ -51,7 +52,7 @@
             left: 0;
             bottom: 0;
             right: 0;
-            z-index: 2;
+            z-index: 3;
             max-width: 70em;
             margin: 0 auto;
             display: flex;
