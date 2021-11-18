@@ -1,19 +1,11 @@
 <script>
     import "../styles/app.scss";
-    import { browser } from '$app/env'
     import IconsCombined from "$lib/svg/icons/Icons_combined.svelte";
     import TopNav from "$lib/components/navigation/TopNav.svelte";
     import ActionNav from "$lib/components/navigation/ActionNav.svelte";
     import Overlay from "$lib/components/ui-elements/Overlay.svelte";
     import LogoWrap from "$lib/components/navigation/logoWrap.svelte";
     export let y;
-    // $: if (browser) {
-    //        if (y > 80) {
-    //            document.body.classList.add('scrolled');
-    //        } else {
-    //         document.body.classList.remove('scrolled');
-    //        }
-    // };
 </script>
 
 <!-- Add hidden icon paths to use across all components -->
@@ -42,7 +34,7 @@
         grid-column: 1 / span 2;
         background-color: hsl(var(--primaryHS) var(--primaryL));
         z-index: 2;
-        @media screen and (min-width: $mdScreen) and (max-width: $xlScreen - 1) {
+        @media screen and (min-width: $mdScreen) and (max-width: calc($xlScreen - 1px)) {
             display: block;
             grid-column: 1 / span 3 ;
             grid-row: 1;
@@ -84,7 +76,7 @@
         grid-area: main;
         box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.15);
 
-        @media screen and (min-width: $mdScreen) and (max-width: $xlScreen - 1) {
+        @media screen and (min-width: $mdScreen) and (max-width: calc($xlScreen - 1px)) {
             grid-column: 1 / span 3 ;
             grid-row: 1;
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0);
