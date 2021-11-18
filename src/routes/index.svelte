@@ -1,11 +1,9 @@
 <script>
     import homePage from '$lib/data/homePage.json'
     import AnimatedLogo from "$lib/svg/logo/Animated-LOGO.svelte";
-    // import Intro from '$lib/components/home/Intro.svelte';
+    import Intro from '$lib/components/home/Intro.svelte';
     import VideoSection from '$lib/components/home/VideoSection.svelte'
     import SectionWrap from '$lib/components/home/SectionWrap.svelte';
-    import themeSwitcher from '$lib/components/ui-elements/ThemeSwitcher.svelte';
-import ThemeSwitcher from '$lib/components/ui-elements/ThemeSwitcher.svelte';
     // import ContactSection from '$lib/components/contact/ContactSection.txt';
 
     // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
@@ -26,12 +24,12 @@ import ThemeSwitcher from '$lib/components/ui-elements/ThemeSwitcher.svelte';
     <AnimatedLogo></AnimatedLogo>
 </section>
 
+<!-- (Intro) Jill's story -->
+<Intro {introSections}></Intro>
+
 <div class="pageWrap">
     <!-- Page Content -->
     <div class="pageContentWrap">
-
-        <!-- Jill's story -->
-        <!-- <Intro {introSections}></Intro> -->
 
         <!-- Video Preview -->
         <VideoSection {introSections}></VideoSection>
