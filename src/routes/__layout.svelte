@@ -1,12 +1,4 @@
-<script>
-    import "../styles/app.scss";
-    import IconsCombined from "$lib/svg/icons/Icons_combined.svelte";
-    import TopNav from "$lib/components/navigation/TopNav.svelte";
-    import ActionNav from "$lib/components/navigation/ActionNav.svelte";
-    import Overlay from "$lib/components/ui-elements/Overlay.svelte";
-    import LogoWrap from "$lib/components/navigation/logoWrap.svelte";
-    export let y;
-</script>
+<!-- ******HTML -->
 
 <!-- Add hidden icon paths to use across all components -->
 <IconsCombined></IconsCombined>
@@ -16,9 +8,7 @@
 <TopNav y="{y}"></TopNav>
 <ActionNav y="{y}"></ActionNav>
 
-<!-- Modal -->
-<Overlay></Overlay> 
-
+<!-- Background color and shadow for Navigation Components -->
 <div class="navColor {y > 80 ? 'scrolled' : ''}"></div>
 <div class="shadow {y > 80 ? 'scrolled' : ''}"></div>
 
@@ -27,6 +17,11 @@
     <slot></slot>
 </main>
 
+<!-- Modal -->
+<Overlay></Overlay> 
+
+
+<!-- ******STYLES -->
 <style lang="scss">
     //  Little hack to make a background color for topnav on scroll
     .navColor {
@@ -62,11 +57,6 @@
         }
     }
 
-
-
-
-
-
     // Little hack to make a shadow nav elements.
     .shadow {
         z-index: 20;
@@ -92,3 +82,14 @@
         }
     }
 </style>
+
+<!-- ******SCRIPT -->
+<script>
+    import "../styles/app.scss";
+    import IconsCombined from "$lib/svg/icons/Icons_combined.svelte";
+    import TopNav from "$lib/components/navigation/TopNav.svelte";
+    import ActionNav from "$lib/components/navigation/ActionNav.svelte";
+    import Overlay from "$lib/components/ui-elements/Overlay.svelte";
+    import LogoWrap from "$lib/components/navigation/logoWrap.svelte";
+    export let y;
+</script>
