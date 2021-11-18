@@ -147,7 +147,6 @@
 				li {
 					a.LinkLevel1 {
 						font-size: var(--fontSizeH5);
-						font-weight: 300;
 						color: hsl(var(--onGradient) / var(--onGradientStrength1));
 						padding: 0;
 						transform-origin: left center;
@@ -162,7 +161,6 @@
 							li {
 								margin-bottom: 0;
 								a {
-									font-weight: 200;
 									padding: 0;
 									transform-origin: left center;
 								}
