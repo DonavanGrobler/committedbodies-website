@@ -58,7 +58,7 @@
 <style lang="scss">
     section {
         background-color: $neutral1;
-        padding: $space3;
+        // padding: $space3;
         &.grid {
             display: grid;
             grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );
