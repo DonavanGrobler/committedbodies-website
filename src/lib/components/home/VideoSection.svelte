@@ -90,7 +90,9 @@
                 justify-content: center;
                 align-items: center;
                 .lookAtMeTitle {
+                    font-family: $font_boldEmphasis;
                     font-size: var(--fontSizeXXXL);
+                    line-height: 0.9;
                     text-align: center;
                     margin-top: 0;
                     margin-bottom: 0.5em;
@@ -114,6 +116,11 @@
                     svg {
                         visibility: visible;
                     }
+                }
+                header {
+                   .lookAtMeTitle {
+                       max-width: none;
+                   } 
                 }
             }
 		}
