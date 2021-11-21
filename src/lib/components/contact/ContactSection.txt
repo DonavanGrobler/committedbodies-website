@@ -110,7 +110,7 @@
             }
             ul.socialDetails {
                 padding: 0;
-                margin: $spaceMD 0 0 0;
+                margin: $space3 0 0 0;
                 list-style-type: none;
                 display: flex;
                 flex-wrap: wrap;

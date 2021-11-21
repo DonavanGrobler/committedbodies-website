@@ -51,8 +51,8 @@
 
 <style lang="scss">
     section {
-        padding: $spaceMD;
-        margin: $spaceMD;
+        padding: $space3;
+        margin: $space3;
         .articleList {
             display: grid;
             grid-template-rows: repeat(1fr);
@@ -75,7 +75,7 @@
                 grid-template-columns: 1fr;
                 justify-content: space-between;
                 header {
-                    padding: $spaceMD;
+                    padding: $space3;
                     display: flex;
                     justify-content: flex-start;
                     flex-direction: row;
@@ -86,10 +86,10 @@
                     }
                 }
                 .excerpt {
-                    padding: $spaceMD;
+                    padding: $space3;
                 }
                 footer {
-                    padding: $spaceMD;
+                    padding: $space3;
                     text-align: right;
                     display: flex;
                     justify-content: flex-end;
