@@ -4,9 +4,7 @@
 </svelte:head>
 
 <!-- Hero logo -->
-<section class="hero">
-    <AnimatedLogo></AnimatedLogo>
-</section>
+<AnimatedLogo></AnimatedLogo>
 
 <!-- (Intro) Jill's story -->
 <Intro {introSections}></Intro>
@@ -30,25 +28,7 @@
 
 <!-- ******STYLES -->
 <style lang="scss">
-    .hero {
-        height: 100%;
-        background-image: var(--brandGradient);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2vw 0;
-        :global(svg){
-            height: 100%;
-            width: auto;
-            max-width: 100%;
-            overflow: visible; /* This prevents clipping when animating the expanding/enlarging */
-            box-shadow : 0px -0px 10000px transparent; /*overflow trick for chrome - to do the same as above*/
-        }
-        @media screen and (min-width: $mdScreen) and (max-width: $xlScreen){
-            padding-top: 136px;
-        }
-    }
+    
 </style>
 
 <!-- ******SCRIPTS -->
