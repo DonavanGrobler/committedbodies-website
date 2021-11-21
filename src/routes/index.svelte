@@ -54,7 +54,7 @@
 <!-- ******SCRIPTS -->
 <script>
     import homePage from '$lib/data/homePage.json'
-    import AnimatedLogo from "$lib/svg/logo/Animated-LOGO.svelte";
+    import AnimatedLogo from "$lib/components/home/AnimatedLogo.svelte";
     import Intro from '$lib/components/home/Intro.svelte';
     import VideoSection from '$lib/components/home/VideoSection.svelte'
     import SectionWrap from '$lib/components/home/SectionWrap.svelte';
