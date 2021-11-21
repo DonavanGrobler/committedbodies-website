@@ -59,10 +59,6 @@
             grid-gap: $space5;
         }
         article {
-            @include themewrap0;
-            &:hover {
-                @include themewrap0-E;
-            }
             display: grid;
             grid-template-columns: 1fr 2fr;
             img {

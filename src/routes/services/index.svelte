@@ -15,9 +15,6 @@
 
 <style lang="scss">
     section {
-        // padding: $space5;
-        // margin: $space5;
-        // @include themewrap0;
         :global(ul) {
             list-style-type: none;
         }
