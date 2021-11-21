@@ -56,7 +56,7 @@
         .articleList {
             display: grid;
             grid-template-rows: repeat(1fr);
-            grid-gap: $spaceLG;
+            grid-gap: $space5;
         }
         article {
             @include themewrap0;
