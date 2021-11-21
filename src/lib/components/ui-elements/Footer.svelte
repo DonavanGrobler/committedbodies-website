@@ -15,7 +15,7 @@
     footer {
         position: relative;
         width: 100vw;
-        background: $neutral2;
+        background: hsl(var(--accentAltHS) var(--accentAltL));
         padding: 6vw;
         color: #ffffff;
         justify-items: space-between;

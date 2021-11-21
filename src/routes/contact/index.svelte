@@ -35,7 +35,7 @@
 <style lang="scss">
     .contentWrap {
         padding: $space4;
-        background-color: $neutral1;
+        background-color: hsl(var(--neutralHS) var(--neutralL));
         form {
             margin-top: $space4;
             background-color: #ffffff;

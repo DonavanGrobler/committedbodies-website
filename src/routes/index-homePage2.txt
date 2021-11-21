@@ -112,7 +112,7 @@
 <style lang="scss">
     .stage {
         position: relative;
-        background: $neutral1;
+        background: hsl(var(--neutralHS) var(--neutralL));
         visibility: hidden;
     }
     .intro {

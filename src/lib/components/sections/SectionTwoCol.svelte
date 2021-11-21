@@ -22,16 +22,16 @@
             border: 1px solid red;
         }
         &.light1 {
-            background-color: $neutral1;
+            background-color: hsl(var(--neutralHS) var(--neutralL));
         }
         &.light2 {
-            background-color: $neutral1;
+            background-color: hsl(var(--neutralHS) var(--neutralL));
         }
         // MED - LARGE SCREENS
-        @media (min-width: $md) {
+        @media (min-width: $mdScreen) {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            padding: $spaceXL;
+            padding: 3vw;
         }
     }
 </style>
