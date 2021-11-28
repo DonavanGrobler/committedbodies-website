@@ -32,7 +32,9 @@
 
   onMount(() => {
     // INTRODUCE THE HERO LOGO
-        function initIntro() {
+    gsap.registerPlugin(ScrollTrigger);
+	gsap.set("svg *",{transformOrigin:"center center"});
+        function initLogo() {
             let tl = gsap.timeline({delay:1, id:"intro"});
 
             tl.from("#bannerCenter, #bodies",{duration:0.4, autoAlpha:0, scaleX:0});
@@ -79,6 +81,6 @@
             stl.to("#shield",{duration:4, y:40},"<");
         }
 
-				initIntro();
+		initLogo();
   })
 </script>
