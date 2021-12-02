@@ -42,6 +42,9 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      - label: Home Page
+        name: "homePage"
+        file: "/src/lib/data/homePage.json"
       - label: "Hero Slider"
         name: "heroSlider"
         file: "/src/lib/data/heroSlider.json"
