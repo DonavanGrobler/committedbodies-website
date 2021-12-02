@@ -13,7 +13,7 @@
     <div class="pageContentWrap">
 
         <!-- Video Preview -->
-        <VideoSection {introSections}></VideoSection>
+        <VideoSection {videoData}></VideoSection>
 
         <!-- Numbered Sections -->
         {#each sections as section (section)}
@@ -47,4 +47,5 @@
     // SECTIONS FROM DATA
     let sections = homePage.sections;
     let introSections = homePage.intro;
+    let videoData = homePage.video;
 </script>
