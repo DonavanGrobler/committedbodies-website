@@ -16,7 +16,7 @@
 			<img class="layer layerScale" src="/assets/images/Before-After/scale.png" alt="">
 			<img class="layer layerJillAfter" src="/assets/images/Before-After/AfterJill.png" alt="">
 			<img class="layerJillBefore" src="/assets/images/Before-After/beforeJill.png" alt="">
-			<img class="layer layerBeforeTextFG" src="static/assets/images/Before-After/BeforeTextFG.png" alt="">
+			<img class="layer layerBeforeTextFG" src="/assets/images/Before-After/BeforeTextFG.png" alt="">
 		</div>
 		<div class="textWrap">
 			<p>{intro.text1}</p>
