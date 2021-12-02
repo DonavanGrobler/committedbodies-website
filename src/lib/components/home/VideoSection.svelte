@@ -1,22 +1,21 @@
 <script>
-    export let introSections;
-    let section = introSections[1];
+    export let videoData;
 </script>
 
 
 <section>
     <video autoplay muted loop id="myVideo">
-        <source src="https://res.cloudinary.com/committed-bodies/video/upload/ac_none,q_auto,vc_auto/v1635629163/video/CommittedBodies-Take-Back-Your-Life_pvhloh.mp4" type="video/mp4">
+        <source src="{videoData[0].videoUrl}" type="video/mp4">
     </video>
     <div class="contentWrap">
         <header>
-            <h2 class="lookAtMeTitle">Your Journey starts now!</h2>
+            <h2 class="lookAtMeTitle">{videoData[0].title}</h2>
         </header>
         <div class="buttonWrap">
             <svg class="line" preserveAspectRatio="none" viewbox="-1 -1 6 800" width="6" height="800">
                 <line x="0" y1="0" x2="0" y2="800"></line>
             </svg>
-            <a class="button primary" href="/">Watch</a>
+            <a class="button primary" href="{videoData[0].primaryButtonLink}">{videoData[0].primaryButtonText}</a>
         </div>
     </div>
 </section>

@@ -10,12 +10,14 @@
             "imageAfter": "https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1635583370/ui-assets/afterFront_2_up6xo9.png",
             "buttonText": "Read my story",
             "buttonLink": "/blog/jills-story"
-        },
+        }
+    ],
+    "video": [
         {
             "title": "Your journey starts now!",
             "primaryButtonText": "Watch",
             "primaryButtonLink": "/",
-            "videoUrl": "https://res.cloudinary.com/committed-bodies/video/upload/ac_none,q_auto,vc_auto/v1635629163/video/CommittedBodies-Take-Back-Your-Life_pvhloh.mp4"
+            "videoUrl": "/assets/video/CommittedBodies-Take-Back-Your-Life-BG.mp4"
         }
     ],
     "sections":[
