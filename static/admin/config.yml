@@ -45,16 +45,17 @@ collections:
       - label: Home Page
         name: "homePage"
         file: "/src/lib/data/homePage.json"
+        widget: object
         fields:
           - label: Video
             name: video
             widget: object
             summary: '{{fields.title}} {{fields.buttonText}} {{fields.buttonLink}} {{fields.videoUrl}}'
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Button Text", name: "buttonText", widget: "string"}
-              - {label: "Button Link", name: "buttonLink", widget: "string"}
-              - {label: "Video URL", name: "videoUrl", widget: "string"}
+              - label: "Title", name: "title", widget: "string"
+              - label: "Button Text", name: "buttonText", widget: "string"
+              - label: "Button Link", name: "buttonLink", widget: "string"
+              - label: "Video URL", name: "videoUrl", widget: "string"
       - label: "Hero Slider"
         name: "heroSlider"
         file: "/src/lib/data/heroSlider.json"
