@@ -50,7 +50,6 @@ collections:
           - label: Video
             name: video
             widget: object
-            summary: '{{fields.title}} {{fields.buttonText}} {{fields.buttonLink}} {{fields.videoUrl}}'
             fields:
               - label: "Title", name: "title", widget: "string"
               - label: "Button Text", name: "buttonText", widget: "string"
