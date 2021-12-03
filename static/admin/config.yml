@@ -51,10 +51,18 @@ collections:
             name: video
             widget: object
             fields:
-              - label: "Title", name: "title", widget: "string"
-              - label: "Button Text", name: "buttonText", widget: "string"
-              - label: "Button Link", name: "buttonLink", widget: "string"
-              - label: "Video URL", name: "videoUrl", widget: "string"
+              - label: "Title",
+                name: "title",
+                widget: "string"
+              - label: "Button Text"
+                name: "buttonText",
+                widget: "string"
+              - label: "Button Link",
+                name: "buttonLink",
+                widget: "string"
+              - label: "Video URL",
+                name: "videoUrl",
+                widget: "string"
       - label: "Hero Slider"
         name: "heroSlider"
         file: "/src/lib/data/heroSlider.json"
