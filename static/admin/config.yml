@@ -39,30 +39,33 @@ collections:
       - {label: "Profile Pic", name: "thumbnail", widget: "image"}
       - {label: "About", name: "body", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "team"}
-  - name: "pages"
+    - name: "pages"
     label: "Pages"
     files:
       - label: Home Page
-        name: "homePage"
-        file: "/src/lib/data/homePage.json"
-        widget: object
+      name: "homePage"
+      file: "/src/lib/data/homePage.json"
+      fields:
+        - label: Video
+          name: video
+          widget: object
         fields:
-          - label: Video
-            name: video
-            widget: object
-            fields:
-              - label: "Title",
-                name: "title",
-                widget: "string"
-              - label: "Button Text"
-                name: "buttonText",
-                widget: "string"
-              - label: "Button Link",
-                name: "buttonLink",
-                widget: "string"
-              - label: "Video URL",
-                name: "videoUrl",
-                widget: "string"
+          - label: "Title",
+            name: "title",
+            widget: "string"
+          - label: "Button Text"
+            name: "buttonText",
+            widget: "string"
+          - label: "Button Link",
+            name: "buttonLink",
+            widget: "string"
+          - label: "Video URL",
+            name: "videoUrl",
+            widget: "string"
+
+
+
+
       - label: "Hero Slider"
         name: "heroSlider"
         file: "/src/lib/data/heroSlider.json"
