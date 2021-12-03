@@ -15,8 +15,8 @@
     "video": [
         {
             "title": "Your journey starts now!",
-            "primaryButtonText": "Watch",
-            "primaryButtonLink": "/",
+            "buttonText": "Watch",
+            "buttonLink": "/",
             "videoUrl": "/assets/video/CommittedBodies-Take-Back-Your-Life-BG.mp4"
         }
     ],
