@@ -12,14 +12,18 @@
             "buttonLink": "/blog/jills-story"
         }
     ],
-    "video": [
+    "video":
         {
             "title": "Your journey starts now!",
             "buttonText": "Watch",
             "buttonLink": "/",
             "videoUrl": "/assets/video/CommittedBodies-Take-Back-Your-Life-BG.mp4"
-        }
-    ],
+        },
+
+
+
+
+
     "sections":[
         {
             "number": 1,
