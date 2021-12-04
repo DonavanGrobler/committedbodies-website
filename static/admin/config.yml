@@ -1,22 +1,21 @@
 # Netlify CMS settings
 backend:
   name: git-gateway
-  branch: main
-
-local_backend: true
-
+  branch: master # Branch to update (optional; defaults to master)
+  
 publish_mode: editorial_workflow # Allows you to save drafts before publishing them
 media_folder: static/uploads # Media files will be stored in the repo under static/images/uploads
 public_folder: /uploads # The src attribute for uploaded media will begin with /images/uploads
 logo_url: /assets/Logo.svg
-
+  
 media_library:
   name: cloudinary
   config:
     cloud_name: committed-bodies
     api_key: 724142698475225
-
+      
 collections:
+
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "/src/routes/blog" # The path to the folder where our blog posts are stored
@@ -28,6 +27,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+  
   - name: "team"
     label: "Team"
     folder: "/src/routes/team"
@@ -39,44 +39,46 @@ collections:
       - {label: "Profile Pic", name: "thumbnail", widget: "image"}
       - {label: "About", name: "body", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "team"}
+  
+  
   - name: "pages"
     label: "Pages"
     files:
-      - label: Home Page
+    - label: Home Page
       name: "homePage"
       file: "/src/lib/data/homePage.json"
       fields:
-        - label: Video
-          name: video
-          widget: object
+      - label: Video
+        name: video
+        widget: object
         fields:
-          - label: "Title",
-            name: "title",
+          - label: "Title"
+            name: "title"
             widget: "string"
           - label: "Button Text"
-            name: "buttonText",
+            name: "buttonText"
             widget: "string"
-          - label: "Button Link",
-            name: "buttonLink",
+          - label: "Button Link"
+            name: "buttonLink"
             widget: "string"
-          - label: "Video URL",
-            name: "videoUrl",
+          - label: "Video URL"
+            name: "videoUrl"
             widget: "string"
-
-
-
-
-      - label: "Hero Slider"
-        name: "heroSlider"
-        file: "/src/lib/data/heroSlider.json"
-        fields:
-          - label: Slides
-            name: slides
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Subtitle, name: subtitle, widget: string}
-              - {label: Paragraph, name: "paragraph", required: false, widget: markdown}
-              - {label: Image, name: "thumbnail", widget: image}
-              - {label: Button Text, name: "buttonText", widget: string}
-              - {label: Button link, name: "buttonLink", widget: string}
+                
+                
+                
+                
+                # - label: "Hero Slider"
+                # name: "heroSlider"
+                # file: "/src/lib/data/heroSlider.json"
+                # fields:
+                #   - label: Slides
+                #   name: slides
+                #   widget: list
+                #   fields:
+                #     - {label: Title, name: title, widget: string}
+                #     - {label: Subtitle, name: subtitle, widget: string}
+                #     - {label: Paragraph, name: "paragraph", required: false, widget: markdown}
+                #     - {label: Image, name: "thumbnail", widget: image}
+                #     - {label: Button Text, name: "buttonText", widget: string}
+                #     - {label: Button link, name: "buttonLink", widget: string}
