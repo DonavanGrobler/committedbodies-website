@@ -1,17 +1,13 @@
 {
-    "intro": [
+    "intro":
         {
             "title": "I took back my life",
             "subtitle": "You can too",
-            "text1": "The day I turned 52, I looked in the mirror and did not recognise the woman staring back at me. I had lost my energy, enthusiasm and figure. I looked like I felt - old, flabby and tired. I had two choices - continue down this road, or I could take back my life.",
-            "text2": "Nine months later I had transformed my body and my life.",
-            "text3": "In 2018, my husband and I launched Committed Bodies Gym. We specialise in transformations - our mission is to help you take back your life.",
-            "imageBefore": "https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1635584514/ui-assets/beforeFront2_s0blvc.png",
-            "imageAfter": "https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1635583370/ui-assets/afterFront_2_up6xo9.png",
+            "text": "<p>The day I turned 52, I looked in the mirror and did not recognise the woman staring back at me. I had lost my energy, enthusiasm and figure. I looked like I felt - old, flabby and tired. I had two choices - continue down this road, or I could take back my life.</p> <p>Nine months later I had transformed my body and my life.</p> <p>In 2018, my husband and I launched Committed Bodies Gym. We specialise in transformations - our mission is to help you take back your life.</p>",
             "buttonText": "Read my story",
             "buttonLink": "/blog/jills-story"
-        }
-    ],
+        },
+
     "video":
         {
             "title": "Your journey starts now!",
@@ -19,10 +15,6 @@
             "buttonLink": "/",
             "videoUrl": "/assets/video/CommittedBodies-Take-Back-Your-Life-BG.mp4"
         },
-
-
-
-
 
     "sections":[
         {

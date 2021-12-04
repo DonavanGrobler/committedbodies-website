@@ -44,10 +44,12 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      
     - label: Home Page
       name: "homePage"
       file: "/src/lib/data/homePage.json"
       fields:
+        
       - label: Video
         name: video
         widget: object
@@ -63,6 +65,26 @@ collections:
             widget: "string"
           - label: "Video URL"
             name: "videoUrl"
+            widget: "string"
+
+      - label: Intro
+        name: Intro
+        widget: object
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Subtitle"
+            name: "subtitle"
+            widget: "string"
+          - label: "Text"
+            name: "text"
+            widget: "text"
+          - label: "Button Text"
+            name: "buttonText"
+            widget: "string"
+          - label: "Button Link"
+            name: "buttonLink"
             widget: "string"
                 
                 
