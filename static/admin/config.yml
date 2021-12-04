@@ -68,7 +68,7 @@ collections:
             widget: "string"
 
       - label: Intro
-        name: Intro
+        name: intro
         widget: object
         fields:
           - label: "Title"
