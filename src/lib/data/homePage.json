@@ -1,87 +1,83 @@
 {
-    "intro":
-        {
-            "title": "I took back my life",
-            "subtitle": "You can too",
-            "text": "<p>The day I turned 52, I looked in the mirror and did not recognise the woman staring back at me. I had lost my energy, enthusiasm and figure. I looked like I felt - old, flabby and tired. I had two choices - continue down this road, or I could take back my life.</p> <p>Nine months later I had transformed my body and my life.</p> <p>In 2018, my husband and I launched Committed Bodies Gym. We specialise in transformations - our mission is to help you take back your life.</p>",
-            "buttonText": "Read my story",
-            "buttonLink": "/blog/jills-story"
-        },
-
-    "video":
-        {
-            "title": "Your journey starts now!",
-            "buttonText": "Watch",
-            "buttonLink": "/",
-            "videoUrl": "/assets/video/CommittedBodies-Take-Back-Your-Life-BG.mp4"
-        },
-
-    "sections":[
-        {
-            "number": 1,
-            "title":"Make a character commitment",
-            "subtitle": "Not a will-power comittment",
-            "text": "<p>Willpower plays a much smaller role than we think. Actually, character trumps will-power when it comes to body transformation. You can create rules which define the type of person you want to be. Go ahead - look yourself in the mirror and say, \"I'm the type of person who enjoys a healthy, active life.\" You're creating a character rule - these affirmations are more effective and use less psychological energy than trying to resist short-term temptation.</p>",
-            "image": "/assets/images/kettlebell-LOGO.png",
-            "primaryButtonText": "",
-            "secondaryButtonText": "",
-            "primaryButtonLink": "",
-            "secondaryButtonLink": ""
-        },
-        {
-            "number": 2,
-            "title":"Put some skin in the game",
-            "subtitle": "Select a membership",
-            "text": "<p>A gym membership gets you more than access to free weights and treadmills. With a gym membership, you can feel your body and mind transform with every visit. We have affordable memberships to suit any lifestyle.</p>",
-            "image": "/assets/images/boxing-LOGO.png",
-            "primaryButtonText": "",
-            "secondaryButtonText": "Memberships",
-            "primaryButtonLink": "",
-            "secondaryButtonLink": "/membership"
-        },
-        {
-            "number": 3,
-            "title":"Find a mentor",
-            "subtitle": "Book a trainer",
-            "text": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>",
-            "image": "/assets/images/trainer-LOGO.png",
-            "primaryButtonText": "",
-            "secondaryButtonText": "Our trainers",
-            "primaryButtonLink": "",
-            "secondaryButtonLink": "/team"
-        },
-        {
-            "number": 4,
-            "title":"Change your habits",
-            "subtitle": "One day at a time",
-            "text": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>",
-            "image": "/assets/images/ball-LOGO.png",
-            "primaryButtonText": "",
-            "secondaryButtonText": "Our services",
-            "primaryButtonLink": "",
-            "secondaryButtonLink": "/services"
-        },
-        {
-            "number": 5,
-            "title":"Make it fun",
-            "subtitle": "Find a supportive community",
-            "text": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>",
-            "image": "/assets/images/zumba-LOGO.png",
-            "primaryButtonText": "",
-            "secondaryButtonText": "News and Events",
-            "primaryButtonLink": "",
-            "secondaryButtonLink": "/blog"
-        },
-        {
-            "number": 6,
-            "title":"Celebrate your success",
-            "subtitle": "9 months to Take back your life",
-            "text": "<p>Our flagship 9-month transformation program consists of three 12 week challenges designed to sculpt your body, improve fitness and increase your strength. We can and will help you change your body and take back your life.</p>",
-            "image": "/assets/images/dumbbells-LOGO.png",
-            "primaryButtonText": "Take back your life!",
-            "secondaryButtonText": "",
-            "primaryButtonLink": "/services/take-back-your-life",
-            "secondaryButtonLink": ""
-        }
-    ]
+  "intro": {
+    "title": "I took back my life",
+    "subtitle": "You can too",
+    "text": "The day I turned 52, I looked in the mirror and did not recognise the woman staring back at me. I had lost my energy, enthusiasm and figure. I looked like I felt - old, flabby and tired. I had two choices - continue down this road, or I could take back my life.\n\nNine months later I had transformed my body and my life.\n\nIn 2018, my husband and I launched Committed Bodies Gym. We specialise in transformations - our mission is to help you take back your life.\n\nTesting",
+    "buttonText": "Read my story",
+    "buttonLink": "/blog/jills-story"
+  },
+  "video": {
+    "title": "Your journey starts now!",
+    "buttonText": "Watch",
+    "buttonLink": "/",
+    "videoUrl": "/assets/video/CommittedBodies-Take-Back-Your-Life-BG.mp4"
+  },
+  "sections": [
+    {
+      "secondaryButtonLink": "",
+      "primaryButtonText": "",
+      "number": 1,
+      "text": "<p>Willpower plays a much smaller role than we think. Actually, character trumps will-power when it comes to body transformation. You can create rules which define the type of person you want to be. Go ahead - look yourself in the mirror and say, \"I'm the type of person who enjoys a healthy, active life.\" You're creating a character rule - these affirmations are more effective and use less psychological energy than trying to resist short-term temptation.</p>",
+      "primaryButtonLink": "",
+      "secondaryButtonText": "",
+      "subtitle": "Not a will-power comittment",
+      "title": "Make a character commitment",
+      "image": "/assets/images/kettlebell-LOGO.png"
+    },
+    {
+      "secondaryButtonLink": "/membership",
+      "primaryButtonText": "",
+      "number": 2,
+      "text": "<p>A gym membership gets you more than access to free weights and treadmills. With a gym membership, you can feel your body and mind transform with every visit. We have affordable memberships to suit any lifestyle.</p>",
+      "primaryButtonLink": "",
+      "secondaryButtonText": "Memberships",
+      "subtitle": "Select a membership",
+      "title": "Put some skin in the game",
+      "image": "/assets/images/boxing-LOGO.png"
+    },
+    {
+      "secondaryButtonLink": "/team",
+      "primaryButtonText": "",
+      "number": 3,
+      "text": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>",
+      "primaryButtonLink": "",
+      "secondaryButtonText": "Our trainers",
+      "subtitle": "Book a trainer",
+      "title": "Find a mentor",
+      "image": "/assets/images/trainer-LOGO.png"
+    },
+    {
+      "secondaryButtonLink": "/services",
+      "primaryButtonText": "",
+      "number": 4,
+      "text": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>",
+      "primaryButtonLink": "",
+      "secondaryButtonText": "Our services",
+      "subtitle": "One day at a time",
+      "title": "Change your habits",
+      "image": "/assets/images/ball-LOGO.png"
+    },
+    {
+      "secondaryButtonLink": "/blog",
+      "primaryButtonText": "",
+      "number": 5,
+      "text": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim tempore tenetur molestiae ipsa quasi eveniet ea consequatur commodi. Quas aut excepturi repellat expedita, dignissimos voluptate error ipsum iusto sapiente?</p>",
+      "primaryButtonLink": "",
+      "secondaryButtonText": "News and Events",
+      "subtitle": "Find a supportive community",
+      "title": "Make it fun",
+      "image": "/assets/images/zumba-LOGO.png"
+    },
+    {
+      "secondaryButtonLink": "",
+      "primaryButtonText": "Take back your life!",
+      "number": 6,
+      "text": "<p>Our flagship 9-month transformation program consists of three 12 week challenges designed to sculpt your body, improve fitness and increase your strength. We can and will help you change your body and take back your life.</p>",
+      "primaryButtonLink": "/services/take-back-your-life",
+      "secondaryButtonText": "",
+      "subtitle": "9 months to Take back your life",
+      "title": "Celebrate your success",
+      "image": "/assets/images/dumbbells-LOGO.png"
+    }
+  ]
 }
