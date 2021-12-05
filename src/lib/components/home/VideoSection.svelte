@@ -5,17 +5,17 @@
 
 <section>
     <video autoplay muted loop id="myVideo">
-        <source src="{videoData[0].videoUrl}" type="video/mp4">
+        <source src="{videoData.videoUrl}" type="video/mp4">
     </video>
     <div class="contentWrap">
         <header>
-            <h2 class="lookAtMeTitle">{videoData[0].title}</h2>
+            <h2 class="lookAtMeTitle">{videoData.title}</h2>
         </header>
         <div class="buttonWrap">
             <svg class="line" preserveAspectRatio="none" viewbox="-1 -1 6 800" width="6" height="800">
                 <line x="0" y1="0" x2="0" y2="800"></line>
             </svg>
-            <a class="button primary" href="{videoData[0].primaryButtonLink}">{videoData[0].primaryButtonText}</a>
+            <a class="button primary" href="{videoData.primaryButtonLink}">{videoData.primaryButtonText}</a>
         </div>
     </div>
 </section>

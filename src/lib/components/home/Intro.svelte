@@ -18,10 +18,8 @@
 			<img class="layerJillBefore" src="/assets/images/Before-After/beforeJill.png" alt="">
 			<img class="layer layerBeforeTextFG" src="/assets/images/Before-After/BeforeTextFG.png" alt="">
 		</div>
-		<div class="textWrap">
-			<p>{intro.text1}</p>
-			<p>{intro.text2}</p>
-			<p>{intro.text3}</p>
+		<div class="textWrap" >
+			{@html intro.text}
 			<div class="signature">
 				Jill Myburgh
 			</div>
@@ -118,7 +116,7 @@
 <script>
 	import { onMount } from 'svelte';
 	export let introSections;
-	let intro = introSections[0];
+	let intro = introSections;
 	
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
