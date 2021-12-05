@@ -53,6 +53,7 @@ collections:
       - label: Video
         name: video
         widget: object
+        collapsed: true
         fields:
           - label: "Title"
             name: "title"
@@ -70,6 +71,7 @@ collections:
       - label: Intro
         name: intro
         widget: object
+        collapsed: true
         fields:
           - label: "Title"
             name: "title"
