@@ -7,7 +7,7 @@
 <AnimatedLogo></AnimatedLogo>
 
 <!-- (Intro) Jill's story -->
-<Intro {introSections}></Intro>
+<Intro {introData}></Intro>
 
 <div class="pageWrap">
     <div class="pageContentWrap">
@@ -35,7 +35,7 @@
 <script>
     import homePage from '$lib/data/homePage.json'
     import AnimatedLogo from "$lib/components/home/AnimatedLogo.svelte";
-    import Intro from '$lib/components/home/Intro.svelte';
+    import Intro from '$lib/components/home/Intro.svx';
     import VideoSection from '$lib/components/home/VideoSection.svelte'
     import SectionWrap from '$lib/components/home/SectionWrap.svelte';
     // import ContactSection from '$lib/components/contact/ContactSection.txt';
@@ -46,6 +46,6 @@
 
     // SECTIONS FROM DATA
     let sections = homePage.sections;
-    let introSections = homePage.intro;
+    let introData = homePage.intro;
     let videoData = homePage.video;
 </script>

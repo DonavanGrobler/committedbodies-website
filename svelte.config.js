@@ -1,6 +1,6 @@
 import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
-import preprocess from "svelte-preprocess";
+import sveltePreprocess from "svelte-preprocess";
 import adapter from '@sveltejs/adapter-netlify';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -14,10 +14,10 @@ const config = {
 	},
 
     preprocess: [
-        preprocess({
+        mdsvex(mdsvexConfig),
+        sveltePreprocess({
             scss: {  prependData: `@import 'src/styles/themeVars.scss'; @import 'src/styles/mixins.scss';`},
-        }),
-        mdsvex(mdsvexConfig)
+        })
     ]
 };
 
