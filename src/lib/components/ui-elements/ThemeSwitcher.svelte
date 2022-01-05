@@ -1,6 +1,6 @@
 <script>
   import { browser } from '$app/env';
-  export let theme = 'dark';
+  export let theme = 'light';
   
   function classToggle() {
     var htmlTag = document.querySelector("html");
