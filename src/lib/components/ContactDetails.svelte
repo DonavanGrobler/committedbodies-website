@@ -48,7 +48,12 @@
         li {
             font-size: inherit;
             color: currentColor;
+            display: block;
+            &:before {
+                display: none;
+            }
             a {
+                text-decoration: none !important;
                 font-size: inherit;
                 color: currentColor;
                 text-decoration: none;
@@ -68,8 +73,6 @@
             }
             &:hover {
                 a {
-                    // opacity: 1;
-                    text-decoration: none;
                     i {
                         svg {
                             fill: currentColor;
