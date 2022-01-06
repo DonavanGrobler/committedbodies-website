@@ -1,3 +1,22 @@
+<!-- ******SCRIPTS -->
+<script>
+    import homePage from '$lib/data/homePage.json'
+    import AnimatedLogo from "$lib/components/home/AnimatedLogo.svelte";
+    import Intro from '$lib/components/home/Intro.svx';
+    import VideoSection from '$lib/components/home/VideoSection.svelte'
+    import NumberedSection from '$lib/components/home/SectionWrap.svelte';
+    import ContactSection from '$lib/components/contact/ContactSection.svelte'
+
+    // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
+    // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689403/ui-assets/woman_f4955x.png"
+    // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689417/ui-assets/dumbbell-FG_auovbf.png"
+
+    // SECTIONS FROM DATA
+    let sections = homePage.sections;
+    let introData = homePage.intro;
+    let videoData = homePage.video;
+</script>
+
 <!-- ******HTML -->
 <svelte:head>
 	<title>Committed Bodies - Weight-loss gym in Benoni</title>
@@ -17,35 +36,16 @@
 
         <!-- Numbered Sections -->
         {#each sections as section (section)}
-            <SectionWrap {section}></SectionWrap>
+            <NumberedSection {section}></NumberedSection>
         {/each}
 
         <!-- Contact -->
-        <!-- <ContactSection></ContactSection> -->
+        <ContactSection />
     </div>
 </div>
 
-
-<!-- ******STYLES -->
-<style lang="scss">
-    
+<style  lang="scss">
+    :global(.pageContentWrap section:nth-last-child(2) .contentSecondary) {
+		margin-bottom: 9rem;
+	}
 </style>
-
-<!-- ******SCRIPTS -->
-<script>
-    import homePage from '$lib/data/homePage.json'
-    import AnimatedLogo from "$lib/components/home/AnimatedLogo.svelte";
-    import Intro from '$lib/components/home/Intro.svx';
-    import VideoSection from '$lib/components/home/VideoSection.svelte'
-    import SectionWrap from '$lib/components/home/SectionWrap.svelte';
-    // import ContactSection from '$lib/components/contact/ContactSection.txt';
-
-    // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
-    // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689403/ui-assets/woman_f4955x.png"
-    // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689417/ui-assets/dumbbell-FG_auovbf.png"
-
-    // SECTIONS FROM DATA
-    let sections = homePage.sections;
-    let introData = homePage.intro;
-    let videoData = homePage.video;
-</script>
