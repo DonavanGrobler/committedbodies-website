@@ -1,35 +1,36 @@
 <script>
-    export let contact;
+    import contactData from '$lib/data/contact.json';
+    let contacts = contactData.contacts[0];
 </script>
 <ul class="contactDetails">
     <li>
-        <a href="tel:{contact.phone}" class="contacts_phone">
+        <a href="tel:{contacts.phone}" class="contacts_phone">
             <i>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                     <use xlink:href="#phone"></use>
                 </svg>
             </i>
-            {contact.phone}
+            {contacts.phone}
         </a>
     </li>
     <li>
-        <a href="mailto:{contact.email}">
+        <a href="mailto:{contacts.email}">
             <i>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                     <use xlink:href="#mail"></use>
                 </svg>
             </i>
-            {contact.email}
+            {contacts.email}
         </a>
     </li>
     <li>
-        <a href="{contact.mapLink}">
+        <a href="{contacts.mapLink}">
             <i>
                 <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                     <use xlink:href="#map-pin"></use>
                 </svg>
             </i>
-            {contact.address}
+            {contacts.address}
         </a>
     </li>
 </ul>
@@ -68,6 +69,7 @@
             &:hover {
                 a {
                     // opacity: 1;
+                    text-decoration: none;
                     i {
                         svg {
                             fill: currentColor;

@@ -1,10 +1,8 @@
 <script>
 	import { page } from '$app/stores';
 	import navigation from '$lib/data/navigation.json';
-	import contactData from '$lib/data/contact.json';
 	import ContactDetails from '$lib/components/contact/ContactDetails.svelte'
 	let topNavList = navigation.topNav;
-	let contact = contactData.contacts[0];
 	export let y;
 </script>
 
@@ -30,7 +28,7 @@
 			{/if}
 			{#if item.title == "Contact"}
 			<div class="subNav contactSubnav hideSM hideMD">
-				<ContactDetails {contact} classList="theme-on-primary"></ContactDetails>
+				<ContactDetails classList="theme-on-primary"></ContactDetails>
 			</div>
 			{/if}
 		</li>
