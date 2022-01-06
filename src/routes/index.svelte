@@ -2,7 +2,7 @@
 <script>
     import homePage from '$lib/data/homePage.json'
     import AnimatedLogo from "$lib/components/home/AnimatedLogo.svelte";
-    import Intro from '$lib/components/home/Intro.svx';
+    import Intro from '$lib/components/home/Intro.svelte';
     import VideoSection from '$lib/components/home/VideoSection.svelte'
     import NumberedSection from '$lib/components/home/NumberedSection.svelte';
     import ContactSection from '$lib/components/contact/ContactSection.svelte'
