@@ -113,6 +113,9 @@
 			grid-column: 1 / span 3;
 			z-index: 3;
 			background-color: hsl(var(--neutralHS) var(--neutralL));
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 
