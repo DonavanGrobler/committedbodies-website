@@ -10,7 +10,7 @@
 
 <section class="contactSection">
     <!-- Title -->
-    <h2>CONTACT US</h2>
+    <h2><span>Contact Us</span></h2>
      
     <!-- Two Columns -->
     <div class="contactWrap">
@@ -36,7 +36,6 @@
                 {/each}
             </ul>
         </div>
-
         <!-- Map Column -->
         <a class="contactMap" href="https://goo.gl/maps/VA4dCUMKpTfk7nPh6" alt="Open Google Maps">
             <img src="/assets/images/map.svg" alt="">
@@ -47,23 +46,59 @@
 <style lang="scss">
     .contactSection {
         h2 {
-            border: 3px solid hsl(var(--accentHS) var(--accentL));
-            padding: 2rem 4rem;
-            text-align: center;
-            margin: 0 0 4rem 0;
-            width: auto;
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 3rem 0;
+            color: hsla(var(--onNeutral) / var(--onNeutralStrength3));
+            font-family: $font_boldEmphasis;
+            span {
+                border: 3px solid hsl(var(--accentHS) var(--accentL));
+                padding: 1rem 2rem;
+                text-align: center;
+                width: auto;
+            }
         }
         .contactWrap {
             display: flex;
-            flex-direction: column;
+             flex-direction: column;
+             color: hsla(var(--onNeutral) / var(--onNeutralStrength1));
+            .contactInfo {
+                margin: 2rem;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                :global(.contactDetails li) {
+                    text-align: center;
+                }
+                .socialDetails li {
+                    text-align: center;
+                    display: block;
+                    &::before {
+                        display: none;
+                    }
+                }
+                .logoWrap {
+                    width: 30%;
+                }
+                .socialDetails {
+                    display: flex;
+                    gap: 1rem;
+                    margin-top: 2rem;
+
+                }
+            }
             a.contactMap {
+                flex: 1;
                 text-decoration: none;
                 transition: all 0.7s linear;
                 background-color: rgba(255,255,255,0.3);
                 display: grid;
                 place-items: center;
                 overflow: hidden;
+                margin: 2rem;
                 &:before {
                     content: "Open in Google Maps";
                     padding: 1rem;
@@ -98,6 +133,18 @@
                 }
             }
         }
-        
+    }
+    @media screen and (min-width: $mdScreen) {
+        .contactSection {
+            .contactWrap {
+                flex-direction: row-reverse;
+                .contactInfo {
+                    align-items: flex-start;
+                    :global(.contactDetails li) {
+                        text-align: left;
+                    }
+                }
+            }
+        }
     }
 </style>
