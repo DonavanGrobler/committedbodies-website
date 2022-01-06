@@ -4,7 +4,7 @@
     import AnimatedLogo from "$lib/components/home/AnimatedLogo.svelte";
     import Intro from '$lib/components/home/Intro.svx';
     import VideoSection from '$lib/components/home/VideoSection.svelte'
-    import NumberedSection from '$lib/components/home/SectionWrap.svelte';
+    import NumberedSection from '$lib/components/home/NumberedSection.svelte';
     import ContactSection from '$lib/components/contact/ContactSection.svelte'
 
     // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
