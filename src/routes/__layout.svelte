@@ -1,3 +1,15 @@
+<!-- ******SCRIPT -->
+<script>
+    import "../styles/app.scss";
+    import IconsCombined from "$lib/svg/icons/Icons_combined.svelte";
+    import TopNav from "$lib/components/NavTopLevel.svelte";
+    import ActionNav from "$lib/components/NavActions.svelte";
+    import Overlay from "$lib/components/Overlay.svelte";
+    import LogoWrap from "$lib/components/NavlogoWrap.svelte";
+    export let y;
+</script>
+
+
 <!-- ******HTML -->
 
 <!-- Add hidden icon paths to use across all components -->
@@ -82,14 +94,3 @@
         }
     }
 </style>
-
-<!-- ******SCRIPT -->
-<script>
-    import "../styles/app.scss";
-    import IconsCombined from "$lib/svg/icons/Icons_combined.svelte";
-    import TopNav from "$lib/components/navigation/TopNav.svelte";
-    import ActionNav from "$lib/components/navigation/ActionNav.svelte";
-    import Overlay from "$lib/components/ui-elements/Overlay.svelte";
-    import LogoWrap from "$lib/components/navigation/logoWrap.svelte";
-    export let y;
-</script>

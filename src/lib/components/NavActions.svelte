@@ -1,7 +1,7 @@
 <script>
     import { page } from '$app/stores';
     import navigation from '$lib/data/navigation.json';
-    import ThemeSwitcher from '$lib/components/ui-elements/ThemeSwitcher.svelte';
+    import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte';
     let actionNavList = navigation.actionNav;
     export let y;
 </script>

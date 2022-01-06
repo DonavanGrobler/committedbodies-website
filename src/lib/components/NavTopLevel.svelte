@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import navigation from '$lib/data/navigation.json';
-	import ContactDetails from '$lib/components/contact/ContactDetails.svelte'
+	import ContactDetails from '$lib/components/ContactDetails.svelte'
 	let topNavList = navigation.topNav;
 	export let y;
 </script>

@@ -1,6 +1,6 @@
 <script>
     import contactData from '$lib/data/contact.json';
-	import ContactDetails from '$lib/components/contact/ContactDetails.svelte'
+	import ContactDetails from '$lib/components/ContactDetails.svelte'
     import Logo from '$lib/svg/logo/Logo.svelte';
 
     // Contact details from data

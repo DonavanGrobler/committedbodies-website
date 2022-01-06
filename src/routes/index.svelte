@@ -1,11 +1,11 @@
 <!-- ******SCRIPTS -->
 <script>
     import homePage from '$lib/data/homePage.json'
-    import AnimatedLogo from "$lib/components/home/AnimatedLogo.svelte";
-    import Intro from '$lib/components/home/Intro.svelte';
-    import VideoSection from '$lib/components/home/VideoSection.svelte'
-    import NumberedSection from '$lib/components/home/NumberedSection.svelte';
-    import ContactSection from '$lib/components/contact/ContactSection.svelte'
+    import AnimatedLogo from "$lib/components/AnimatedLogo.svelte";
+    import Intro from '$lib/components/Intro.svelte';
+    import VideoSection from '$lib/components/VideoSection.svelte'
+    import NumberedSection from '$lib/components/NumberedSection.svelte';
+    import ContactSection from '$lib/components/ContactSection.svelte'
 
     // SONYA: if you update the Animated-LOGO from keyshape, replace woman and dumbell xlinks with cloudinary links:
     // xlink:href="https://res.cloudinary.com/committed-bodies/image/upload/f_auto,q_auto/v1631689403/ui-assets/woman_f4955x.png"
