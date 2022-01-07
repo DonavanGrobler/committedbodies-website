@@ -26,7 +26,6 @@
     background-color: hsl(var(--accentHS) var(--accentL));
     color: hsl(var(--onAccent) / var(--onAccentStrength0));
     box-shadow: 0 14px 28px rgb(0 0 0 / 0%), 0 10px 10px rgb(0 0 0 / 0%);
-    transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
     &:hover {
         border: 1px solid hsl(var(--accentHS) calc(var(--accentL) - 10%));
         background-color: hsl(var(--accentHS) calc(var(--accentL) - 10%));
