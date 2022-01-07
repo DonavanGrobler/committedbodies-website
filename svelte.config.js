@@ -16,7 +16,7 @@ const config = {
             css: {
                 preprocessorOptions: {
                     scss: {
-                        additionalData: '@import "src/styles/themeVars.scss";'
+                        additionalData: '@import "src/styles/themeVars.scss"; "src/styles/mixins.scss";'
                     }
                 }
             }
