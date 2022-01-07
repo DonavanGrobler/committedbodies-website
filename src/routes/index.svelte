@@ -1,8 +1,8 @@
 <!-- ******SCRIPTS -->
 <script>
     import homePage from '$lib/data/homePage.json'
-    import AnimatedLogo from "$lib/components/AnimatedLogo.svelte";
-    import Intro from '$lib/components/Intro.svelte';
+    import HeroLogo from "$lib/components/HeroLogo.svelte";
+    import JillsStoryIntro from '$lib/components/JillsStoryIntro.svelte';
     import VideoSection from '$lib/components/VideoSection.svelte'
     import NumberedSection from '$lib/components/NumberedSection.svelte';
     import ContactSection from '$lib/components/ContactSection.svelte'
@@ -23,10 +23,10 @@
 </svelte:head>
 
 <!-- Hero logo -->
-<AnimatedLogo></AnimatedLogo>
+<HeroLogo></HeroLogo>
 
 <!-- (Intro) Jill's story -->
-<Intro {introData}></Intro>
+<JillsStoryIntro {introData}></JillsStoryIntro>
 
 <div class="pageWrap">
     <div class="pageContentWrap">
