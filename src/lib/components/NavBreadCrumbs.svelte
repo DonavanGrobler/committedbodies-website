@@ -1,6 +1,6 @@
 <script>
     import { page } from '$app/stores';
-    export let path = $page.path;
+    export let path = $page.url.pathname;
     export let classList;
 
     // create array from path
@@ -21,7 +21,7 @@
 
 <ul class="breadcrumbs {classList}">
     {#each breadcrumbs as crumb, i}
-        {#if crumb.url == $page.path}
+        {#if crumb.url == $page.url.pathname}
             <li class="youAreHere">
                 <span class="divider">/</span>
                 <span class="crumb">{crumb.title}</span>

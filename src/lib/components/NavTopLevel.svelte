@@ -10,7 +10,7 @@
 <nav class="topNav {y > 80 ? 'scrolled' : ''}" aria-label="Primary Navigation">
 	<ul>
 		{#each topNavList as item (item)}
-		<li class="{item.class}" class:active={item.link === $page.path}>
+		<li class="{item.class}" class:active={item.link === $page.url.pathname}>
 			<a class="LinkLevel1" href="{item.link}">{item.title}</a>
 			
 			{#if item.subnav}
