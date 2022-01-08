@@ -56,7 +56,7 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
             padding: 0;
             .buttonWrap {
@@ -65,13 +65,14 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
+                height: 30%;
                 svg {
                     height: 100%;
                     stroke-width: 4px;
                     stroke: hsl(var(--accentHS) var(--accentL));
                     position: absolute;
                     z-index: 1;
-                    visibility: hidden;
+                    // visibility: hidden;
                 }
                 .button {
                     @include button;
@@ -109,13 +110,6 @@
 		section {
 			// border: 10px solid red;
             .contentWrap {
-                justify-content: flex-end;
-                .buttonWrap {
-                    height: 30%;
-                    svg {
-                        visibility: visible;
-                    }
-                }
                 header {
                    .lookAtMeTitle {
                        max-width: none;
