@@ -12,13 +12,13 @@
             <ul>
                 <li><a href="/">Select a membership</a></li>
                 <li><a href="/">Another action</a></li>
-                <li><a href="/">A question</a></li>
+                <li><a href="/">One more action</a></li>
             </ul>
         </div>
         <div class="actionsWidget">
             <h5>Not sure?</h5>
             <ul>
-                <li><a href="/">Find us</a></li>
+                <li><a href="/">Advice</a></li>
                 <li><a href="/">Make an appointment</a></li>
                 <li><a href="/">Join a class</a></li>
             </ul>
