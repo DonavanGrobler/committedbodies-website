@@ -7,7 +7,7 @@
         <h5>About Committed Bodies</h5>
         <p>{siteData.config.about}</p>
         </div>
-        <div class="siteMapWidget align-right">
+        <div class="actionsWidget align-right">
             <h5>Start now</h5>
             <ul>
                 <li><a href="/">Select a membership</a></li>
@@ -15,7 +15,7 @@
                 <li><a href="/">A question</a></li>
             </ul>
         </div>
-        <div class="siteMapWidget">
+        <div class="actionsWidget">
             <h5>Not sure?</h5>
             <ul>
                 <li><a href="/">Find us</a></li>
@@ -59,7 +59,7 @@
                 font-weight: 300;
                 color: hsl(var(--onAccentAlt) / var(--onAccentAltStrength3));
             }
-            .siteMapWidget {
+            .actionsWidget {
                 padding: 1rem;
                 ul {
                     list-style-type: none;
@@ -100,7 +100,7 @@
                         max-width: 40ch;
                     }
                 }
-                .siteMapWidget {
+                .actionsWidget {
                     padding: 0;
                     &.align-right {
                         padding: 0 1rem 0 0;
