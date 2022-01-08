@@ -1,4 +1,3 @@
-<!-- ******SCRIPT -->
 <script>
     import "../styles/app.scss";
     import IconsCombined from "$lib/svg/icons/Icons_combined.svelte";
@@ -6,11 +5,9 @@
     import ActionNav from "$lib/components/NavActions.svelte";
     import Overlay from "$lib/components/Overlay.svelte";
     import LogoWrap from "$lib/components/NavlogoWrap.svelte";
+    import Footer from "$lib/components/Footer.svelte";
     export let y;
 </script>
-
-
-<!-- ******HTML -->
 
 <!-- Add hidden icon paths to use across all components -->
 <IconsCombined></IconsCombined>
@@ -27,6 +24,7 @@
 <!-- Main content -->
 <main on:scroll="{(e)=>y=e.target.scrollTop}">
     <slot></slot>
+    <Footer></Footer>
 </main>
 
 <!-- Modal -->

@@ -23,7 +23,7 @@
     }
 
     // Responsive Styles
-    @media (min-width:700px) {
+    @media (min-width: $mdScreen) {
         footer {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
