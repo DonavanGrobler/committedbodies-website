@@ -12,6 +12,9 @@
 // Had to put some css vars in app.scss because svelte strips unused styles
 // Figure out how to tidy up.
 
+// IMPORT MIXINS
+@import "./mixins.scss";
+
 // ---1. BREAKPOINTS FOR MAIN LAYOUT STRUCTURE
 // We're going to try to only use breakpoints for the main page layout changes (Main and Navigation components)
 $mdScreen: 780px; //min-width for medium layout

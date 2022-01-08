@@ -16,7 +16,7 @@ const config = {
             css: {
                 preprocessorOptions: {
                     scss: {
-                        additionalData: `@import 'src/styles/themeVars.scss'; @import 'src/styles/mixins.scss';`
+                        additionalData: '@import "src/styles/themeVars.scss";'
                     }
                 }
             }
@@ -27,7 +27,7 @@ const config = {
         mdsvex(mdsvexConfig),
         sveltePreprocess({
             scss: {
-                prependData: `@import 'src/styles/themeVars.scss'; @import 'src/styles/mixins.scss';`
+                prependData: '@import "src/styles/themeVars.scss";'
             },
         })
     ]
