@@ -1,11 +1,11 @@
 <script>
-    import siteData from "$lib/data/site.json";
+    import siteSettings from "$lib/data/siteSettings.json";
 </script>
 <footer>
     <div class="footerContent">
         <div class="aboutWidget">
         <h5>About Committed Bodies</h5>
-        <p>{siteData.config.about}</p>
+        <p>{siteSettings.config.about}</p>
         </div>
         <div class="actionsWidget align-right">
             <h5>Start now</h5>

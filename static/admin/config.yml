@@ -41,8 +41,16 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "team"}
   
   - name: "pages"
-    label: "Pages"
+    label: "Settings and Pages"
     files:
+    - label: "Site Settings"
+      name: "siteSettings"
+      file: "/src/lib/data/siteSettings.json"
+      widget: "list"
+      summary: '{{fields.title}} - {{fields.author.name}}'
+      fields:
+        - {label: Title, name: title, widget: string, default: "Some action"}
+        - {label: Link, name: link, widget: string, default: "/"}
     - label: Home Page
       name: "homePage"
       file: "/src/lib/data/homePage.json"
@@ -84,3 +92,4 @@ collections:
           - label: "Button Link"
             name: "buttonLink"
             widget: "string"
+      
