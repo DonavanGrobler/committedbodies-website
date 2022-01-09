@@ -15,6 +15,31 @@ media_library:
     api_key: 724142698475225
       
 collections:
+  - label: "Site Settings"
+    name: "siteSettings"
+    file: "/src/lib/data/siteSettings.json"
+    fields:
+      - label: Config
+        name: config
+        widget: object
+        collapsed: true
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Slogan"
+            name: "slogan"
+            widget: "string"
+          - label: "About"
+            name: "about"
+            widget: "text"
+      - label: "Footer Links"
+        name: "footerLinks"
+        widget: "list"
+        summary: '{{fields.quote}} - {{fields.author.name}}'
+        fields:
+          - {label: Title, name: title, widget: string, default: "Link text"}
+          - {label: Url, name: url, widget: string, default: "/"}
 
   - name: "blog"
     label: "Blog"
@@ -41,16 +66,8 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "team"}
   
   - name: "pages"
-    label: "Settings and Pages"
+    label: "Pages"
     files:
-    - label: "Site Settings"
-      name: "siteSettings"
-      file: "/src/lib/data/siteSettings.json"
-      widget: "list"
-      summary: '{{fields.title}} - {{fields.author.name}}'
-      fields:
-        - {label: Title, name: title, widget: string, default: "Some action"}
-        - {label: Link, name: link, widget: string, default: "/"}
     - label: Home Page
       name: "homePage"
       file: "/src/lib/data/homePage.json"
