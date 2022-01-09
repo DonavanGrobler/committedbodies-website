@@ -37,6 +37,10 @@ collections:
             - label: "About"
               name: "about"
               widget: "text"
+    - label: "Footer"
+      name: "footer"  
+      file: "/src/lib/data/footer.json"
+      fields:
         - label: "Footer Links"
           name: "footerLinks"
           widget: "list"
