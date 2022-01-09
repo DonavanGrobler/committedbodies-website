@@ -47,7 +47,7 @@ collections:
           widget: "object"
           collapsed: true
           fields:
-            - {label: "Column Title", name: "title1", widget: "string", default: "Start Now"}
+            - {label: "Column Title", name: "title", widget: "string", default: "Start Now"}
             - label: "Links"
               name: "links"
               widget: "list"
@@ -60,7 +60,7 @@ collections:
           widget: "object"
           collapsed: true
           fields:
-            - {label: "Column Title", name: "title2", widget: "string", default: "Not sure?"}
+            - {label: "Column Title", name: "title", widget: "string", default: "Not sure?"}
             - label: "Links"
               name: "links"
               widget: "list"

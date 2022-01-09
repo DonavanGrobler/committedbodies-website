@@ -1,5 +1,6 @@
 <script>
     import siteSettings from "$lib/data/siteSettings.json";
+    import footerData from "$lib/data/footer.json";
 </script>
 <footer>
     <div class="footerContent">
@@ -8,19 +9,19 @@
         <p>{siteSettings.config.about}</p>
         </div>
         <div class="actionsWidget align-right">
-            <h5>Start now</h5>
+            <h5>{footerData.footerLinks1.title}</h5>
             <ul>
-                <li><a href="/">Select a membership</a></li>
-                <li><a href="/">Another action</a></li>
-                <li><a href="/">One more action</a></li>
+                {#each footerData.footerLinks1.links as link}
+                    <li><a href="{link.url}">{link.title}</a></li>
+                {/each}
             </ul>
         </div>
         <div class="actionsWidget">
-            <h5>Not sure?</h5>
+            <h5>{footerData.footerLinks2.title}</h5>
             <ul>
-                <li><a href="/">Advice</a></li>
-                <li><a href="/">Make an appointment</a></li>
-                <li><a href="/">Join a class</a></li>
+                {#each footerData.footerLinks2.links as link}
+                    <li><a href="{link.url}">{link.title}</a></li>
+                {/each}
             </ul>
         </div>
     </div>
