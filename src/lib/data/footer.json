@@ -1,0 +1,36 @@
+{
+  "footerLinks1": {
+    "title1": "Start Now",
+    "links": [
+      {
+        "title": "Select a membership",
+        "url": "/membership"
+      },
+      {
+        "title": "Book a class",
+        "url": "/services"
+      },
+      {
+        "title": "Download the app",
+        "url": "/download"
+      }
+    ]
+  },
+  "footerLinks2": {
+    "title2": "Not sure?",
+    "links": [
+      {
+        "title": "Make an appointment",
+        "url": "/appointment"
+      },
+      {
+        "title": "Health and Fitness advice",
+        "url": "/"
+      },
+      {
+        "title": "Live Chat",
+        "url": "/"
+      }
+    ]
+  }
+}
