@@ -40,6 +40,7 @@ collections:
     - label: "Footer"
       name: "footer"  
       file: "/src/lib/data/footer.json"
+      
       fields:
         - label: "Footer Links Column 1"
           name: "footerLinks1"
@@ -54,7 +55,6 @@ collections:
               fields:
                 - {label: Title, name: title, widget: string, default: "Link text"}
                 - {label: Url, name: url, widget: string, default: "/"}
-      fields:
         - label: "Footer Links Column 2"
           name: "footerLinks2"
           widget: "object"
