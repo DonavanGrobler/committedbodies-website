@@ -25,7 +25,7 @@ collections:
       fields:
         - label: "Site Settings"
           name: "config"
-          widget: object
+          widget: "object"
           collapsed: true
           fields:
             - label: "Title"
@@ -41,13 +41,33 @@ collections:
       name: "footer"  
       file: "/src/lib/data/footer.json"
       fields:
-        - label: "Footer Links"
-          name: "footerLinks"
-          widget: "list"
-          summary: '{{fields.quote}} - {{fields.author.name}}'
+        - label: "Footer Links Column 1"
+          name: "footerLinks1"
+          widget: "object"
+          collapsed: true
           fields:
-            - {label: Title, name: title, widget: string, default: "Link text"}
-            - {label: Url, name: url, widget: string, default: "/"}
+            - {label: "Column Title", name: "title", widget: "string", default: "Start Now"}
+            - label: "Links"
+              name: "links"
+              widget: "list"
+              summary: '{{fields.quote}} - {{fields.author.name}}'
+              fields:
+                - {label: Title, name: title, widget: string, default: "Link text"}
+                - {label: Url, name: url, widget: string, default: "/"}
+      fields:
+        - label: "Footer Links Column 2"
+          name: "footerLinks2"
+          widget: "object"
+          collapsed: true
+          fields:
+            - {label: "Column Title", name: "title", widget: "string", default: "Start Now"}
+            - label: "Links"
+              name: "links"
+              widget: "list"
+              summary: '{{fields.quote}} - {{fields.author.name}}'
+              fields:
+                - {label: Title, name: title, widget: string, default: "Link text"}
+                - {label: Url, name: url, widget: string, default: "/"}
 
   - name: "blog"
     label: "Blog"
