@@ -9,7 +9,7 @@
         <p>{siteSettings.config.about}</p>
         </div>
         <div class="actionsWidget align-right">
-            <h5>{footerData.footerLinks1.title}</h5>
+            <h5>{footerData.footerLinks1.columnTitle}</h5>
             <ul>
                 {#each footerData.footerLinks1.links as link}
                     <li><a href="{link.url}">{link.title}</a></li>
@@ -17,7 +17,7 @@
             </ul>
         </div>
         <div class="actionsWidget">
-            <h5>{footerData.footerLinks2.title}</h5>
+            <h5>{footerData.footerLinks2.columnTitle}</h5>
             <ul>
                 {#each footerData.footerLinks2.links as link}
                     <li><a href="{link.url}">{link.title}</a></li>

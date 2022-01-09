@@ -1,6 +1,6 @@
 {
   "footerLinks1": {
-    "title": "Start Now",
+    "columnTitle": "Start Now",
     "links": [
       {
         "title": "Select a membership",
@@ -17,7 +17,7 @@
     ]
   },
   "footerLinks2": {
-    "title": "Not sure?",
+    "columnTitle": "Not sure?",
     "links": [
       {
         "title": "Make an appointment",
