@@ -1,10 +1,14 @@
-import { getPosts } from '$lib/get-posts'
-import { website } from '$lib/info'
+import { getPosts } from '$lib/data/get-posts'
+// import { website } from '$lib/data/info'
+import sitesetings from '$lib/data/siteSettings'
+let website = sitesetings.config.domain;
+
+// console.log("posts: ", posts);
 
 export async function get() {
 
     const posts = await getPosts()
-    const pages = ['about' , 'newsletter', 'privacy policy']
+    const pages = ['about' , 'blog', 'contact', 'explore', 'membership', 'portal', 'services', 'team']
     const body = sitemap(posts, pages)
 
     const headers = {
@@ -47,9 +51,10 @@ const sitemap = (
           .join('')}
         ${posts
           .map(post =>
-            post.isPrivate
-              ? null
-              : `
+            // post.isPrivate
+            //   ? null
+            //   : 
+            `
         <url>
           <loc>${website}/posts/${post.slug}</loc>
           <changefreq>daily</changefreq>
